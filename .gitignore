@@ -7,3 +7,6 @@ api_keys.py
 __pycache__/
 *.pyc
 *.pyo
+
+# Prompts
+ai_agents_prompts/
