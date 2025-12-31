@@ -8,5 +8,5 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Prompts
-ai_agents_prompts/
+# Notes
+notes/
