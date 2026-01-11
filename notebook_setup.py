@@ -13,7 +13,7 @@ from itertools import product
 from tqdm import tqdm
 from sklearn.preprocessing import LabelEncoder
 
-# Darts - Time Series Library
+# Darts imports
 from darts import TimeSeries
 from darts.dataprocessing.transformers import Scaler, StaticCovariatesTransformer
 from darts.metrics import rmse, mape
@@ -27,47 +27,32 @@ from darts.models import (
     TFTModel,
 )
 
-# Foundation Models (optional dependencies)
+# Načtení environmentu (Chronos, TimeGPT)
+# Zkusíme importovat config, pokud existuje
 try:
-    from chronos import ChronosPipeline
-    import torch
-
-    CHRONOS_AVAILABLE = True
+    from src.config import CHRONOS_AVAILABLE, TIMEGPT_AVAILABLE, NIXTLA_API_KEY
 except ImportError:
+    # Fallback pokud config neexistuje
     CHRONOS_AVAILABLE = False
-
-try:
-    from nixtla import NixtlaClient
-
-    TIMEGPT_AVAILABLE = True
-except ImportError:
     TIMEGPT_AVAILABLE = False
-
-# Load API keys
-# Attempt to find api_keys in the same directory as this module
-try:
-    # If running from a notebook where sys.path includes the root, this works
-    from api_keys import NIXTLA_API_KEY
-except ImportError:
     NIXTLA_API_KEY = None
 
-# Suppress all warnings and verbose logging
+# === DŮLEŽITÉ: IMPORTY Z NAŠICH MODULŮ ===
+# Toto zpřístupní funkce run_tuning_*, run_foundation_models, atd. v noteboocích
+from src.experiment import ExperimentTracker
+from src.tuning import run_tuning_and_eval, run_tuning_local, run_tuning_global
+from src.pipeline import run_foundation_models, get_final_predictions
+from src.visualization import (
+    plot_model_comparison,
+    plot_forecast_comparison,
+    export_plots,
+)
+
+# Potlačení warningů
 warnings.filterwarnings("ignore")
 os.environ["CMDSTAN_VERBOSE"] = "FALSE"
-for logger_name in [
-    "darts",
-    "prophet",
-    "cmdstanpy",
-    "stan",
-    "pystan",
-    "prophet.models",
-    "pytorch_lightning",
-    "lightning",
-    "nixtla",
-    "kaleido",
-    "choreographer",
-]:
-    logging.getLogger(logger_name).setLevel(logging.CRITICAL)
+logging.getLogger("cmdstanpy").setLevel(logging.CRITICAL)
+for logger in ["darts", "prophet", "pytorch_lightning", "nixtla"]:
+    logging.getLogger(logger).setLevel(logging.CRITICAL)
 
-print(f"Chronos: {'Available' if CHRONOS_AVAILABLE else 'Not installed'}")
-print(f"TimeGPT: {'Available' if TIMEGPT_AVAILABLE else 'Not installed'}")
+print("Notebook setup complete.")
