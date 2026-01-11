@@ -1,198 +1,32 @@
+# soubor: src/tuning.py
 import time
-import random
+import pandas as pd
 import numpy as np
-from itertools import product
 from tqdm import tqdm
+from itertools import product
+import random
+import traceback
 from darts.metrics import rmse, mape
-
-# Nastavení seedu pro reprodukovatelnost
-RANDOM_SEED = 42
-random.seed(RANDOM_SEED)
-np.random.seed(RANDOM_SEED)
+from darts.utils.utils import ModelMode
 
 
 def grid_search_all(param_grid):
-    """Vygeneruje všechny kombinace parametrů pro Grid Search."""
-    if not param_grid:
-        return [{}]
-    keys, values = list(param_grid.keys()), list(param_grid.values())
-    return [dict(zip(keys, combo)) for combo in product(*values)]
-
-
-def random_grid_search(param_grid, n_iter=5, seed=RANDOM_SEED):
-    """Vygeneruje náhodné kombinace parametrů."""
-    rng = random.Random(seed)
+    """Generates all combinations of parameters."""
     keys = list(param_grid.keys())
-    if not keys:
-        return [{}]
-
-    combinations = [
-        {key: rng.choice(param_grid[key]) for key in keys} for _ in range(n_iter)
-    ]
-    seen = set()
-    # Odstranění duplicit
-    return [
-        d
-        for d in combinations
-        if not (key := frozenset((k, str(v)) for k, v in d.items())) in seen
-        and not seen.add(key)
-    ]
+    values = list(param_grid.values())
+    combinations = [dict(zip(keys, v)) for v in product(*values)]
+    return combinations
 
 
-def evaluate_model(
-    model_cls,
-    params,
-    series_train,
-    is_dl=False,
-    forecast_horizon=12,
-    stride=1,
-    start_p=0.7,
-    scaler=None,
-    original_train=None,
-):
-    """
-    Vyhodnotí jeden model pomocí rolling window cross-validation na trénovacích datech.
-    """
-    start_time = time.time()
-    try:
-        model = model_cls(**params)
-
-        if is_dl:
-            # Deep Learning modely: fit jednou, pak historical_forecasts bez retrain
-            # (vyžaduje scaler a original_train pro inverzní transformaci)
-            model.fit(series_train, verbose=False)
-            backtest = model.historical_forecasts(
-                series=series_train,
-                start=start_p,
-                forecast_horizon=forecast_horizon,
-                stride=stride,
-                retrain=False,
-                verbose=False,
-                last_points_only=True,
-            )
-            # Inverzní transformace
-            backtest_unscaled = scaler.inverse_transform(backtest)
-            actual = original_train.slice_intersect(backtest_unscaled)
-            metric_pred = backtest_unscaled
-        else:
-            # Statistické modely: retrain=True
-            backtest = model.historical_forecasts(
-                series=series_train,
-                start=start_p,
-                forecast_horizon=forecast_horizon,
-                stride=stride,
-                retrain=True,
-                verbose=False,
-                last_points_only=True,
-            )
-            actual = series_train.slice_intersect(backtest)
-            metric_pred = backtest
-
-        # Výpočet metrik
-        rmse_val = rmse(actual, metric_pred)
-        mape_val = mape(actual, metric_pred)
-
-        return rmse_val, mape_val, time.time() - start_time
-
-    except Exception as e:
-        # V případě chyby (např. špatné parametry) vrátíme nekonečné error metriky
-        # print(f"Error evaluating {model_cls.__name__}: {e}") # Odkomentovat pro debug
-        return float("inf"), float("inf"), 0
+def random_grid_search(param_grid, n_iter=10):
+    """Generates random sample of parameter combinations."""
+    all_combinations = grid_search_all(param_grid)
+    if len(all_combinations) <= n_iter:
+        return all_combinations
+    return random.sample(all_combinations, n_iter)
 
 
-def run_tuning_and_eval(
-    tracker,  # <--- DŮLEŽITÉ: Předáváme instanci trackeru
-    model_name,
-    model_cls,
-    param_grid,
-    train_series,
-    is_dl=False,
-    n_iter=5,
-    scaler=None,
-    original_train=None,
-    use_full_grid=False,
-    forecast_horizon=None,  # Pokud None, bere se z configu notebooku
-    test_periods=None,  # Pro určení horizon, pokud není zadán explicitně
-):
-    """
-    Řídí proces ladění hyperparametrů a loguje výsledky do trackeru.
-    """
-    tuning_start = time.time()
-
-    # Pokud není zadán horizon, zkusíme ho odvodit (fallback na 12)
-    horizon = (
-        forecast_horizon if forecast_horizon else (test_periods if test_periods else 12)
-    )
-
-    # 1. Base run (pokud je grid prázdný, spustíme defaultní nastavení)
-    if not param_grid:
-        rmse_val, mape_val, cfg_time = evaluate_model(
-            model_cls,
-            {},
-            train_series,
-            is_dl=is_dl,
-            forecast_horizon=horizon,
-            scaler=scaler,
-            original_train=original_train,
-        )
-        if rmse_val != float("inf"):
-            tracker.log(
-                model_name,
-                rmse_val,
-                mape_val,
-                time.time() - tuning_start,
-                cfg_time,
-                {},
-                1,
-            )
-        return {}
-
-    # 2. Generování kombinací
-    combinations = (
-        grid_search_all(param_grid)
-        if use_full_grid
-        else random_grid_search(param_grid, n_iter=n_iter, seed=RANDOM_SEED)
-    )
-
-    best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
-
-    # 3. Iterace přes parametry
-    # Používáme tqdm pro progress bar
-    for params in tqdm(combinations, desc=model_name):
-        rmse_val, mape_val, cfg_time = evaluate_model(
-            model_cls,
-            params,
-            train_series,
-            is_dl=is_dl,
-            forecast_horizon=horizon,
-            scaler=scaler,
-            original_train=original_train,
-        )
-
-        if rmse_val < best_rmse:
-            best_rmse, best_params, best_mape, best_cfg_time = (
-                rmse_val,
-                params,
-                mape_val,
-                cfg_time,
-            )
-
-    # 4. Logování nejlepšího výsledku
-    if best_params and best_rmse != float("inf"):
-        tracker.log(
-            model_name,
-            best_rmse,
-            best_mape,
-            time.time() - tuning_start,
-            best_cfg_time,
-            best_params,
-            len(combinations),
-        )
-
-    return best_params
-
-
-# === MULTI-SERIES TUNING ===
+# === MULTI-SERIES TUNING (04) ===
 
 
 def evaluate_local_model(
@@ -204,7 +38,6 @@ def evaluate_local_model(
     forecast_horizon=7,
     stride=1,
 ):
-    """Evaluates local model on a list of series (trains separate model for each)."""
     start_time = time.time()
     all_backtest, all_actual = [], []
     errors = []
@@ -218,6 +51,7 @@ def evaluate_local_model(
                 else None
             )
 
+            # Local models (stat) are fast, so we can use retrain=True
             backtest = model.historical_forecasts(
                 series=train_s,
                 future_covariates=future_cov,
@@ -231,14 +65,20 @@ def evaluate_local_model(
             all_backtest.append(backtest)
             all_actual.append(train_s.slice_intersect(backtest))
         except Exception as e:
-            errors.append(f"series_{i}: {str(e)[:50]}")
+            errors.append(f"series_{i}: {str(e)[:100]}")
 
     if not all_backtest:
-        return float("inf"), float("inf"), 0, f"All failed"
+        return float("inf"), 0, 0, f"All failed: {errors[0] if errors else 'Unknown'}"
 
-    # Compute average metrics across all series
-    avg_rmse = np.mean([rmse(a, b) for a, b in zip(all_actual, all_backtest)])
-    avg_mape = np.mean([mape(a, b) for a, b in zip(all_actual, all_backtest)])
+    try:
+        avg_rmse = np.mean([rmse(a, b) for a, b in zip(all_actual, all_backtest)])
+    except Exception:
+        avg_rmse = float("inf")
+
+    try:
+        avg_mape = np.mean([mape(a, b) for a, b in zip(all_actual, all_backtest)])
+    except Exception:
+        avg_mape = 0.0
 
     return avg_rmse, avg_mape, time.time() - start_time, None
 
@@ -254,10 +94,10 @@ def evaluate_global_model(
     forecast_horizon=7,
     stride=1,
 ):
-    """Evaluates global model (trains once on all series)."""
     start_time = time.time()
     try:
         model = model_cls(**params)
+        # Global models train ONCE on the full dataset (or subset)
         model.fit(
             series=train_scaled_list,
             future_covariates=future_covs,
@@ -286,10 +126,14 @@ def evaluate_global_model(
             )
 
         avg_rmse = np.mean([rmse(a, b) for a, b in zip(all_actual, all_backtest)])
-        avg_mape = np.mean([mape(a, b) for a, b in zip(all_actual, all_backtest)])
+        try:
+            avg_mape = np.mean([mape(a, b) for a, b in zip(all_actual, all_backtest)])
+        except Exception:
+            avg_mape = 0.0
+
         return avg_rmse, avg_mape, time.time() - start_time, None
     except Exception as e:
-        return float("inf"), float("inf"), 0, str(e)[:100]
+        return float("inf"), 0, 0, str(e)[:100]
 
 
 def run_tuning_local(
@@ -304,7 +148,6 @@ def run_tuning_local(
     n_iter=5,
     seasonal_period=1,
 ):
-    """Tuning loop for Local models."""
     tuning_start = time.time()
     combinations = (
         grid_search_all(param_grid)
@@ -312,7 +155,6 @@ def run_tuning_local(
         else random_grid_search(param_grid, n_iter=n_iter)
     )
 
-    # Filter HW invalid params
     if "Holt" in model_name:
         combinations = [
             p
@@ -322,7 +164,8 @@ def run_tuning_local(
 
     best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
 
-    for params in tqdm(combinations, desc=model_name):
+    loop = tqdm(combinations, desc=model_name)
+    for params in loop:
         rmse_val, mape_val, cfg_time, err = evaluate_local_model(
             model_cls,
             params,
@@ -331,6 +174,12 @@ def run_tuning_local(
             supports_covariates,
             stride=seasonal_period,
         )
+
+        if rmse_val < float("inf"):
+            loop.set_postfix(rmse=f"{rmse_val:.2f}", best=f"{best_rmse:.2f}")
+        else:
+            loop.set_postfix(status="Err")
+
         if rmse_val < best_rmse:
             best_rmse, best_params, best_mape, best_cfg_time = (
                 rmse_val,
@@ -367,7 +216,6 @@ def run_tuning_global(
     n_iter=10,
     seasonal_period=1,
 ):
-    """Tuning loop for Global models."""
     tuning_start = time.time()
     combinations = (
         grid_search_all(param_grid)
@@ -377,7 +225,8 @@ def run_tuning_global(
 
     best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
 
-    for params in tqdm(combinations, desc=model_name):
+    loop = tqdm(combinations, desc=model_name)
+    for params in loop:
         rmse_val, mape_val, cfg_time, err = evaluate_global_model(
             model_cls,
             params,
@@ -388,6 +237,154 @@ def run_tuning_global(
             past_covs,
             stride=seasonal_period,
         )
+
+        if rmse_val < float("inf"):
+            loop.set_postfix(rmse=f"{rmse_val:.2f}", best=f"{best_rmse:.2f}")
+        else:
+            loop.set_postfix(status="Err")
+
+        if rmse_val < best_rmse:
+            best_rmse, best_params, best_mape, best_cfg_time = (
+                rmse_val,
+                params,
+                mape_val,
+                cfg_time,
+            )
+
+    if best_params and best_rmse != float("inf"):
+        tracker.log(
+            model_name,
+            best_rmse,
+            best_mape,
+            time.time() - tuning_start,
+            best_cfg_time,
+            best_params,
+            len(combinations),
+        )
+
+    return best_params
+
+
+# === SINGLE SERIES TUNING (Legacy for 01-03, 05) ===
+
+
+def evaluate_model(
+    model_cls,
+    params,
+    train_series,
+    test_periods=None,
+    is_dl=False,
+    scaler=None,
+    original_train=None,
+):
+    """
+    Single series evaluation (Legacy for 01-03).
+    """
+    start_time = time.time()
+    try:
+        model = model_cls(**params)
+
+        # Cross-validation setup
+        stride = 1
+        start_ratio = 0.7
+        forecast_horizon = test_periods if test_periods else 12
+
+        if is_dl:
+            # === OPRAVA PRO DL MODELY ===
+            # Pokud je retrain=False, model musí být předem natrénován.
+            # Natrénujeme ho na "historické" části dat (prvních 70%), kterou pak nebude předpovídat.
+            # Tím zabráníme chybě "model not fitted" a zároveň Data Leakage.
+
+            split_idx = int(len(train_series) * start_ratio)
+            train_subset = train_series[:split_idx]
+            model.fit(train_subset, verbose=False)
+            # ============================
+
+            # DL models use scaled data for training
+            backtest_scaled = model.historical_forecasts(
+                series=train_series,
+                start=start_ratio,
+                forecast_horizon=forecast_horizon,
+                stride=stride,
+                retrain=False,  # Nyní validní, model je natrénován
+                verbose=False,
+                last_points_only=True,
+            )
+            # Inverse transform to get real values
+            backtest = scaler.inverse_transform(backtest_scaled)
+            # Compare with ORIGINAL train data (slice_intersect ensures alignment)
+            actual = original_train.slice_intersect(backtest)
+        else:
+            # Statistical models use original data
+            backtest = model.historical_forecasts(
+                series=train_series,
+                start=start_ratio,
+                forecast_horizon=forecast_horizon,
+                stride=stride,
+                retrain=True,
+                verbose=False,
+                last_points_only=True,
+            )
+            actual = train_series.slice_intersect(backtest)
+
+        rmse_val = rmse(actual, backtest)
+        mape_val = mape(actual, backtest)
+
+        return rmse_val, mape_val, time.time() - start_time, None
+
+    except Exception as e:
+        # print(f"\n[DEBUG] Error in {model_cls.__name__}: {str(e)[:200]}")
+        return float("inf"), float("inf"), 0, str(e)
+
+
+def run_tuning_and_eval(
+    tracker,
+    model_name,
+    model_cls,
+    param_grid,
+    train_series,
+    use_full_grid=True,
+    n_iter=10,
+    test_periods=None,
+    is_dl=False,
+    scaler=None,
+    original_train=None,
+):
+    """
+    Main tuning function for Single Series (Legacy for 01-03).
+    """
+    tuning_start = time.time()
+    combinations = (
+        grid_search_all(param_grid)
+        if use_full_grid
+        else random_grid_search(param_grid, n_iter=n_iter)
+    )
+
+    if "Holt" in model_name:
+        combinations = [
+            p
+            for p in combinations
+            if not (p.get("damped", False) and p.get("trend") == ModelMode.NONE)
+        ]
+
+    best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
+
+    loop = tqdm(combinations, desc=model_name)
+    for params in loop:
+        rmse_val, mape_val, cfg_time, err = evaluate_model(
+            model_cls,
+            params,
+            train_series,
+            test_periods=test_periods,
+            is_dl=is_dl,
+            scaler=scaler,
+            original_train=original_train,
+        )
+        if rmse_val < float("inf"):
+            loop.set_postfix(rmse=f"{rmse_val:.2f}", best=f"{best_rmse:.2f}")
+        else:
+            loop.set_postfix(status="Err")
+
         if rmse_val < best_rmse:
             best_rmse, best_params, best_mape, best_cfg_time = (
                 rmse_val,
