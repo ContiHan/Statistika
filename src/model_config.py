@@ -49,9 +49,9 @@ def get_dl_grids(seasonal_period):
     # Zde jsme to osekali, aby toho nebylo moc
     common = {
         "input_chunk_length": [base, base * 2],
-        "output_chunk_length": [base],  # Fixnuto na 1 horizon pro jednoduchost
-        "n_epochs": [15],  # Fixnuto na rozumnou hodnotu
-        "batch_size": [32],
+        "output_chunk_length": [base // 2, base],
+        "n_epochs": [15, 30],
+        "batch_size": [32, 64],
         "random_state": [TUNING_CONFIG["RANDOM_STATE"]],
     }
 
@@ -60,7 +60,7 @@ def get_dl_grids(seasonal_period):
             **common,
             "hidden_size": [64, 128],
             "dropout": [0.1],
-            "num_encoder_layers": [1],  # Méně vrstev pro základní tuning
+            "num_encoder_layers": [1],
             "num_decoder_layers": [1],
         },
         "N-BEATS": {

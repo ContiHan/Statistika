@@ -262,6 +262,7 @@ def plot_forecast_comparison(
 
     fig.update_layout(
         title=f"<b>{dataset_name}</b>{title_suffix} - Out-of-Sample Forecast",
+        width=1700,
         height=500,
         margin=dict(b=100),
     )

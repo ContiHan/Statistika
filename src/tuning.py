@@ -35,7 +35,7 @@ def evaluate_local_model(
     train_list,
     future_covs_list=None,
     supports_covariates=False,
-    forecast_horizon=7,
+    test_periods=None,
     stride=1,
     cv_start_ratio=0.7,
 ):
@@ -57,7 +57,7 @@ def evaluate_local_model(
                 series=train_s,
                 future_covariates=future_cov,
                 start=cv_start_ratio,
-                forecast_horizon=forecast_horizon,
+                forecast_horizon=test_periods,
                 stride=stride,
                 retrain=True,
                 verbose=False,
@@ -92,9 +92,9 @@ def evaluate_global_model(
     scaler,
     future_covs=None,
     past_covs=None,
-    forecast_horizon=7,
     stride=1,
     cv_start_ratio=0.7,
+    test_periods=None,
 ):
     start_time = time.time()
     try:
@@ -116,7 +116,7 @@ def evaluate_global_model(
                 future_covariates=future_covs[i] if future_covs else None,
                 past_covariates=past_covs[i] if past_covs else None,
                 start=cv_start_ratio,
-                forecast_horizon=forecast_horizon,
+                forecast_horizon=test_periods,
                 stride=stride,
                 retrain=False,
                 verbose=False,
@@ -138,7 +138,7 @@ def evaluate_global_model(
         return float("inf"), 0, 0, str(e)[:100]
 
 
-def run_tuning_local(
+def run_tuning_local_and_eval(
     tracker,
     model_name,
     model_cls,
@@ -148,6 +148,7 @@ def run_tuning_local(
     supports_covariates=False,
     use_full_grid=True,
     n_iter=5,
+    test_periods=None,
     seasonal_period=1,
     cv_start_ratio=0.7,
 ):
@@ -175,6 +176,7 @@ def run_tuning_local(
             train_list,
             future_covs_list,
             supports_covariates,
+            test_periods=test_periods,
             stride=seasonal_period,
             cv_start_ratio=cv_start_ratio,
         )
@@ -206,7 +208,7 @@ def run_tuning_local(
     return best_params
 
 
-def run_tuning_global(
+def run_tuning_global_and_eval(
     tracker,
     model_name,
     model_cls,
@@ -220,6 +222,7 @@ def run_tuning_global(
     n_iter=10,
     seasonal_period=1,
     cv_start_ratio=0.7,
+    test_periods=None,
 ):
     tuning_start = time.time()
     combinations = (
@@ -242,6 +245,7 @@ def run_tuning_global(
             past_covs,
             stride=seasonal_period,
             cv_start_ratio=cv_start_ratio,
+            test_periods=test_periods,
         )
 
         if rmse_val < float("inf"):
@@ -283,6 +287,7 @@ def evaluate_model(
     scaler=None,
     original_train=None,
     cv_start_ratio=0.7,
+    stride=1,
 ):
     """
     Single series evaluation (Legacy for 01-03).
@@ -290,11 +295,6 @@ def evaluate_model(
     start_time = time.time()
     try:
         model = model_cls(**params)
-
-        # Cross-validation setup
-        stride = 1
-        forecast_horizon = test_periods if test_periods else 12
-
         if is_dl:
             # === OPRAVA PRO DL MODELY ===
             # Pokud je retrain=False, model musí být předem natrénován.
@@ -310,7 +310,7 @@ def evaluate_model(
             backtest_scaled = model.historical_forecasts(
                 series=train_series,
                 start=cv_start_ratio,
-                forecast_horizon=forecast_horizon,
+                forecast_horizon=test_periods,
                 stride=stride,
                 retrain=False,  # Nyní validní, model je natrénován
                 verbose=False,
@@ -325,7 +325,7 @@ def evaluate_model(
             backtest = model.historical_forecasts(
                 series=train_series,
                 start=cv_start_ratio,
-                forecast_horizon=forecast_horizon,
+                forecast_horizon=test_periods,
                 stride=stride,
                 retrain=True,
                 verbose=False,

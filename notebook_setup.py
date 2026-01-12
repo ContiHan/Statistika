@@ -40,7 +40,11 @@ except ImportError:
 # === DŮLEŽITÉ: IMPORTY Z NAŠICH MODULŮ ===
 # Toto zpřístupní funkce run_tuning_*, run_foundation_models, atd. v noteboocích
 from src.experiment import ExperimentTracker
-from src.tuning import run_tuning_and_eval, run_tuning_local, run_tuning_global
+from src.tuning import (
+    run_tuning_and_eval,
+    run_tuning_local_and_eval,
+    run_tuning_global_and_eval,
+)
 from src.pipeline import run_foundation_models, get_final_predictions
 from src.visualization import (
     plot_model_comparison,
