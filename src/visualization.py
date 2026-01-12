@@ -1,6 +1,7 @@
 import os
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from darts.metrics import rmse, mape
 
 
 def plot_model_comparison(
@@ -8,7 +9,6 @@ def plot_model_comparison(
 ):
     """
     Vykreslí porovnání modelů.
-    Pokud plot_mape=False, vynechá graf vpravo nahoře (pro data s nulami).
     """
     if results_dataframe.empty:
         return None
@@ -38,7 +38,6 @@ def plot_model_comparison(
         horizontal_spacing=0.1,
     )
 
-    # 1. RMSE (Vždy)
     fig.add_trace(
         go.Bar(
             y=models,
@@ -51,7 +50,6 @@ def plot_model_comparison(
         col=1,
     )
 
-    # 2. MAPE (Volitelně)
     if plot_mape:
         fig.add_trace(
             go.Bar(
@@ -65,7 +63,6 @@ def plot_model_comparison(
             col=2,
         )
 
-    # 3. Tuning Time
     fig.add_trace(
         go.Bar(
             y=models,
@@ -79,8 +76,6 @@ def plot_model_comparison(
         row=2,
         col=1,
     )
-
-    # 4. Best Config Time
     fig.add_trace(
         go.Bar(
             y=models,
@@ -105,7 +100,6 @@ def plot_model_comparison(
     )
     for i in range(1, 3):
         for j in range(1, 3):
-            # Pokud nevykreslujeme MAPE (row 1, col 2), přeskočíme update osy
             if not plot_mape and i == 1 and j == 2:
                 continue
             fig.update_yaxes(autorange="reversed", row=i, col=j)
@@ -121,7 +115,10 @@ def plot_forecast_comparison(
     value_unit=None,
     series_idx=0,
 ):
-    """Univerzální interaktivní graf pro Single i Multi series."""
+    """
+    Univerzální interaktivní graf.
+    Automaticky dopočítává metriky pro konkrétní zobrazenou sérii.
+    """
     is_multiseries = isinstance(train_series, list)
 
     train_s = train_series[series_idx] if is_multiseries else train_series
@@ -156,27 +153,44 @@ def plot_forecast_comparison(
         value_unit if value_unit else (target_column if target_column else "Value")
     )
 
-    def _add_traces(pred_key, col, show_legend=True):
+    def _add_traces(pred_key, col, role_label):
         if pred_key not in predictions_dict:
             return
         pred_info = predictions_dict[pred_key]
         pred = pred_info["prediction"]
+
+        # 1. Vybrat správnou predikci (pokud list)
         if is_multiseries:
             pred = pred[series_idx]
 
+        # 2. Dopočítat metriky LOCALLY pro tuto sérii
+        local_rmse = rmse(test_s, pred)
+        try:
+            local_mape = mape(test_s, pred)
+        except:
+            local_mape = 0.0
+
+        model_name = pred_info["model"]
+        legend_name = f"{model_name} ({role_label})"
+
+        # Vykreslení
+        show_legend = True if col == 1 else False  # Jen jednou pro Train/Test
+
+        # Train
         fig.add_trace(
             go.Scatter(
                 x=train_s.time_index,
                 y=train_s.values().flatten(),
                 mode="lines",
                 name="Train",
-                line=dict(color=colors["train"], width=1.5),
+                line=dict(color=colors["train"], width=1),
                 showlegend=show_legend,
                 hovertemplate="<b>Train</b><br>Date: %{x}<br>Value: %{y:.2f}<extra></extra>",
             ),
             row=1,
             col=col,
         )
+        # Test
         fig.add_trace(
             go.Scatter(
                 x=test_s.time_index,
@@ -190,69 +204,71 @@ def plot_forecast_comparison(
             row=1,
             col=col,
         )
+
+        # Forecast
         c = colors["pred1"] if col == 1 else colors["pred2"]
         fig.add_trace(
             go.Scatter(
                 x=pred.time_index,
                 y=pred.values().flatten(),
                 mode="lines",
-                name=f"Forecast ({pred_info['model']})",
+                name=legend_name,
                 line=dict(color=c, width=2, dash="dash"),
-                showlegend=show_legend,
-                hovertemplate=f"<b>{pred_info['model']}</b><br>Date: %{{x}}<br>Pred: %{{y:.2f}}<extra></extra>",
+                showlegend=True,
+                hovertemplate=f"<b>{model_name}</b><br>Date: %{{x}}<br>Pred: %{{y:.2f}}<extra></extra>",
             ),
             row=1,
             col=col,
         )
 
-    if "best_rmse" in predictions_dict:
-        _add_traces("best_rmse", 1)
-    if not same_model and "fastest" in predictions_dict:
-        _add_traces("fastest", 2, show_legend=False)
+        # === OPRAVA XREF ===
+        # Plotly používá "x domain" pro 1. graf a "x2 domain" pro 2. graf (nikdy ne x1)
+        xref_val = "x domain" if col == 1 else f"x{col} domain"
 
-    # ANOTACE
-    annotations = []
-
-    def add_annot(info, pos_x):
-        annotations.append(
-            dict(
-                x=pos_x,
-                y=1.02,
-                xref="paper",
-                yref="paper",
-                text=f"<b>{info['model']}</b>",
-                showarrow=False,
-                font=dict(size=13),
-                xanchor="center",
-            )
-        )
-        # Zde už nevypisujeme MAPE, pokud je 0 nebo None
-        mape_txt = f" | MAPE: {info['mape']:.2f}%" if info.get("mape") else ""
-        annotations.append(
-            dict(
-                x=pos_x,
-                y=-0.18,
-                xref="paper",
-                yref="paper",
-                text=f"RMSE: {info['rmse']:.2f}{mape_txt} | Time: {info['tuning_time']:.1f}s",
-                showarrow=False,
-                font=dict(size=10),
-                xanchor="center",
-            )
+        # Anotace (Nadpis grafu a Metriky dole)
+        fig.add_annotation(
+            x=0.5,
+            y=1.08,
+            xref=xref_val,
+            yref="paper",
+            text=f"<b>{model_name}</b> <span style='font-size:10px;color:gray'>({role_label})</span>",
+            showarrow=False,
+            font=dict(size=14),
+            xanchor="center",
         )
 
+        # Metriky dole (Locally calculated!)
+        mape_txt = f" | MAPE: {local_mape:.2f}%" if local_mape > 0 else ""
+        fig.add_annotation(
+            x=0.5,
+            y=-0.18,
+            xref=xref_val,
+            yref="paper",
+            text=f"RMSE: {local_rmse:.2f}{mape_txt} | Tuning: {pred_info['tuning_time']:.1f}s",
+            showarrow=False,
+            font=dict(size=11),
+            xanchor="center",
+        )
+
+    # Vykreslení
+    current_col = 1
     if "best_rmse" in predictions_dict:
-        add_annot(predictions_dict["best_rmse"], 0.22 if n_plots == 2 else 0.5)
+        _add_traces("best_rmse", current_col, "Best RMSE")
+        if not same_model and "fastest" in predictions_dict:
+            current_col += 1
+
     if not same_model and "fastest" in predictions_dict:
-        add_annot(predictions_dict["fastest"], 0.78)
+        _add_traces("fastest", current_col, "Fastest")
 
     fig.update_layout(
         title=f"<b>{dataset_name}</b>{title_suffix} - Out-of-Sample Forecast",
-        width=1700,
         height=500,
-        annotations=annotations,
         margin=dict(b=100),
     )
+
+    if n_plots == 2:
+        fig.update_yaxes(title=y_label, row=1, col=2)
+
     return fig
 
 

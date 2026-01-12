@@ -334,6 +334,7 @@ def evaluate_model(
 
     except Exception as e:
         # print(f"\n[DEBUG] Error in {model_cls.__name__}: {str(e)[:200]}")
+        # tqdm.write(f"Error in {model_cls.__name__}: {str(e)[:150]}")
         return float("inf"), float("inf"), 0, str(e)
 
 
