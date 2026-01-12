@@ -37,6 +37,7 @@ def evaluate_local_model(
     supports_covariates=False,
     forecast_horizon=7,
     stride=1,
+    cv_start_ratio=0.7,
 ):
     start_time = time.time()
     all_backtest, all_actual = [], []
@@ -55,7 +56,7 @@ def evaluate_local_model(
             backtest = model.historical_forecasts(
                 series=train_s,
                 future_covariates=future_cov,
-                start=0.7,
+                start=cv_start_ratio,
                 forecast_horizon=forecast_horizon,
                 stride=stride,
                 retrain=True,
@@ -93,6 +94,7 @@ def evaluate_global_model(
     past_covs=None,
     forecast_horizon=7,
     stride=1,
+    cv_start_ratio=0.7,
 ):
     start_time = time.time()
     try:
@@ -113,7 +115,7 @@ def evaluate_global_model(
                 series=train_s,
                 future_covariates=future_covs[i] if future_covs else None,
                 past_covariates=past_covs[i] if past_covs else None,
-                start=0.7,
+                start=cv_start_ratio,
                 forecast_horizon=forecast_horizon,
                 stride=stride,
                 retrain=False,
@@ -147,6 +149,7 @@ def run_tuning_local(
     use_full_grid=True,
     n_iter=5,
     seasonal_period=1,
+    cv_start_ratio=0.7,
 ):
     tuning_start = time.time()
     combinations = (
@@ -173,6 +176,7 @@ def run_tuning_local(
             future_covs_list,
             supports_covariates,
             stride=seasonal_period,
+            cv_start_ratio=cv_start_ratio,
         )
 
         if rmse_val < float("inf"):
@@ -215,6 +219,7 @@ def run_tuning_global(
     use_full_grid=False,
     n_iter=10,
     seasonal_period=1,
+    cv_start_ratio=0.7,
 ):
     tuning_start = time.time()
     combinations = (
@@ -236,6 +241,7 @@ def run_tuning_global(
             future_covs,
             past_covs,
             stride=seasonal_period,
+            cv_start_ratio=cv_start_ratio,
         )
 
         if rmse_val < float("inf"):
@@ -276,6 +282,7 @@ def evaluate_model(
     is_dl=False,
     scaler=None,
     original_train=None,
+    cv_start_ratio=0.7,
 ):
     """
     Single series evaluation (Legacy for 01-03).
@@ -286,7 +293,6 @@ def evaluate_model(
 
         # Cross-validation setup
         stride = 1
-        start_ratio = 0.7
         forecast_horizon = test_periods if test_periods else 12
 
         if is_dl:
@@ -295,7 +301,7 @@ def evaluate_model(
             # Natrénujeme ho na "historické" části dat (prvních 70%), kterou pak nebude předpovídat.
             # Tím zabráníme chybě "model not fitted" a zároveň Data Leakage.
 
-            split_idx = int(len(train_series) * start_ratio)
+            split_idx = int(len(train_series) * cv_start_ratio)
             train_subset = train_series[:split_idx]
             model.fit(train_subset, verbose=False)
             # ============================
@@ -303,7 +309,7 @@ def evaluate_model(
             # DL models use scaled data for training
             backtest_scaled = model.historical_forecasts(
                 series=train_series,
-                start=start_ratio,
+                start=cv_start_ratio,
                 forecast_horizon=forecast_horizon,
                 stride=stride,
                 retrain=False,  # Nyní validní, model je natrénován
@@ -318,7 +324,7 @@ def evaluate_model(
             # Statistical models use original data
             backtest = model.historical_forecasts(
                 series=train_series,
-                start=start_ratio,
+                start=cv_start_ratio,
                 forecast_horizon=forecast_horizon,
                 stride=stride,
                 retrain=True,
@@ -350,6 +356,7 @@ def run_tuning_and_eval(
     is_dl=False,
     scaler=None,
     original_train=None,
+    cv_start_ratio=0.7,
 ):
     """
     Main tuning function for Single Series (Legacy for 01-03).
@@ -380,6 +387,7 @@ def run_tuning_and_eval(
             is_dl=is_dl,
             scaler=scaler,
             original_train=original_train,
+            cv_start_ratio=cv_start_ratio,
         )
         if rmse_val < float("inf"):
             loop.set_postfix(rmse=f"{rmse_val:.2f}", best=f"{best_rmse:.2f}")
