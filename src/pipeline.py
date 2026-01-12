@@ -23,8 +23,41 @@ from src.config import (
 
 
 def run_foundation_models(tracker, train, test, freq):
-    """Spustí Foundation modely (Chronos, TimeGPT) a zaloguje výsledky."""
+    """
+    Spustí Foundation modely (Chronos, TimeGPT).
+
+    ZMENA: Provádí hold-out validaci uvnitř TRAIN setu.
+    1. Vezme délku testovacího horizontu (h).
+    2. Rozdělí TRAIN na:
+       - Context (vše kromě posledních h bodů)
+       - Validation (posledních h bodů)
+    3. Předpovídá Validation část a počítá chybu.
+    """
     is_multiseries = isinstance(train, list)
+
+    # Zjištění délky horizontu (pro split)
+    if is_multiseries:
+        horizon = len(test[0])
+    else:
+        horizon = len(test)
+
+    # --- PŘÍPRAVA DAT PRO VALIDACI (SPLIT UVNITŘ TRAINU) ---
+    if is_multiseries:
+        # Pro každou sérii: uříznout konec pro validaci
+        val_inputs = [s[:-horizon] for s in train]  # To, co model vidí (Context)
+        val_targets = [s[-horizon:] for s in train]  # To, co model hádá (Ground Truth)
+    else:
+        val_inputs = train[:-horizon]
+        val_targets = train[-horizon:]
+
+    print(
+        "Val Inputs Length:",
+        [len(s) for s in val_inputs] if is_multiseries else len(val_inputs),
+    )
+    print(
+        "Val Targets Length:",
+        [len(s) for s in val_targets] if is_multiseries else len(val_targets),
+    )
 
     # 1. Chronos
     if CHRONOS_AVAILABLE and torch:
@@ -38,26 +71,33 @@ def run_foundation_models(tracker, train, test, freq):
 
             if is_multiseries:
                 all_pred, all_actual = [], []
-                for train_s, test_s in zip(train, test):
-                    context = torch.tensor(train_s.values().flatten())
+                # Iterujeme přes připravené SPLITY, ne přes train/test
+                for inp, tgt in zip(val_inputs, val_targets):
+                    context = torch.tensor(inp.values().flatten())
+                    # Předpovídáme délku 'horizon' (což je délka tgt)
                     fc = pipeline.predict(
-                        context, prediction_length=len(test_s), num_samples=20
+                        context, prediction_length=horizon, num_samples=20
                     )
-                    vals = fc.median(dim=1).values.numpy().flatten()[: len(test_s)]
+                    vals = fc.median(dim=1).values.numpy().flatten()[:horizon]
                     all_pred.append(
-                        TimeSeries.from_times_and_values(test_s.time_index, vals)
+                        TimeSeries.from_times_and_values(tgt.time_index, vals)
                     )
-                    all_actual.append(test_s)
+                    all_actual.append(tgt)
+
                 rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
-                mape_val = 0  # Ignorujeme MAPE pro multiseries v logu
+                mape_val = 0  # Ignorujeme MAPE pro multiseries
             else:
-                context = torch.tensor(train.values().flatten())
+                # Single series: Input je val_inputs, porovnáváme s val_targets
+                context = torch.tensor(val_inputs.values().flatten())
                 fc = pipeline.predict(
-                    context, prediction_length=len(test), num_samples=20
+                    context, prediction_length=horizon, num_samples=20
                 )
-                vals = fc.median(dim=1).values.numpy().flatten()[: len(test)]
-                pred_ts = TimeSeries.from_times_and_values(test.time_index, vals)
-                rmse_val, mape_val = rmse(test, pred_ts), mape(test, pred_ts)
+                vals = fc.median(dim=1).values.numpy().flatten()[:horizon]
+                pred_ts = TimeSeries.from_times_and_values(val_targets.time_index, vals)
+
+                rmse_val, mape_val = rmse(val_targets, pred_ts), mape(
+                    val_targets, pred_ts
+                )
 
             dur = time.time() - start
             tracker.log(
@@ -80,39 +120,44 @@ def run_foundation_models(tracker, train, test, freq):
 
             if is_multiseries:
                 combined_df = []
-                for i, train_s in enumerate(train):
+                # Tvoříme DataFrame z val_inputs (zkrácený train)
+                for i, inp in enumerate(val_inputs):
                     df_s = pd.DataFrame(
-                        {"ds": train_s.time_index, "y": train_s.values().flatten()}
+                        {"ds": inp.time_index, "y": inp.values().flatten()}
                     )
                     df_s["unique_id"] = f"series_{i}"
                     combined_df.append(df_s)
                 combined_df = pd.concat(combined_df, ignore_index=True)
+
+                # Předpovídáme horizont h
                 fc_df = client.forecast(
-                    df=combined_df, h=len(test[0]), model="timegpt-1", freq=freq
+                    df=combined_df, h=horizon, model="timegpt-1", freq=freq
                 )
 
                 all_pred, all_actual = [], []
-                for i, test_s in enumerate(test):
+                for i, tgt in enumerate(val_targets):
                     pred_vals = fc_df[fc_df["unique_id"] == f"series_{i}"][
                         "TimeGPT"
                     ].values
                     all_pred.append(
-                        TimeSeries.from_times_and_values(test_s.time_index, pred_vals)
+                        TimeSeries.from_times_and_values(tgt.time_index, pred_vals)
                     )
-                    all_actual.append(test_s)
+                    all_actual.append(tgt)
+
                 rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
                 mape_val = 0
             else:
+                # Single series
                 df = pd.DataFrame(
-                    {"ds": train.time_index, "y": train.values().flatten()}
+                    {"ds": val_inputs.time_index, "y": val_inputs.values().flatten()}
                 )
-                fc_df = client.forecast(
-                    df=df, h=len(test), model="timegpt-1", freq=freq
-                )
+                fc_df = client.forecast(df=df, h=horizon, model="timegpt-1", freq=freq)
                 pred_ts = TimeSeries.from_times_and_values(
-                    test.time_index, fc_df["TimeGPT"].values
+                    val_targets.time_index, fc_df["TimeGPT"].values
                 )
-                rmse_val, mape_val = rmse(test, pred_ts), mape(test, pred_ts)
+                rmse_val, mape_val = rmse(val_targets, pred_ts), mape(
+                    val_targets, pred_ts
+                )
 
             dur = time.time() - start
             tracker.log(
