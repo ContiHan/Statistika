@@ -8,7 +8,7 @@ def plot_model_comparison(
     results_dataframe, dataset_name, value_unit=None, plot_mape=True
 ):
     """
-    Vykreslí porovnání modelů.
+    Plots model comparison.
     """
     if results_dataframe.empty:
         return None
@@ -116,8 +116,8 @@ def plot_forecast_comparison(
     series_idx=0,
 ):
     """
-    Univerzální interaktivní graf.
-    Automaticky dopočítává metriky pro konkrétní zobrazenou sérii.
+    Universal interactive chart.
+    Automatically recalculates metrics for the specific displayed series.
     """
     is_multiseries = isinstance(train_series, list)
 
@@ -159,11 +159,11 @@ def plot_forecast_comparison(
         pred_info = predictions_dict[pred_key]
         pred = pred_info["prediction"]
 
-        # 1. Vybrat správnou predikci (pokud list)
+        # 1. Select correct prediction (if list)
         if is_multiseries:
             pred = pred[series_idx]
 
-        # 2. Dopočítat metriky LOCALLY pro tuto sérii
+        # 2. Recalculate metrics LOCALLY for this series
         local_rmse = rmse(test_s, pred)
         try:
             local_mape = mape(test_s, pred)
@@ -173,8 +173,8 @@ def plot_forecast_comparison(
         model_name = pred_info["model"]
         legend_name = f"{model_name} ({role_label})"
 
-        # Vykreslení
-        show_legend = True if col == 1 else False  # Jen jednou pro Train/Test
+        # Plotting
+        show_legend = True if col == 1 else False  # Only once for Train/Test
 
         # Train
         fig.add_trace(
@@ -221,11 +221,9 @@ def plot_forecast_comparison(
             col=col,
         )
 
-        # === OPRAVA XREF ===
-        # Plotly používá "x domain" pro 1. graf a "x2 domain" pro 2. graf (nikdy ne x1)
         xref_val = "x domain" if col == 1 else f"x{col} domain"
 
-        # Anotace (Nadpis grafu a Metriky dole)
+        # Annotations (Chart title and Metrics at bottom)
         fig.add_annotation(
             x=0.5,
             y=1.08,
@@ -237,7 +235,7 @@ def plot_forecast_comparison(
             xanchor="center",
         )
 
-        # Metriky dole (Locally calculated!)
+        # Bottom metrics (Locally calculated!)
         mape_txt = f" | MAPE: {local_mape:.2f}%" if local_mape > 0 else ""
         fig.add_annotation(
             x=0.5,
@@ -250,7 +248,6 @@ def plot_forecast_comparison(
             xanchor="center",
         )
 
-    # Vykreslení
     current_col = 1
     if "best_rmse" in predictions_dict:
         _add_traces("best_rmse", current_col, "Best RMSE")

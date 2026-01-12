@@ -3,15 +3,15 @@ import sys
 import warnings
 import logging
 
-# === 0. INICIALIZACE PROMĚNNÝCH ===
+# === 0. VARIABLE INITIALIZATION ===
 ChronosPipeline = None
 NixtlaClient = None
-torch = None  # <--- PŘIDÁNO: Inicializace torch
+torch = None
 CHRONOS_AVAILABLE = False
 TIMEGPT_AVAILABLE = False
 NIXTLA_API_KEY = None
 
-# === 1. NASTAVENÍ CEST (PATH) ===
+# === 1. PATH SETUP ===
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
 
@@ -21,7 +21,7 @@ if PROJECT_ROOT not in sys.path:
 # === 2. SUPPRESS WARNINGS ===
 warnings.filterwarnings("ignore")
 os.environ["CMDSTAN_VERBOSE"] = "FALSE"
-# ... (zbytek logování warningů beze změny) ...
+# ... (warning logging setup) ...
 loggers_to_silence = [
     "darts",
     "prophet",
@@ -38,18 +38,17 @@ loggers_to_silence = [
 for logger_name in loggers_to_silence:
     logging.getLogger(logger_name).setLevel(logging.CRITICAL)
 
-# === 3. IMPORT KNIHOVEN ===
-print("Checking dependencies in src/config.py...")
+# === 3. LIBRARY IMPORTS ===
+print("Checking for crucial dependencies...")
 
 # Chronos
 try:
     from chronos import ChronosPipeline
-    import torch  # <--- Tady se načte do namespace modulu
+    import torch
 
     CHRONOS_AVAILABLE = True
 except ImportError:
     CHRONOS_AVAILABLE = False
-    # torch zůstane None, pokud import selže
 
 # TimeGPT
 try:
@@ -65,7 +64,7 @@ try:
 except ImportError:
     NIXTLA_API_KEY = None
 
-# Debug výpis
-print(f"  -> Chronos: {CHRONOS_AVAILABLE}")
-print(f"  -> TimeGPT: {TIMEGPT_AVAILABLE}")
+# Debug output
+print(f"  -> Chronos: {'Available' if CHRONOS_AVAILABLE else 'Not Available'}")
+print(f"  -> TimeGPT: {'Available' if TIMEGPT_AVAILABLE else 'Not Available'}")
 print(f"  -> API Key: {'Found' if NIXTLA_API_KEY else 'Not Found'}")

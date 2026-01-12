@@ -24,28 +24,28 @@ from src.config import (
 
 def run_foundation_models(tracker, train, test, freq):
     """
-    Spustí Foundation modely (Chronos, TimeGPT).
+    Runs Foundation models (Chronos, TimeGPT).
 
-    ZMENA: Provádí hold-out validaci uvnitř TRAIN setu.
-    1. Vezme délku testovacího horizontu (h).
-    2. Rozdělí TRAIN na:
-       - Context (vše kromě posledních h bodů)
-       - Validation (posledních h bodů)
-    3. Předpovídá Validation část a počítá chybu.
+    Performs hold-out validation within the TRAIN set.
+    1. Takes test horizon length (h).
+    2. Splits TRAIN into:
+       - Context (all except last h points)
+       - Validation (last h points)
+    3. Predicts Validation part and calculates error.
     """
     is_multiseries = isinstance(train, list)
 
-    # Zjištění délky horizontu (pro split)
+    # Determine horizon length (for split)
     if is_multiseries:
         horizon = len(test[0])
     else:
         horizon = len(test)
 
-    # --- PŘÍPRAVA DAT PRO VALIDACI (SPLIT UVNITŘ TRAINU) ---
+    # --- DATA PREPARATION FOR VALIDATION (INTERNAL TRAIN SPLIT) ---
     if is_multiseries:
-        # Pro každou sérii: uříznout konec pro validaci
-        val_inputs = [s[:-horizon] for s in train]  # To, co model vidí (Context)
-        val_targets = [s[-horizon:] for s in train]  # To, co model hádá (Ground Truth)
+        # For each series: cut off end for validation
+        val_inputs = [s[:-horizon] for s in train]  # Model input (Context)
+        val_targets = [s[-horizon:] for s in train]  # Ground Truth
     else:
         val_inputs = train[:-horizon]
         val_targets = train[-horizon:]
@@ -71,10 +71,10 @@ def run_foundation_models(tracker, train, test, freq):
 
             if is_multiseries:
                 all_pred, all_actual = [], []
-                # Iterujeme přes připravené SPLITY, ne přes train/test
+                # Iterate over prepared SPLITS
                 for inp, tgt in zip(val_inputs, val_targets):
                     context = torch.tensor(inp.values().flatten())
-                    # Předpovídáme délku 'horizon' (což je délka tgt)
+                    # Predict horizon length
                     fc = pipeline.predict(
                         context, prediction_length=horizon, num_samples=20
                     )
@@ -85,9 +85,9 @@ def run_foundation_models(tracker, train, test, freq):
                     all_actual.append(tgt)
 
                 rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
-                mape_val = 0  # Ignorujeme MAPE pro multiseries
+                mape_val = 0  # Ignore MAPE for multiseries
             else:
-                # Single series: Input je val_inputs, porovnáváme s val_targets
+                # Single series: Input is val_inputs, compare with val_targets
                 context = torch.tensor(val_inputs.values().flatten())
                 fc = pipeline.predict(
                     context, prediction_length=horizon, num_samples=20
@@ -120,7 +120,7 @@ def run_foundation_models(tracker, train, test, freq):
 
             if is_multiseries:
                 combined_df = []
-                # Tvoříme DataFrame z val_inputs (zkrácený train)
+                # Create DataFrame from val_inputs (train subset)
                 for i, inp in enumerate(val_inputs):
                     df_s = pd.DataFrame(
                         {"ds": inp.time_index, "y": inp.values().flatten()}
@@ -129,7 +129,7 @@ def run_foundation_models(tracker, train, test, freq):
                     combined_df.append(df_s)
                 combined_df = pd.concat(combined_df, ignore_index=True)
 
-                # Předpovídáme horizont h
+                # Predict horizon h
                 fc_df = client.forecast(
                     df=combined_df, h=horizon, model="timegpt-1", freq=freq
                 )

@@ -1,4 +1,3 @@
-# soubor: src/tuning.py
 import time
 import pandas as pd
 import numpy as np
@@ -27,8 +26,6 @@ def random_grid_search(param_grid, n_iter=10):
 
 
 # === MULTI-SERIES TUNING (04) ===
-
-
 def evaluate_local_model(
     model_cls,
     params,
@@ -276,8 +273,6 @@ def run_tuning_global_and_eval(
 
 
 # === SINGLE SERIES TUNING (Legacy for 01-03, 05) ===
-
-
 def evaluate_model(
     model_cls,
     params,
@@ -296,23 +291,16 @@ def evaluate_model(
     try:
         model = model_cls(**params)
         if is_dl:
-            # === OPRAVA PRO DL MODELY ===
-            # Pokud je retrain=False, model musí být předem natrénován.
-            # Natrénujeme ho na "historické" části dat (prvních 70%), kterou pak nebude předpovídat.
-            # Tím zabráníme chybě "model not fitted" a zároveň Data Leakage.
-
             split_idx = int(len(train_series) * cv_start_ratio)
             train_subset = train_series[:split_idx]
             model.fit(train_subset, verbose=False)
-            # ============================
-
             # DL models use scaled data for training
             backtest_scaled = model.historical_forecasts(
                 series=train_series,
                 start=cv_start_ratio,
                 forecast_horizon=test_periods,
                 stride=stride,
-                retrain=False,  # Nyní validní, model je natrénován
+                retrain=False,
                 verbose=False,
                 last_points_only=True,
             )

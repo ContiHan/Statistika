@@ -27,18 +27,16 @@ from darts.models import (
     TFTModel,
 )
 
-# Načtení environmentu (Chronos, TimeGPT)
-# Zkusíme importovat config, pokud existuje
+# Environment setup (Chronos, TimeGPT)
 try:
     from src.config import CHRONOS_AVAILABLE, TIMEGPT_AVAILABLE, NIXTLA_API_KEY
 except ImportError:
-    # Fallback pokud config neexistuje
+    # Fallback if config does not exist
     CHRONOS_AVAILABLE = False
     TIMEGPT_AVAILABLE = False
     NIXTLA_API_KEY = None
 
-# === DŮLEŽITÉ: IMPORTY Z NAŠICH MODULŮ ===
-# Toto zpřístupní funkce run_tuning_*, run_foundation_models, atd. v noteboocích
+# === LOCAL MODULE IMPORTS ===
 from src.experiment import ExperimentTracker
 from src.tuning import (
     run_tuning_and_eval,
@@ -53,7 +51,7 @@ from src.visualization import (
 )
 from src.model_config import get_statistical_grids, get_dl_grids, TUNING_CONFIG
 
-# Potlačení warningů
+# Suppress warnings
 warnings.filterwarnings("ignore")
 os.environ["CMDSTAN_VERBOSE"] = "FALSE"
 logging.getLogger("cmdstanpy").setLevel(logging.CRITICAL)

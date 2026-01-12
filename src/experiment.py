@@ -17,7 +17,7 @@ class ExperimentTracker:
         n_combinations: int = 1,
     ):
         """
-        Uloží výsledek experimentu a vytiskne ho do konzole.
+        Saves experiment result and prints it to console.
         """
         entry = {
             "Model": model_name,
@@ -30,27 +30,26 @@ class ExperimentTracker:
         }
         self.results.append(entry)
 
-        # TENTO PRINT ZAJISTÍ VÝPIS DO OUTPUTU (řeší tvůj první problém)
         print(
             f"{model_name}: RMSE={rmse_val:.4f} | MAPE={mape_val:.2f}% | "
             f"Time={tuning_time:.1f}s ({n_combinations} combinations)"
         )
 
     def get_results_df(self) -> pd.DataFrame:
-        """Vrátí výsledky jako DataFrame seřazený podle RMSE."""
+        """Returns results as DataFrame sorted by RMSE."""
         if not self.results:
             return pd.DataFrame()
         return pd.DataFrame(self.results).sort_values(by="RMSE")
 
     def get_best_model(self):
-        """Vrátí řádek (Series) s nejlepším modelem (nejnižší RMSE)."""
+        """Returns row (Series) of the best model (lowest RMSE)."""
         df = self.get_results_df()
         if df.empty:
             return None
         return df.iloc[0]
 
     def get_fastest_model(self):
-        """Vrátí řádek (Series) s nejrychlejším modelem."""
+        """Returns row (Series) of the fastest model."""
         df = self.get_results_df()
         if df.empty:
             return None

@@ -1,20 +1,18 @@
 from darts.utils.utils import ModelMode
 
 # === 1. GLOBAL TUNING CONFIGURATION ===
-# Zde nastavujeme, jak "drsné" má být ladění napříč všemi notebooky.
 TUNING_CONFIG = {
     "RANDOM_STATE": 42,
-    "N_ITER": 10,  # Počet náhodných kombinací (pokud se nepoužije full grid)
-    "USE_FULL_GRID": False,  # Defaultně vypnuto pro velké DL gridy, zapnuto jen pro malé
+    "N_ITER": 10,  # Number of random combinations (if full grid is not used)
+    "USE_FULL_GRID": False,
 }
 
+
 # === 2. MODEL PARAMETERS COOKBOOK ===
-
-
 def get_statistical_grids(seasonal_period):
     """
-    Vrací mřížky pro statistické modely (Holt-Winters, ARIMA, Prophet).
-    Závisí na sezónnosti datasetu.
+    Returns grids for statistical models (Holt-Winters, ARIMA, Prophet).
+    Depends on dataset seasonality.
     """
     return {
         "Holt-Winters": {
@@ -27,8 +25,8 @@ def get_statistical_grids(seasonal_period):
             "season_length": [seasonal_period],
             "seasonal": [True] if seasonal_period > 1 else [False],
             "max_p": [3],
-            "max_q": [3],  # Omezeno pro rychlost
-            "stepwise": [True],  # Rychlejší hledání
+            "max_q": [3],
+            "stepwise": [True],
         },
         "Prophet": {
             "seasonality_mode": ["additive", "multiplicative"],
@@ -39,14 +37,13 @@ def get_statistical_grids(seasonal_period):
 
 def get_dl_grids(seasonal_period):
     """
-    Vrací mřížky pro Deep Learning modely.
-    Optimalizováno tak, aby počet kombinací neexplodoval.
+    Returns grids for Deep Learning models.
+    Optimized to prevent combination explosion.
     """
     # Base chunk size logic
     base = seasonal_period if seasonal_period > 1 else 12
 
-    # Common Parameters (Sdílené pro všechny DL modely)
-    # Zde jsme to osekali, aby toho nebylo moc
+    # Common Parameters (Shared for all DL models)
     common = {
         "input_chunk_length": [base, base * 2],
         "output_chunk_length": [base // 2, base],
