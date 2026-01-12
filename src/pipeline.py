@@ -50,14 +50,14 @@ def run_foundation_models(tracker, train, test, freq):
         val_inputs = train[:-horizon]
         val_targets = train[-horizon:]
 
-    print(
-        "Val Inputs Length:",
-        [len(s) for s in val_inputs] if is_multiseries else len(val_inputs),
-    )
-    print(
-        "Val Targets Length:",
-        [len(s) for s in val_targets] if is_multiseries else len(val_targets),
-    )
+    # print(
+    #     "Val Inputs Length:",
+    #     [len(s) for s in val_inputs] if is_multiseries else len(val_inputs),
+    # )
+    # print(
+    #     "Val Targets Length:",
+    #     [len(s) for s in val_targets] if is_multiseries else len(val_targets),
+    # )
 
     # 1. Chronos
     if CHRONOS_AVAILABLE and torch:
