@@ -345,6 +345,7 @@ def run_tuning_and_eval(
     scaler=None,
     original_train=None,
     cv_start_ratio=0.7,
+    seasonal_period=1,
 ):
     """
     Main tuning function for Single Series (Legacy for 01-03).
@@ -376,6 +377,7 @@ def run_tuning_and_eval(
             scaler=scaler,
             original_train=original_train,
             cv_start_ratio=cv_start_ratio,
+            stride=seasonal_period,
         )
         if rmse_val < float("inf"):
             loop.set_postfix(rmse=f"{rmse_val:.2f}", best=f"{best_rmse:.2f}")
