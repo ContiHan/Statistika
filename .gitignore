@@ -1,4 +1,8 @@
+# Ignore raw data files
 *raw*
+
+# Ignore venv directories
+*venv/
 
 # API keys (sensitive)
 api_keys.py
