@@ -11,3 +11,6 @@ __pycache__/
 
 # Notes
 notes/
+
+# Agent files
+GEMINI.md
