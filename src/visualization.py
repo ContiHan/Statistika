@@ -258,11 +258,11 @@ def plot_forecast_comparison(
 
     # Filter available keys and deduplicate models, aggregating roles
     role_labels = {
-        "best_rmse": "Best Overall",
+        "best_rmse": "Best RMSE",
         "fastest": "Fastest",
-        "best_stat": "Best Stat",
-        "best_dl": "Best DL",
-        "best_foundation": "Best Found."
+        "best_stat": "Best Statistical",
+        "best_dl": "Best Deep Learning",
+        "best_foundation": "Best Foundation"
     }
 
     for k in potential_keys:

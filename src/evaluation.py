@@ -4,30 +4,37 @@ from scipy.stats import t, norm
 from darts import TimeSeries
 
 def diebold_mariano_test(
-    target: TimeSeries,
-    pred1: TimeSeries,
-    pred2: TimeSeries,
+    target,
+    pred1,
+    pred2,
     h: int = 1,
     criterion: str = "mse",
 ):
     """
     Performs the Diebold-Mariano test to compare the forecast accuracy of two models.
     Includes the Harvey-Leybourne-Newbold correction for small sample sizes.
+    Supports both single TimeSeries and list[TimeSeries] (for multi-series datasets).
 
     Args:
-        target: Ground truth series.
-        pred1: Predictions from the first model.
-        pred2: Predictions from the second model.
+        target: Ground truth series (TimeSeries or list[TimeSeries]).
+        pred1: Predictions from the first model (TimeSeries or list[TimeSeries]).
+        pred2: Predictions from the second model (TimeSeries or list[TimeSeries]).
         h: Forecast horizon.
         criterion: Loss function to use ('mse' or 'mae').
 
     Returns:
         dict: DM statistic, p-value, and interpretation.
     """
+    # Helper to flatten values whether it's a single series or a list of series
+    def get_values_flat(data):
+        if isinstance(data, list):
+            return np.concatenate([s.values().flatten() for s in data])
+        return data.values().flatten()
+
     # Ensure we are working with numpy arrays of the same length
-    y = target.values().flatten()
-    y_hat1 = pred1.values().flatten()
-    y_hat2 = pred2.values().flatten()
+    y = get_values_flat(target)
+    y_hat1 = get_values_flat(pred1)
+    y_hat2 = get_values_flat(pred2)
 
     n = len(y)
     if len(y_hat1) != n or len(y_hat2) != n:
@@ -116,12 +123,12 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
     # 1. Identify Best Models based on TEST set RMSE
     # final_predictions structure: {'ModelName': {'rmse': float, 'tuning_time': float, ...}}
     
-    # Filter out special keys like 'best_rmse' or 'fastest' if they duplicate model entries
-    # We want to iterate over actual model names.
-    # Assuming standard model names are keys in final_predictions.
+    # Filter out ALL special keys to ensure we only iterate over actual model names
+    ignored_keys = {"best_rmse", "fastest", "best_stat", "best_dl", "best_foundation"}
+    
     model_stats = []
     for m_name, info in final_predictions.items():
-        if m_name in ["best_rmse", "fastest"]:
+        if m_name in ignored_keys:
             continue
         model_stats.append({
             "Model": m_name,
@@ -134,14 +141,17 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
     if df_test_stats.empty:
         return pd.DataFrame()
 
-    # Helper to find best model in a category (by Test RMSE)
-    def get_best_test(models_list):
-        subset = df_test_stats[df_test_stats["Model"].isin(models_list)]
+    # Helper to find best model in a category (by Test RMSE) with substring matching
+    def get_best_test(category_substrings):
+        # Filter models that contain ANY of the substrings in the category list
+        subset = df_test_stats[
+            df_test_stats["Model"].apply(lambda x: any(sub in x for sub in category_substrings))
+        ]
         if subset.empty:
             return None
         return subset.sort_values("RMSE").iloc[0]["Model"]
 
-    # Categories
+    # Categories (Substrings to match)
     dl_models = ["TiDE", "N-BEATS", "TFT"]
     stat_models = ["AutoARIMA", "Prophet", "Holt-Winters"]
     found_models = ["Chronos", "TimeGPT"]
@@ -155,21 +165,28 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
         m2 = sorted_models.iloc[1]["Model"]
         comparisons.append(("Best vs 2nd Best", m1, m2))
 
-    # 2. Best DL vs Best Stat (on Test Set)
+    # Identify Category Winners
     bdl = get_best_test(dl_models)
     bstat = get_best_test(stat_models)
+    bfound = get_best_test(found_models)
+
+    # 2. DL vs Statistical
     if bdl and bstat:
         comparisons.append(("DL vs Statistical", bdl, bstat))
 
-    # 3. Best Foundation vs Best DL (on Test Set)
-    bfound = get_best_test(found_models)
+    # 3. Foundation vs DL
     if bfound and bdl:
         comparisons.append(("Foundation vs DL", bfound, bdl))
 
-    # 4. Best Accuracy vs Fastest
+    # 4. Statistical vs Foundation (New)
+    if bstat and bfound:
+        comparisons.append(("Statistical vs Foundation", bstat, bfound))
+
+    # 5. Best Accuracy vs Fastest
     # We use the fastest model from the TRACKER (tuning time), but compare it against the Best RMSE on TEST.
     best_rmse_test = df_test_stats.sort_values("RMSE").iloc[0]["Model"]
     if not results_tracker.empty:
+        # Sort tracker by time to find fastest
         fastest_tracker = results_tracker.sort_values("Tuning Time (s)").iloc[0]["Model"]
     else:
         fastest_tracker = df_test_stats.sort_values("Time").iloc[0]["Model"]
@@ -178,12 +195,11 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
 
     # Run Tests
     data = []
-    seen = set()
     
     for label, m1, m2 in comparisons:
-        # Check for identical models (e.g. Best is also Fastest)
+        # Check for identical models
         if m1 == m2:
-             data.append({
+            data.append({
                 "Comparison": label,
                 "Model A": m1,
                 "Model B": m2,
@@ -192,14 +208,8 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
                 "Significant": "N/A",
                 "Winner": "Same Model"
             })
-             continue
-
-        pair_key = tuple(sorted((m1, m2)))
-        # We allow duplicates if the label is different (e.g. might want to see Best vs 2nd Best AND DL vs Stat even if same pair)
-        # But if you strictly want unique pairs, keep 'seen'. 
-        # For clarity in the report, it is better to show all 4 categories even if pairs repeat.
-        # So I will remove the 'seen' check to ensure 4 rows.
-        
+            continue
+            
         if m1 not in final_predictions or m2 not in final_predictions:
             continue
             
@@ -207,20 +217,11 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
             pred1 = final_predictions[m1]['prediction']
             pred2 = final_predictions[m2]['prediction']
             
-            # Check for identical predictions
+            # Check for identical predictions (e.g. constant forecasts that happen to be identical)
             vals1 = pred1.values().flatten() if not isinstance(pred1, list) else np.concatenate([p.values().flatten() for p in pred1])
             vals2 = pred2.values().flatten() if not isinstance(pred2, list) else np.concatenate([p.values().flatten() for p in pred2])
 
             if np.allclose(vals1, vals2):
-                 data.append({
-                    "Comparison": label,
-                    "Model A": m1,
-                    "Model B": m2,
-                    "DM Stat": 0.0,
-                    "P-Value": 1.0,
-                    "Significant": "No",
-                    "Winner": "Identical predictions"
-                })
                  continue
 
             # Run DM Test
