@@ -50,15 +50,6 @@ def run_foundation_models(tracker, train, test, freq):
         val_inputs = train[:-horizon]
         val_targets = train[-horizon:]
 
-    # print(
-    #     "Val Inputs Length:",
-    #     [len(s) for s in val_inputs] if is_multiseries else len(val_inputs),
-    # )
-    # print(
-    #     "Val Targets Length:",
-    #     [len(s) for s in val_targets] if is_multiseries else len(val_targets),
-    # )
-
     # 1. Chronos
     if CHRONOS_AVAILABLE and torch:
         try:
@@ -179,7 +170,13 @@ def get_final_predictions(
     train_past_covs_scaled=None,
     all_future_covs_scaled=None,
     all_past_covs_scaled=None,
+    models_to_predict=None,
 ):
+    """
+    Retrains and predicts using specific models.
+    Identifies Best Overall, Fastest, and Category Winners (Stat, DL, Foundation).
+    If models_to_predict is None, defaults to Best and Fastest.
+    """
 
     results_df = tracker.get_results_df()
     if results_df.empty:
@@ -187,6 +184,18 @@ def get_final_predictions(
 
     is_multiseries = isinstance(train, list)
     predictions = {}
+
+    # Define Categories
+    cat_stat = ["ARIMA", "AutoARIMA", "Prophet", "Holt-Winters", "ExponentialSmoothing", "BATS", "Theta", "4Theta"]
+    cat_dl = ["N-BEATS", "N-HiTS", "TFT", "TiDE", "Transformer", "RNN", "BlockRNN"]
+    cat_foundation = ["Chronos", "TimeGPT"]
+
+    def _get_category(model_name):
+        clean = model_name.replace(" (LOCAL)", "").replace(" (GLOBAL)", "")
+        if clean in cat_stat: return "statistical"
+        if clean in cat_dl: return "dl"
+        if clean in cat_foundation: return "foundation"
+        return "other"
 
     def _predict(model_name, params):
         # 1. Foundation Models
@@ -345,42 +354,96 @@ def get_final_predictions(
             return None
 
     # --- EXECUTION ---
+    # Helper to calculate metrics
+    def _calc_metrics(pred):
+        if is_multiseries:
+            rmse_val = np.mean([rmse(test[i], pred[i]) for i in range(len(test))])
+            mape_val = 0
+        else:
+            rmse_val = rmse(test, pred)
+            mape_val = mape(test, pred)
+        return rmse_val, mape_val
+
+    # If explicit models are requested
+    if models_to_predict:
+        calculated_preds = []
+        for model_name in models_to_predict:
+            row = results_df[results_df["Model"] == model_name]
+            if not row.empty:
+                params = row.iloc[0]["Params"]
+                tuning_time = row.iloc[0]["Tuning Time (s)"]
+                print(f"Retraining {model_name}...")
+                p = _predict(model_name, params)
+                if p:
+                    r, m = _calc_metrics(p)
+                    category = _get_category(model_name)
+                    entry = {
+                        "model": model_name,
+                        "prediction": p,
+                        "rmse": r,
+                        "mape": m,
+                        "tuning_time": tuning_time,
+                        "category": category
+                    }
+                    predictions[model_name] = entry
+                    calculated_preds.append(entry)
+        
+        # Identify Best and Fastest and Category Winners
+        if calculated_preds:
+            # 1. Best RMSE (Overall)
+            best_entry = sorted(calculated_preds, key=lambda x: x["rmse"])[0]
+            predictions["best_rmse"] = best_entry
+            
+            # 2. Fastest
+            fast_entry = sorted(calculated_preds, key=lambda x: x["tuning_time"])[0]
+            predictions["fastest"] = fast_entry
+
+            # 3. Best Statistical
+            stats = [x for x in calculated_preds if x["category"] == "statistical"]
+            if stats:
+                predictions["best_stat"] = sorted(stats, key=lambda x: x["rmse"])[0]
+
+            # 4. Best DL
+            dls = [x for x in calculated_preds if x["category"] == "dl"]
+            if dls:
+                predictions["best_dl"] = sorted(dls, key=lambda x: x["rmse"])[0]
+
+            # 5. Best Foundation
+            foundations = [x for x in calculated_preds if x["category"] == "foundation"]
+            if foundations:
+                predictions["best_foundation"] = sorted(foundations, key=lambda x: x["rmse"])[0]
+
+        return predictions
+
+    # Default Behavior: Best + Fastest (Legacy Fallback)
     best = tracker.get_best_model()
     print(f"Retraining Best: {best['Model']}")
     p_best = _predict(best["Model"], best["Params"])
     if p_best:
-        rmse_val = (
-            np.mean([rmse(test[i], p_best[i]) for i in range(len(test))])
-            if is_multiseries
-            else rmse(test, p_best)
-        )
-        mape_val = 0 if is_multiseries else mape(test, p_best)
+        r, m = _calc_metrics(p_best)
         predictions["best_rmse"] = {
             "model": best["Model"],
             "prediction": p_best,
-            "rmse": rmse_val,
-            "mape": mape_val,
+            "rmse": r,
+            "mape": m,
             "tuning_time": best["Tuning Time (s)"],
         }
+        predictions[best["Model"]] = predictions["best_rmse"]
 
     fast = tracker.get_fastest_model()
     if fast["Model"] != best["Model"]:
         print(f"Retraining Fastest: {fast['Model']}")
         p_fast = _predict(fast["Model"], fast["Params"])
         if p_fast:
-            rmse_val = (
-                np.mean([rmse(test[i], p_fast[i]) for i in range(len(test))])
-                if is_multiseries
-                else rmse(test, p_fast)
-            )
-            mape_val = 0 if is_multiseries else mape(test, p_fast)
+            r, m = _calc_metrics(p_fast)
             predictions["fastest"] = {
                 "model": fast["Model"],
                 "prediction": p_fast,
-                "rmse": rmse_val,
-                "mape": mape_val,
+                "rmse": r,
+                "mape": m,
                 "tuning_time": fast["Tuning Time (s)"],
             }
+            predictions[fast["Model"]] = predictions["fastest"]
     else:
         predictions["fastest"] = predictions.get("best_rmse")
 

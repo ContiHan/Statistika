@@ -1,5 +1,6 @@
 import pandas as pd
 from typing import Dict, Any, Optional
+from src.evaluation import diebold_mariano_test
 
 
 class ExperimentTracker:
@@ -34,6 +35,31 @@ class ExperimentTracker:
             f"{model_name}: RMSE={rmse_val:.4f} | MAPE={mape_val:.2f}% | "
             f"Time={tuning_time:.1f}s ({n_combinations} combinations)"
         )
+
+    def compare_models(self, target, model_a_name, model_b_name, predictions_dict, h=1):
+        """
+        Statistical comparison using Diebold-Mariano test.
+        """
+        if model_a_name not in predictions_dict or model_b_name not in predictions_dict:
+            print(f"Predictions for {model_a_name} or {model_b_name} not found.")
+            return None
+
+        p1 = predictions_dict[model_a_name]
+        p2 = predictions_dict[model_b_name]
+
+        # If it's a dict from pipeline (containing 'prediction' key)
+        if isinstance(p1, dict): p1 = p1['prediction']
+        if isinstance(p2, dict): p2 = p2['prediction']
+
+        res = diebold_mariano_test(target, p1, p2, h=h)
+
+        print(f"\n--- Diebold-Mariano Test: {model_a_name} vs {model_b_name} ---")
+        print(f"DM Statistic: {res['dm_stat']:.4f}")
+        print(f"P-value:      {res['p_value']:.4f}")
+        print(f"Significant:  {res['is_significant']}")
+        print(f"Better Model: {model_a_name if res['better_model'] == 'Model 1' else model_b_name}")
+
+        return res
 
     def get_results_df(self) -> pd.DataFrame:
         """Returns results as DataFrame sorted by RMSE."""
