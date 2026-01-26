@@ -14,3 +14,6 @@ notes/
 
 # Agent files
 GEMINI.md
+
+# MacOS system files
+.DS_Store
