@@ -50,13 +50,17 @@ try:
 except ImportError:
     CHRONOS_AVAILABLE = False
 
-# IBM Granite TTM (via Transformers)
+# IBM Granite TTM (via IBM Granite TSFM)
 try:
-    import transformers
-
+    import tsfm_public
     GRANITE_AVAILABLE = True
 except ImportError:
-    GRANITE_AVAILABLE = False
+    # Fallback check (less reliable)
+    try:
+        import transformers
+        GRANITE_AVAILABLE = True
+    except ImportError:
+        GRANITE_AVAILABLE = False
 
 # TimeGPT
 try:

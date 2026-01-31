@@ -76,8 +76,9 @@ The framework generates automated artifacts for academic reporting:
 
 ### 4.1. Core Libraries
 *   **`darts`**: The backbone framework providing a unified API for all models (PyTorch-based for DL).
-*   **`torch`**: Underlying tensor computation for Deep Learning models.
-*   **`transformers`**: Hugging Face library, used for IBM Granite TTM.
+*   **`torch`**: Underlying tensor computation for Deep Learning models (pinned to v2.8.0 for compatibility).
+*   **`transformers`**: Hugging Face library (pinned to v4.56.0).
+*   **`granite-tsfm`**: IBM's library for Tiny Time Mixers (Granite TTM), installed via Git.
 *   **`nixtla`**: Client for TimeGPT API.
 *   **`optuna` / `scikit-learn`**: Utilized implicitly for optimization and preprocessing.
 
