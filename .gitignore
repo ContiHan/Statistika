@@ -9,11 +9,5 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Notes
-notes/
-
-# Agent files
-GEMINI.md
-
 # MacOS system files
 .DS_Store

@@ -75,3 +75,24 @@ def get_dl_grids(seasonal_period):
             "add_relative_index": [True],
         },
     }
+
+
+def get_foundation_grids():
+    """
+    Returns grids/configs for Foundation Models (Zero-Shot).
+    """
+    return {
+        "Chronos2": {
+            "model_name": "amazon/chronos-2",
+            "num_samples": 20,
+            "input_chunk_length": 512,
+            "output_chunk_length": 64,
+        },
+        "GraniteTTM": {
+            "model_name": "ibm-granite/granite-timeseries-ttm-r1",
+            "context_length": 512,  # TTM standard context
+            "prediction_length": 96, # Adjust dynamically in pipeline if needed
+        }
+    }
+            
+            

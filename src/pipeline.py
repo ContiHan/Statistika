@@ -13,25 +13,69 @@ from darts.models import (
     NBEATSModel,
     TFTModel,
 )
+
+# New Imports
+Chronos2Model = None
+try:
+    from darts.models import Chronos2Model
+except ImportError:
+    pass
+try:
+    from darts.models import ChronosModel
+except ImportError:
+    ChronosModel = None
+
+from src.wrappers.granite_ttm import GraniteTTMModel
 from src.config import (
     CHRONOS_AVAILABLE,
     TIMEGPT_AVAILABLE,
     NIXTLA_API_KEY,
-    ChronosPipeline,
     NixtlaClient,
 )
+from src.model_config import get_foundation_grids
 
+def _load_foundation_model(model_name, params=None):
+    """
+    Factory to load Foundation Models.
+    """
+    params = params or {}
+    device = "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
+    
+    # default config from model_config if available
+    foundation_grids = get_foundation_grids()
+    
+    if model_name in ["Chronos", "Chronos2"]:
+        if Chronos2Model is None:
+            return None
+            
+        # Select base config
+        cfg = foundation_grids.get("Chronos2", {})
+            
+        # Merge params
+        final_params = {**cfg, **params}
+        
+        # ChronosModel specific args
+        return Chronos2Model(
+            input_chunk_length=final_params.get("input_chunk_length", 512),
+            output_chunk_length=final_params.get("output_chunk_length", 64),
+            model_name=final_params.get("model_name", "amazon/chronos-2")
+        )
+        
+    elif model_name == "GraniteTTM":
+        cfg = foundation_grids.get("GraniteTTM", {})
+        final_params = {**cfg, **params}
+        return GraniteTTMModel(
+            model_name=final_params.get("model_name", "ibm/ttm-research-v1"),
+            context_length=final_params.get("context_length", 512)
+        )
+        
+    return None
 
 def run_foundation_models(tracker, train, test, freq):
     """
-    Runs Foundation models (Chronos, TimeGPT).
+    Runs Foundation models (ChronosBolt, GraniteTTM, TimeGPT).
 
     Performs hold-out validation within the TRAIN set.
-    1. Takes test horizon length (h).
-    2. Splits TRAIN into:
-       - Context (all except last h points)
-       - Validation (last h points)
-    3. Predicts Validation part and calculates error.
     """
     is_multiseries = isinstance(train, list)
 
@@ -50,60 +94,82 @@ def run_foundation_models(tracker, train, test, freq):
         val_inputs = train[:-horizon]
         val_targets = train[-horizon:]
 
-    # 1. Chronos
-    if CHRONOS_AVAILABLE and torch:
+    # Define Foundation Models to Run
+    # We map the generic names to our implementation
+    models_to_run = ["Chronos2", "GraniteTTM"] 
+    # TimeGPT is handled separately due to API nature, but could be unified if wrapper existed.
+    # We keep TimeGPT separate as in original code for now, or unified?
+    # Original code had TimeGPT separate. We'll keep it separate to avoid breaking Nixtla logic unless requested.
+
+    # 1. Local Foundation Models (Chronos, TTM)
+    # Determine available history for config
+    if is_multiseries:
+        min_len = min(len(s) for s in val_inputs)
+    else:
+        min_len = len(val_inputs)
+
+    # Dynamic adjustment: Configure based on dataset properties (Horizon & Size)
+    # 1. Output Chunk: Should match the forecast horizon we want to evaluate.
+    safe_output_chunk = horizon
+
+    # 2. Input Chunk: Maximize context history, bounded by model limit (512) and available data.
+    # Constraint: input + output <= series_length
+    max_possible_input = min_len - safe_output_chunk
+    safe_input_chunk = min(512, max_possible_input)
+    
+    # Ensure at least minimal input (1 sample)
+    if safe_input_chunk < 1:
+        safe_input_chunk = 1
+
+    override_params = {
+        "input_chunk_length": safe_input_chunk,
+        "output_chunk_length": safe_output_chunk
+    }
+
+    for model_name in models_to_run:
         try:
             start = time.time()
-            pipeline = ChronosPipeline.from_pretrained(
-                "amazon/chronos-t5-small",
-                device_map="mps" if torch.backends.mps.is_available() else "cpu",
-                dtype=torch.float32,
-            )
+            model = _load_foundation_model(model_name, params=override_params)
+            
+            if model is None:
+                continue
 
             if is_multiseries:
                 all_pred, all_actual = [], []
                 # Iterate over prepared SPLITS
                 for inp, tgt in zip(val_inputs, val_targets):
-                    context = torch.tensor(inp.values().flatten())
-                    # Predict horizon length
-                    fc = pipeline.predict(
-                        context, prediction_length=horizon, num_samples=20
-                    )
-                    vals = fc.median(dim=1).values.numpy().flatten()[:horizon]
-                    all_pred.append(
-                        TimeSeries.from_times_and_values(tgt.time_index, vals)
-                    )
+                    # Zero-shot prediction
+                    # ChronosModel/GraniteTTM wrapper expect 'series' in predict for context
+                    if model_name.startswith("Chronos"):
+                        model.fit(inp)
+
+                    pred_ts = model.predict(n=horizon, series=inp)
+                    all_pred.append(pred_ts)
                     all_actual.append(tgt)
 
                 rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
                 mape_val = 0  # Ignore MAPE for multiseries
             else:
-                # Single series: Input is val_inputs, compare with val_targets
-                context = torch.tensor(val_inputs.values().flatten())
-                fc = pipeline.predict(
-                    context, prediction_length=horizon, num_samples=20
-                )
-                vals = fc.median(dim=1).values.numpy().flatten()[:horizon]
-                pred_ts = TimeSeries.from_times_and_values(val_targets.time_index, vals)
-
-                rmse_val, mape_val = rmse(val_targets, pred_ts), mape(
-                    val_targets, pred_ts
-                )
+                # Single series
+                if model_name.startswith("Chronos"):
+                    model.fit(val_inputs)
+                pred_ts = model.predict(n=horizon, series=val_inputs)
+                rmse_val, mape_val = rmse(val_targets, pred_ts), mape(val_targets, pred_ts)
 
             dur = time.time() - start
             tracker.log(
-                "Chronos",
+                model_name,
                 rmse_val,
                 mape_val,
                 dur,
                 dur,
-                {"model": "chronos-t5-small"},
+                {"model": model.model_name}, # Log specific sub-model name
                 1,
             )
         except Exception as e:
-            print(f"ERROR Chronos: {e}")
+            print(f"ERROR {model_name}: {e}")
 
-    # 2. TimeGPT
+    # 2. TimeGPT (Kept as is, assuming it works)
     if TIMEGPT_AVAILABLE and NIXTLA_API_KEY:
         try:
             start = time.time()
@@ -111,7 +177,6 @@ def run_foundation_models(tracker, train, test, freq):
 
             if is_multiseries:
                 combined_df = []
-                # Create DataFrame from val_inputs (train subset)
                 for i, inp in enumerate(val_inputs):
                     df_s = pd.DataFrame(
                         {"ds": inp.time_index, "y": inp.values().flatten()}
@@ -120,7 +185,6 @@ def run_foundation_models(tracker, train, test, freq):
                     combined_df.append(df_s)
                 combined_df = pd.concat(combined_df, ignore_index=True)
 
-                # Predict horizon h
                 fc_df = client.forecast(
                     df=combined_df, h=horizon, model="timegpt-1", freq=freq
                 )
@@ -138,7 +202,6 @@ def run_foundation_models(tracker, train, test, freq):
                 rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
                 mape_val = 0
             else:
-                # Single series
                 df = pd.DataFrame(
                     {"ds": val_inputs.time_index, "y": val_inputs.values().flatten()}
                 )
@@ -174,8 +237,6 @@ def get_final_predictions(
 ):
     """
     Retrains and predicts using specific models.
-    Identifies Best Overall, Fastest, and Category Winners (Stat, DL, Foundation).
-    If models_to_predict is None, defaults to Best and Fastest.
     """
 
     results_df = tracker.get_results_df()
@@ -188,7 +249,7 @@ def get_final_predictions(
     # Define Categories
     cat_stat = ["ARIMA", "AutoARIMA", "Prophet", "Holt-Winters", "ExponentialSmoothing", "BATS", "Theta", "4Theta"]
     cat_dl = ["N-BEATS", "N-HiTS", "TFT", "TiDE", "Transformer", "RNN", "BlockRNN"]
-    cat_foundation = ["Chronos", "TimeGPT"]
+    cat_foundation = ["Chronos", "Chronos2", "TimeGPT", "GraniteTTM"]
 
     def _get_category(model_name):
         clean = model_name.replace(" (LOCAL)", "").replace(" (GLOBAL)", "")
@@ -198,43 +259,52 @@ def get_final_predictions(
         return "other"
 
     def _predict(model_name, params):
-        # 1. Foundation Models
-        if model_name == "Chronos":
-            if CHRONOS_AVAILABLE and torch:
-                try:
-                    pipeline = ChronosPipeline.from_pretrained(
-                        "amazon/chronos-t5-small",
-                        device_map=(
-                            "mps" if torch.backends.mps.is_available() else "cpu"
-                        ),
-                        dtype=torch.float32,
-                    )
+        # 1. Foundation Models (New Unified Logic)
+        if model_name in ["Chronos", "Chronos2", "GraniteTTM"]:
+            try:
+                # Map legacy "Chronos" to "Chronos2" if needed
+                if model_name == "Chronos":
+                    target_name = "Chronos2"
+                else:
+                    target_name = model_name
+
+                # Dynamic length adjustment
+                if is_multiseries:
+                    min_len = min(len(s) for s in train)
+                    horizon_local = len(test[0])
+                else:
+                    min_len = len(train)
+                    horizon_local = len(test)
+
+                # Dynamic adjustment: Match horizon, maximize context
+                safe_output = horizon_local
+                max_possible = min_len - safe_output
+                safe_input = min(512, max_possible)
+                if safe_input < 1: safe_input = 1
+                
+                # Merge with existing params, favoring dynamic calculation for lengths
+                override = params.copy() if params else {}
+                override["input_chunk_length"] = safe_input
+                override["output_chunk_length"] = safe_output
+                
+                model = _load_foundation_model(target_name, override)
+                
+                if model:
                     if is_multiseries:
                         preds = []
                         for train_s, test_s in zip(train, test):
-                            ctx = torch.tensor(train_s.values().flatten())
-                            fc = pipeline.predict(
-                                ctx, prediction_length=len(test_s), num_samples=20
-                            )
-                            vals = (
-                                fc.median(dim=1).values.numpy().flatten()[: len(test_s)]
-                            )
-                            preds.append(
-                                TimeSeries.from_times_and_values(
-                                    test_s.time_index, vals
-                                )
-                            )
+                            # Predict horizon = len(test_s)
+                            if target_name.startswith("Chronos"): # Use target_name for mapped name
+                                model.fit(train_s)
+                            preds.append(model.predict(n=len(test_s), series=train_s))
                         return preds
                     else:
-                        ctx = torch.tensor(train.values().flatten())
-                        fc = pipeline.predict(
-                            ctx, prediction_length=len(test), num_samples=20
-                        )
-                        vals = fc.median(dim=1).values.numpy().flatten()[: len(test)]
-                        return TimeSeries.from_times_and_values(test.time_index, vals)
-                except Exception as e:
-                    print(f"Error predicting Chronos: {e}")
-                    return None
+                        if target_name.startswith("Chronos"):
+                            model.fit(train)
+                        return model.predict(n=len(test), series=train)
+            except Exception as e:
+                print(f"Error predicting {model_name}: {e}")
+                return None
             return None
 
         if model_name == "TimeGPT" and TIMEGPT_AVAILABLE:

@@ -1,0 +1,17 @@
+- [x] výsledný graf na 01 není v čitelých jednotkách, udělat asi billions USD nebo ještě vyšší řád
+- [x] sjednotit agentem forecast notebook na 04 daily
+  - [x] v notebooku 04 smazat po validaci smoke testing
+  - [x] zkusit sekundární metriku MASE
+  - [x] vyřešit warningy u modelů
+  - [x] vyřešit, jak se počítají ty modely, chci to porovnat dohromady a nechci porovnat zvlášť local a global, to nedává smysl, chci, aby se to porovnalo navzájem, aby bylo vidět, jestli je lepší local nebo global přístup
+- [x] sjednotit agentem forecast notebook na 05 hourly
+  - [ ] v notebooku 05 smazat po validaci smoke testing
+  - [x] zkusit tlačítka reset a zoom
+  - [x] vyřešit warningy u modelů
+- [ ] zkusit google colab
+- [x] kouknout na rozdělení train a test u všech datasetů, jesti dává poměr smysl
+- [x] kontrola nastavení parametrů hypertuning
+- [x] kontrola metody evaluate_model a parametru forecast_horizon, je tam hardcoded, ale měl by se brát z DATASET_CONFIG['test_periods'] a taky jak to udělat u Chronos a TimeGPT, tam se to předává asi jinak
+- [x] do výsledné predikce do grafu se asi neberou best params z nejlepšího RMSE (možná asi berou, jen se nedělá výpočet metrik z CV, ale přímo train vs test, takže se ta čísla mohou lišit, jen takto mám výhodu, že ty test data/actual data znám, jinak predikce do budoucna přeci neznají budoucnost)
+- [x] vyhodit ven stride, ono to už je u local a global dělané přes seasonal periods, tak jen ověřit, jestli by to tak šlo a nebo tam narvat něco jiného, ale ať je to konfigurovatelné zvenku
+- [ ] sjednotit buňku 2
