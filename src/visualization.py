@@ -3,6 +3,60 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from darts.metrics import rmse, mape
 import pandas as pd
+import matplotlib.pyplot as plt
+
+
+def plot_data_split(train, test, config, series=None):
+    """
+    Visualize Train/Test split using Matplotlib.
+    Handles single-series and multi-series (plots up to 5 series).
+    """
+    is_multi = isinstance(train, list)
+    dataset_name = config['name']
+    smoke_test = config.get("smoke_test") or config.get("smoke_test_points")
+    value_unit = config.get("value_unit", "Value")
+    
+    if is_multi:
+        # Reconstruct full series if not provided
+        if series is None:
+            series = [t.append(te) for t, te in zip(train, test)]
+        
+        # Plot up to 5 series to avoid clutter
+        limit = 5
+        to_plot = series[:limit]
+        
+        fig, ax = plt.subplots(figsize=(15, 5))
+        for s in to_plot:
+            label = "Series"
+            # Try to get ID from static covariates
+            if hasattr(s, "static_covariates") and s.static_covariates is not None:
+                cols = s.static_covariates.columns
+                if "unique_id" in cols:
+                    label = str(s.static_covariates["unique_id"].values[0])
+                elif "id" in cols:
+                    label = str(s.static_covariates["id"].values[0])
+            
+            s.plot(ax=ax, label=label)
+            
+        split_time = test[0].start_time()
+        ax.axvline(x=split_time, color='red', linestyle='--', label='Split')
+        ax.set_title(f'{dataset_name}' + (' [SMOKE TEST]' if smoke_test else ''))
+        ax.set_ylabel(value_unit)
+        ax.legend(loc='upper left', fontsize=8)
+        plt.tight_layout()
+        plt.show()
+        
+    else:
+        # Single-series
+        if series is None:
+            series = train.append(test)
+        
+        series.plot(label="Full Series", figsize=(18, 5))
+        plt.axvline(x=test.start_time(), color="red", linestyle="--", label="Train/Test Split")
+        plt.title(f"{dataset_name} - Train/Test Split" + (" [SMOKE TEST]" if smoke_test else ""))
+        plt.ylabel(value_unit)
+        plt.legend()
+        plt.show()
 
 
 def plot_model_comparison(
