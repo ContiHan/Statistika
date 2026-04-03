@@ -23,6 +23,23 @@ from src.statistical_transforms import (
 )
 
 
+def _build_validation_artifact(
+    actual,
+    prediction,
+    forecast_horizon,
+    stride,
+    source="rolling_validation",
+):
+    return {
+        "actual": actual,
+        "prediction": prediction,
+        "forecast_horizon": forecast_horizon,
+        "stride": stride,
+        "source": source,
+        "last_points_only": True,
+    }
+
+
 def grid_search_all(param_grid):
     """Generates all combinations of parameters."""
     keys = list(param_grid.keys())
@@ -84,13 +101,13 @@ def _prepare_statistical_combinations(
     )
 
     expanded = []
-    for transform_name in transform_candidates:
-        for params in base_combinations:
-            prepared = prepare_statistical_candidate_params(
-                model_name, params, transform_name
-            )
-            if prepared is not None:
-                expanded.append(prepared)
+    transform_name = transform_candidates[0]
+    for params in base_combinations:
+        prepared = prepare_statistical_candidate_params(
+            model_name, params, transform_name
+        )
+        if prepared is not None:
+            expanded.append(prepared)
 
     return _deduplicate_param_dicts(expanded)
 
@@ -141,7 +158,13 @@ def evaluate_local_model(
             errors.append(f"series_{i}: {str(e)[:100]}")
 
     if not all_backtest:
-        return float("inf"), 0, 0, f"All failed: {errors[0] if errors else 'Unknown'}"
+        return (
+            float("inf"),
+            0,
+            0,
+            f"All failed: {errors[0] if errors else 'Unknown'}",
+            None,
+        )
 
     try:
         avg_rmse = np.mean([rmse(a, b) for a, b in zip(all_actual, all_backtest)])
@@ -153,7 +176,18 @@ def evaluate_local_model(
     except Exception:
         avg_mape = 0.0
 
-    return avg_rmse, avg_mape, time.time() - start_time, None
+    return (
+        avg_rmse,
+        avg_mape,
+        time.time() - start_time,
+        None,
+        _build_validation_artifact(
+            actual=all_actual,
+            prediction=all_backtest,
+            forecast_horizon=test_periods,
+            stride=stride,
+        ),
+    )
 
 
 def evaluate_global_model(
@@ -205,9 +239,20 @@ def evaluate_global_model(
         except Exception:
             avg_mape = 0.0
 
-        return avg_rmse, avg_mape, time.time() - start_time, None
+        return (
+            avg_rmse,
+            avg_mape,
+            time.time() - start_time,
+            None,
+            _build_validation_artifact(
+                actual=all_actual,
+                prediction=all_backtest,
+                forecast_horizon=test_periods,
+                stride=stride,
+            ),
+        )
     except Exception as e:
-        return float("inf"), 0, 0, str(e)[:100]
+        return float("inf"), 0, 0, str(e)[:100], None
 
 
 def run_tuning_local_and_eval(
@@ -229,11 +274,17 @@ def run_tuning_local_and_eval(
         model_name, param_grid, use_full_grid=use_full_grid, n_iter=n_iter
     )
 
-    best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
+    best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (
+        float("inf"),
+        None,
+        0,
+        0,
+        None,
+    )
 
     loop = tqdm(combinations, desc=model_name)
     for params in loop:
-        rmse_val, mape_val, cfg_time, err = evaluate_local_model(
+        rmse_val, mape_val, cfg_time, err, artifact = evaluate_local_model(
             model_cls,
             params,
             train_list,
@@ -250,11 +301,12 @@ def run_tuning_local_and_eval(
             loop.set_postfix(status="Err")
 
         if rmse_val < best_rmse:
-            best_rmse, best_params, best_mape, best_cfg_time = (
+            best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (
                 rmse_val,
                 params,
                 mape_val,
                 cfg_time,
+                artifact,
             )
 
     if best_params and best_rmse != float("inf"):
@@ -269,6 +321,7 @@ def run_tuning_local_and_eval(
             best_cfg_time,
             best_params,
             len(combinations),
+            validation_artifact=best_artifact,
         )
 
     return best_params
@@ -297,11 +350,17 @@ def run_tuning_global_and_eval(
         else random_grid_search(param_grid, n_iter=n_iter)
     )
 
-    best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
+    best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (
+        float("inf"),
+        None,
+        0,
+        0,
+        None,
+    )
 
     loop = tqdm(combinations, desc=model_name)
     for params in loop:
-        rmse_val, mape_val, cfg_time, err = evaluate_global_model(
+        rmse_val, mape_val, cfg_time, err, artifact = evaluate_global_model(
             model_cls,
             params,
             train_scaled_list,
@@ -320,11 +379,12 @@ def run_tuning_global_and_eval(
             loop.set_postfix(status="Err")
 
         if rmse_val < best_rmse:
-            best_rmse, best_params, best_mape, best_cfg_time = (
+            best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (
                 rmse_val,
                 params,
                 mape_val,
                 cfg_time,
+                artifact,
             )
 
     if best_params and best_rmse != float("inf"):
@@ -336,6 +396,7 @@ def run_tuning_global_and_eval(
             best_cfg_time,
             best_params,
             len(combinations),
+            validation_artifact=best_artifact,
         )
 
     return best_params
@@ -399,12 +460,23 @@ def evaluate_model(
         rmse_val = rmse(actual, backtest)
         mape_val = mape(actual, backtest)
 
-        return rmse_val, mape_val, time.time() - start_time, None
+        return (
+            rmse_val,
+            mape_val,
+            time.time() - start_time,
+            None,
+            _build_validation_artifact(
+                actual=actual,
+                prediction=backtest,
+                forecast_horizon=test_periods,
+                stride=stride,
+            ),
+        )
 
     except Exception as e:
         # print(f"\n[DEBUG] Error in {model_cls.__name__}: {str(e)[:200]}")
         # tqdm.write(f"Error in {model_cls.__name__}: {str(e)[:150]}")
-        return float("inf"), float("inf"), 0, str(e)
+        return float("inf"), float("inf"), 0, str(e), None
 
 
 def run_tuning_and_eval(
@@ -435,11 +507,17 @@ def run_tuning_and_eval(
             model_name, param_grid, use_full_grid=use_full_grid, n_iter=n_iter
         )
 
-    best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
+    best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (
+        float("inf"),
+        None,
+        0,
+        0,
+        None,
+    )
 
     loop = tqdm(combinations, desc=model_name)
     for params in loop:
-        rmse_val, mape_val, cfg_time, err = evaluate_model(
+        rmse_val, mape_val, cfg_time, err, artifact = evaluate_model(
             model_cls,
             params,
             train_series,
@@ -456,11 +534,12 @@ def run_tuning_and_eval(
             loop.set_postfix(status="Err")
 
         if rmse_val < best_rmse:
-            best_rmse, best_params, best_mape, best_cfg_time = (
+            best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (
                 rmse_val,
                 params,
                 mape_val,
                 cfg_time,
+                artifact,
             )
 
     if best_params and best_rmse != float("inf"):
@@ -479,6 +558,7 @@ def run_tuning_and_eval(
             best_cfg_time,
             best_params,
             len(combinations),
+            validation_artifact=best_artifact,
         )
 
     return best_params

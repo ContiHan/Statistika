@@ -33,6 +33,7 @@ from src.config import (
     NixtlaClient,
 )
 from src.model_config import get_foundation_grids
+from src.runtime_context import get_current_dataset_config
 from src.statistical_transforms import (
     build_target_transform,
     clean_model_name,
@@ -77,13 +78,138 @@ def _load_foundation_model(model_name, params=None):
         
     return None
 
+
+def _rolling_last_point_validation(
+    series, horizon, stride, start_ratio, predict_fn, min_context_points=1
+):
+    if horizon < 1:
+        raise ValueError("Forecast horizon must be at least 1.")
+
+    n = len(series)
+    max_pred_start = n - horizon
+    if max_pred_start < 1:
+        raise ValueError("Not enough history for rolling validation.")
+
+    stride = max(1, int(stride))
+    requested_start_idx = max(
+        1,
+        int(np.floor(n * start_ratio)),
+        int(min_context_points),
+    )
+    if requested_start_idx > max_pred_start:
+        raise ValueError(
+            "Series too short for rolling validation: "
+            f"need at least {requested_start_idx} context points for horizon={horizon}, "
+            f"but only {max_pred_start} are available."
+        )
+
+    start_idx = requested_start_idx
+
+    pred_times = []
+    pred_values = []
+    actual_values = []
+
+    for pred_start in range(start_idx, max_pred_start + 1, stride):
+        context = series[:pred_start]
+        target_window = series[pred_start : pred_start + horizon]
+        if len(target_window) < horizon:
+            continue
+
+        pred_window = predict_fn(context, target_window)
+        pred_times.append(target_window.time_index[-1])
+        pred_values.append(pred_window.values(copy=False)[-1])
+        actual_values.append(target_window.values(copy=False)[-1])
+
+    if not pred_times:
+        raise ValueError("No rolling validation windows available.")
+
+    if isinstance(pred_times[0], pd.Timestamp):
+        time_index = pd.DatetimeIndex(pred_times)
+        validation_freq = time_index.inferred_freq
+        if validation_freq is None:
+            base_freq = getattr(series.time_index, "freq", None)
+            if base_freq is None and hasattr(series, "freq"):
+                base_freq = series.freq
+            if base_freq is not None:
+                try:
+                    validation_freq = base_freq * stride
+                except TypeError:
+                    validation_freq = base_freq
+
+        static_covariates = (
+            series.static_covariates
+            if hasattr(series, "static_covariates")
+            else None
+        )
+        hierarchy = series.hierarchy if hasattr(series, "hierarchy") else None
+        metadata = series.metadata if hasattr(series, "metadata") else None
+
+        actual_ts = TimeSeries.from_times_and_values(
+            time_index,
+            np.vstack(actual_values),
+            freq=validation_freq,
+            static_covariates=static_covariates,
+            hierarchy=hierarchy,
+            metadata=metadata,
+        )
+        pred_ts = TimeSeries.from_times_and_values(
+            time_index,
+            np.vstack(pred_values),
+            freq=validation_freq,
+            static_covariates=static_covariates,
+            hierarchy=hierarchy,
+            metadata=metadata,
+        )
+    else:
+        time_index = pd.Index(pred_times)
+        static_covariates = (
+            series.static_covariates
+            if hasattr(series, "static_covariates")
+            else None
+        )
+        hierarchy = series.hierarchy if hasattr(series, "hierarchy") else None
+        metadata = series.metadata if hasattr(series, "metadata") else None
+        actual_ts = TimeSeries.from_times_and_values(
+            time_index,
+            np.vstack(actual_values),
+            static_covariates=static_covariates,
+            hierarchy=hierarchy,
+            metadata=metadata,
+        )
+        pred_ts = TimeSeries.from_times_and_values(
+            time_index,
+            np.vstack(pred_values),
+            static_covariates=static_covariates,
+            hierarchy=hierarchy,
+            metadata=metadata,
+        )
+    return actual_ts.astype(np.float32), pred_ts.astype(np.float32)
+
+
+def _log_unavailable_foundation_validation(
+    tracker, model_name, params, elapsed, reason
+):
+    print(f"SKIP {model_name} validation: {reason}")
+    tracker.log(
+        model_name,
+        float("inf"),
+        0,
+        elapsed,
+        elapsed,
+        params,
+        1,
+        validation_artifact=None,
+        selection_basis="validation_unavailable",
+    )
+
 def run_foundation_models(tracker, train, test, freq):
     """
-    Runs Foundation models (ChronosBolt, GraniteTTM, TimeGPT).
-
-    Performs hold-out validation within the TRAIN set.
+    Runs foundation models with rolling validation on the TRAIN set.
     """
     is_multiseries = isinstance(train, list)
+    dataset_config = get_current_dataset_config() or {}
+    stride = dataset_config.get("seasonal_period", 1)
+    start_ratio = dataset_config.get("cv_start_ratio", 0.7)
 
     # Determine horizon length (for split)
     if is_multiseries:
@@ -91,39 +217,23 @@ def run_foundation_models(tracker, train, test, freq):
     else:
         horizon = len(test)
 
-    # --- DATA PREPARATION FOR VALIDATION (INTERNAL TRAIN SPLIT) ---
-    if is_multiseries:
-        # For each series: cut off end for validation
-        val_inputs = [s[:-horizon] for s in train]  # Model input (Context)
-        val_targets = [s[-horizon:] for s in train]  # Ground Truth
-    else:
-        val_inputs = train[:-horizon]
-        val_targets = train[-horizon:]
-
     # Define Foundation Models to Run
-    # We map the generic names to our implementation
     models_to_run = ["Chronos2", "GraniteTTM"] 
-    # TimeGPT is handled separately due to API nature, but could be unified if wrapper existed.
-    # We keep TimeGPT separate as in original code for now, or unified?
-    # Original code had TimeGPT separate. We'll keep it separate to avoid breaking Nixtla logic unless requested.
 
     # 1. Local Foundation Models (Chronos, TTM)
-    # Determine available history for config
     if is_multiseries:
-        min_len = min(len(s) for s in val_inputs)
+        min_len = min(len(s) for s in train)
     else:
-        min_len = len(val_inputs)
+        min_len = len(train)
 
-    # Dynamic adjustment: Configure based on dataset properties (Horizon & Size)
-    # 1. Output Chunk: Should match the forecast horizon we want to evaluate.
+    # Dynamic adjustment for validation: keep the horizon fixed, but cap context so that
+    # rolling windows remain feasible even on short yearly datasets.
     safe_output_chunk = horizon
-
-    # 2. Input Chunk: Maximize context history, bounded by model limit (512) and available data.
-    # Constraint: input + output <= series_length
     max_possible_input = min_len - safe_output_chunk
-    safe_input_chunk = min(512, max_possible_input)
+    earliest_context = max(1, int(np.floor(min_len * start_ratio)))
+    validation_max_input = max(1, earliest_context - safe_output_chunk)
+    safe_input_chunk = min(512, max_possible_input, validation_max_input)
     
-    # Ensure at least minimal input (1 sample)
     if safe_input_chunk < 1:
         safe_input_chunk = 1
 
@@ -140,27 +250,60 @@ def run_foundation_models(tracker, train, test, freq):
             if model is None:
                 continue
 
-            if is_multiseries:
-                all_pred, all_actual = [], []
-                # Iterate over prepared SPLITS
-                for inp, tgt in zip(val_inputs, val_targets):
-                    # Zero-shot prediction
-                    # ChronosModel/GraniteTTM wrapper expect 'series' in predict for context
-                    if model_name.startswith("Chronos"):
-                        model.fit(inp)
-
-                    pred_ts = model.predict(n=horizon, series=inp)
-                    all_pred.append(pred_ts)
-                    all_actual.append(tgt)
-
-                rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
-                mape_val = 0  # Ignore MAPE for multiseries
-            else:
-                # Single series
+            def predict_fn(context, target_window):
                 if model_name.startswith("Chronos"):
-                    model.fit(val_inputs)
-                pred_ts = model.predict(n=horizon, series=val_inputs)
-                rmse_val, mape_val = rmse(val_targets, pred_ts), mape(val_targets, pred_ts)
+                    model.fit(context)
+                pred_ts = model.predict(n=horizon, series=context)
+                return TimeSeries.from_times_and_values(
+                    target_window.time_index,
+                    pred_ts.values(copy=False)[: len(target_window)],
+                )
+
+            try:
+                if is_multiseries:
+                    all_pred, all_actual = [], []
+                    for train_s in train:
+                        actual_ts, pred_ts = _rolling_last_point_validation(
+                            train_s,
+                            horizon=horizon,
+                            stride=stride,
+                            start_ratio=start_ratio,
+                            predict_fn=predict_fn,
+                            min_context_points=getattr(
+                                model,
+                                "min_train_series_length",
+                                safe_input_chunk + safe_output_chunk,
+                            ),
+                        )
+                        all_actual.append(actual_ts)
+                        all_pred.append(pred_ts)
+
+                    rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
+                    mape_val = 0  # Ignore MAPE for multiseries
+                else:
+                    all_actual, all_pred = _rolling_last_point_validation(
+                        train,
+                        horizon=horizon,
+                        stride=stride,
+                        start_ratio=start_ratio,
+                        predict_fn=predict_fn,
+                        min_context_points=getattr(
+                            model,
+                            "min_train_series_length",
+                            safe_input_chunk + safe_output_chunk,
+                        ),
+                    )
+                    rmse_val, mape_val = rmse(all_actual, all_pred), mape(all_actual, all_pred)
+            except ValueError as e:
+                dur = time.time() - start
+                _log_unavailable_foundation_validation(
+                    tracker,
+                    model_name,
+                    {"model": model.model_name},
+                    dur,
+                    str(e),
+                )
+                continue
 
             dur = time.time() - start
             tracker.log(
@@ -171,57 +314,85 @@ def run_foundation_models(tracker, train, test, freq):
                 dur,
                 {"model": model.model_name}, # Log specific sub-model name
                 1,
+                validation_artifact={
+                    "actual": all_actual,
+                    "prediction": all_pred,
+                    "forecast_horizon": horizon,
+                    "stride": stride,
+                    "source": "rolling_validation_foundation",
+                    "last_points_only": True,
+                },
             )
         except Exception as e:
             print(f"ERROR {model_name}: {e}")
 
-    # 2. TimeGPT (Kept as is, assuming it works)
+    # 2. TimeGPT
     if TIMEGPT_AVAILABLE and NIXTLA_API_KEY:
         try:
             start = time.time()
             client = NixtlaClient(api_key=NIXTLA_API_KEY)
 
-            if is_multiseries:
-                combined_df = []
-                for i, inp in enumerate(val_inputs):
-                    df_s = pd.DataFrame(
-                        {"ds": inp.time_index, "y": inp.values().flatten()}
-                    )
-                    df_s["unique_id"] = f"series_{i}"
-                    combined_df.append(df_s)
-                combined_df = pd.concat(combined_df, ignore_index=True)
-
-                fc_df = client.forecast(
-                    df=combined_df, h=horizon, model="timegpt-1", freq=freq
-                )
-
-                all_pred, all_actual = [], []
-                for i, tgt in enumerate(val_targets):
-                    pred_vals = fc_df[fc_df["unique_id"] == f"series_{i}"][
-                        "TimeGPT"
-                    ].values
-                    all_pred.append(
-                        TimeSeries.from_times_and_values(tgt.time_index, pred_vals)
-                    )
-                    all_actual.append(tgt)
-
-                rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
-                mape_val = 0
-            else:
-                df = pd.DataFrame(
-                    {"ds": val_inputs.time_index, "y": val_inputs.values().flatten()}
-                )
+            def predict_fn(context, target_window):
+                df = pd.DataFrame({"ds": context.time_index, "y": context.values().flatten()})
                 fc_df = client.forecast(df=df, h=horizon, model="timegpt-1", freq=freq)
-                pred_ts = TimeSeries.from_times_and_values(
-                    val_targets.time_index, fc_df["TimeGPT"].values
+                return TimeSeries.from_times_and_values(
+                    target_window.time_index,
+                    fc_df["TimeGPT"].values[: len(target_window)],
                 )
-                rmse_val, mape_val = rmse(val_targets, pred_ts), mape(
-                    val_targets, pred_ts
+
+            try:
+                if is_multiseries:
+                    all_pred, all_actual = [], []
+                    for train_s in train:
+                        actual_ts, pred_ts = _rolling_last_point_validation(
+                            train_s,
+                            horizon=horizon,
+                            stride=stride,
+                            start_ratio=start_ratio,
+                            predict_fn=predict_fn,
+                        )
+                        all_actual.append(actual_ts)
+                        all_pred.append(pred_ts)
+
+                    rmse_val = np.mean([rmse(a, p) for a, p in zip(all_actual, all_pred)])
+                    mape_val = 0
+                else:
+                    all_actual, all_pred = _rolling_last_point_validation(
+                        train,
+                        horizon=horizon,
+                        stride=stride,
+                        start_ratio=start_ratio,
+                        predict_fn=predict_fn,
+                    )
+                    rmse_val, mape_val = rmse(all_actual, all_pred), mape(all_actual, all_pred)
+            except ValueError as e:
+                dur = time.time() - start
+                _log_unavailable_foundation_validation(
+                    tracker,
+                    "TimeGPT",
+                    {"model": "timegpt-1"},
+                    dur,
+                    str(e),
                 )
+                return
 
             dur = time.time() - start
             tracker.log(
-                "TimeGPT", rmse_val, mape_val, dur, dur, {"model": "timegpt-1"}, 1
+                "TimeGPT",
+                rmse_val,
+                mape_val,
+                dur,
+                dur,
+                {"model": "timegpt-1"},
+                1,
+                validation_artifact={
+                    "actual": all_actual,
+                    "prediction": all_pred,
+                    "forecast_horizon": horizon,
+                    "stride": stride,
+                    "source": "rolling_validation_foundation",
+                    "last_points_only": True,
+                },
             )
         except Exception as e:
             print(f"ERROR TimeGPT: {e}")

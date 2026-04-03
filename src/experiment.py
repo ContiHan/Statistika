@@ -10,6 +10,7 @@ from src.statistical_transforms import (
 class ExperimentTracker:
     def __init__(self):
         self.results = []
+        self.validation_artifacts = {}
 
     def log(
         self,
@@ -20,6 +21,8 @@ class ExperimentTracker:
         best_config_time: float,
         params: Optional[Dict[str, Any]] = None,
         n_combinations: int = 1,
+        validation_artifact: Optional[Dict[str, Any]] = None,
+        selection_basis: str = "validation",
     ):
         """
         Saves experiment result and prints it to console.
@@ -34,8 +37,11 @@ class ExperimentTracker:
             "Best Config Time (s)": best_config_time,
             "Combinations": n_combinations,
             "Params": params,
+            "Selection Basis": selection_basis,
         }
         self.results.append(entry)
+        if validation_artifact is not None:
+            self.validation_artifacts[model_name] = validation_artifact
 
         print(
             f"{model_name}: RMSE={rmse_val:.4f} | MAPE={mape_val:.2f}% | "
@@ -86,3 +92,6 @@ class ExperimentTracker:
         if df.empty:
             return None
         return df.sort_values("Tuning Time (s)").iloc[0]
+
+    def get_validation_artifact(self, model_name: str):
+        return self.validation_artifacts.get(model_name)
