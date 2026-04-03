@@ -8,6 +8,20 @@ import traceback
 from darts.metrics import rmse, mape
 from darts.utils.utils import ModelMode
 
+from src.runtime_context import (
+    get_current_dataset_config,
+    get_current_target_diagnostics,
+)
+from src.statistical_transforms import (
+    build_target_transform,
+    clean_model_name,
+    format_model_variant_name,
+    get_target_transform_name,
+    prepare_statistical_candidate_params,
+    resolve_statistical_transform_candidates,
+    strip_internal_params,
+)
+
 
 def grid_search_all(param_grid):
     """Generates all combinations of parameters."""
@@ -25,6 +39,62 @@ def random_grid_search(param_grid, n_iter=10):
     return random.sample(all_combinations, n_iter)
 
 
+def _build_combinations(param_grid, use_full_grid=True, n_iter=10):
+    return (
+        grid_search_all(param_grid)
+        if use_full_grid
+        else random_grid_search(param_grid, n_iter=n_iter)
+    )
+
+
+def _filter_invalid_holt_combinations(model_name, combinations):
+    if "Holt" not in clean_model_name(model_name):
+        return combinations
+    return [
+        p
+        for p in combinations
+        if not (p.get("damped", False) and p.get("trend") == ModelMode.NONE)
+    ]
+
+
+def _deduplicate_param_dicts(combinations):
+    unique = []
+    seen = set()
+    for params in combinations:
+        key = tuple((key, str(value)) for key, value in sorted(params.items()))
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(params)
+    return unique
+
+
+def _prepare_statistical_combinations(
+    model_name, param_grid, use_full_grid=True, n_iter=10
+):
+    base_combinations = _build_combinations(
+        param_grid, use_full_grid=use_full_grid, n_iter=n_iter
+    )
+    base_combinations = _filter_invalid_holt_combinations(model_name, base_combinations)
+
+    dataset_config = get_current_dataset_config() or {}
+    diagnostics = get_current_target_diagnostics() or {}
+    transform_candidates = resolve_statistical_transform_candidates(
+        model_name, diagnostics=diagnostics, config=dataset_config
+    )
+
+    expanded = []
+    for transform_name in transform_candidates:
+        for params in base_combinations:
+            prepared = prepare_statistical_candidate_params(
+                model_name, params, transform_name
+            )
+            if prepared is not None:
+                expanded.append(prepared)
+
+    return _deduplicate_param_dicts(expanded)
+
+
 # === MULTI-SERIES TUNING (04) ===
 def evaluate_local_model(
     model_cls,
@@ -39,19 +109,23 @@ def evaluate_local_model(
     start_time = time.time()
     all_backtest, all_actual = [], []
     errors = []
+    transform_name = get_target_transform_name(params)
+    clean_params = strip_internal_params(params)
 
     for i, train_s in enumerate(train_list):
         try:
-            model = model_cls(**params)
+            model = model_cls(**clean_params)
             future_cov = (
                 future_covs_list[i]
                 if (supports_covariates and future_covs_list)
                 else None
             )
+            target_transform = build_target_transform(transform_name).fit(train_s)
+            train_transformed = target_transform.transform_series(train_s)
 
             # Local models (stat) are fast, so we can use retrain=True
-            backtest = model.historical_forecasts(
-                series=train_s,
+            backtest_transformed = model.historical_forecasts(
+                series=train_transformed,
                 future_covariates=future_cov,
                 start=cv_start_ratio,
                 forecast_horizon=test_periods,
@@ -60,6 +134,7 @@ def evaluate_local_model(
                 verbose=False,
                 last_points_only=True,
             )
+            backtest = target_transform.inverse_series(backtest_transformed)
             all_backtest.append(backtest)
             all_actual.append(train_s.slice_intersect(backtest))
         except Exception as e:
@@ -150,18 +225,9 @@ def run_tuning_local_and_eval(
     cv_start_ratio=0.7,
 ):
     tuning_start = time.time()
-    combinations = (
-        grid_search_all(param_grid)
-        if use_full_grid
-        else random_grid_search(param_grid, n_iter=n_iter)
+    combinations = _prepare_statistical_combinations(
+        model_name, param_grid, use_full_grid=use_full_grid, n_iter=n_iter
     )
-
-    if "Holt" in model_name:
-        combinations = [
-            p
-            for p in combinations
-            if not (p.get("damped", False) and p.get("trend") == ModelMode.NONE)
-        ]
 
     best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
 
@@ -192,8 +258,11 @@ def run_tuning_local_and_eval(
             )
 
     if best_params and best_rmse != float("inf"):
+        best_name = format_model_variant_name(
+            model_name, get_target_transform_name(best_params)
+        )
         tracker.log(
-            model_name,
+            best_name,
             best_rmse,
             best_mape,
             time.time() - tuning_start,
@@ -289,8 +358,8 @@ def evaluate_model(
     """
     start_time = time.time()
     try:
-        model = model_cls(**params)
         if is_dl:
+            model = model_cls(**params)
             split_idx = int(len(train_series) * cv_start_ratio)
             train_subset = train_series[:split_idx]
             model.fit(train_subset, verbose=False)
@@ -309,9 +378,14 @@ def evaluate_model(
             # Compare with ORIGINAL train data (slice_intersect ensures alignment)
             actual = original_train.slice_intersect(backtest)
         else:
+            clean_params = strip_internal_params(params)
+            transform_name = get_target_transform_name(params)
+            target_transform = build_target_transform(transform_name).fit(train_series)
+            train_transformed = target_transform.transform_series(train_series)
+            model = model_cls(**clean_params)
             # Statistical models use original data
-            backtest = model.historical_forecasts(
-                series=train_series,
+            backtest_transformed = model.historical_forecasts(
+                series=train_transformed,
                 start=cv_start_ratio,
                 forecast_horizon=test_periods,
                 stride=stride,
@@ -319,6 +393,7 @@ def evaluate_model(
                 verbose=False,
                 last_points_only=True,
             )
+            backtest = target_transform.inverse_series(backtest_transformed)
             actual = train_series.slice_intersect(backtest)
 
         rmse_val = rmse(actual, backtest)
@@ -351,18 +426,14 @@ def run_tuning_and_eval(
     Main tuning function for Single Series (Legacy for 01-03).
     """
     tuning_start = time.time()
-    combinations = (
-        grid_search_all(param_grid)
-        if use_full_grid
-        else random_grid_search(param_grid, n_iter=n_iter)
-    )
-
-    if "Holt" in model_name:
-        combinations = [
-            p
-            for p in combinations
-            if not (p.get("damped", False) and p.get("trend") == ModelMode.NONE)
-        ]
+    if is_dl:
+        combinations = _build_combinations(
+            param_grid, use_full_grid=use_full_grid, n_iter=n_iter
+        )
+    else:
+        combinations = _prepare_statistical_combinations(
+            model_name, param_grid, use_full_grid=use_full_grid, n_iter=n_iter
+        )
 
     best_rmse, best_params, best_mape, best_cfg_time = float("inf"), None, 0, 0
 
@@ -393,8 +464,15 @@ def run_tuning_and_eval(
             )
 
     if best_params and best_rmse != float("inf"):
+        best_name = (
+            model_name
+            if is_dl
+            else format_model_variant_name(
+                model_name, get_target_transform_name(best_params)
+            )
+        )
         tracker.log(
-            model_name,
+            best_name,
             best_rmse,
             best_mape,
             time.time() - tuning_start,

@@ -1,17 +1,42 @@
-- [x] výsledný graf na 01 není v čitelých jednotkách, udělat asi billions USD nebo ještě vyšší řád
-- [x] sjednotit agentem forecast notebook na 04 daily
-  - [x] v notebooku 04 smazat po validaci smoke testing
-  - [x] zkusit sekundární metriku MASE
-  - [x] vyřešit warningy u modelů
-  - [x] vyřešit, jak se počítají ty modely, chci to porovnat dohromady a nechci porovnat zvlášť local a global, to nedává smysl, chci, aby se to porovnalo navzájem, aby bylo vidět, jestli je lepší local nebo global přístup
-- [x] sjednotit agentem forecast notebook na 05 hourly
-  - [ ] v notebooku 05 smazat po validaci smoke testing
-  - [x] zkusit tlačítka reset a zoom
-  - [x] vyřešit warningy u modelů
-- [ ] zkusit google colab
-- [x] kouknout na rozdělení train a test u všech datasetů, jesti dává poměr smysl
-- [x] kontrola nastavení parametrů hypertuning
-- [x] kontrola metody evaluate_model a parametru forecast_horizon, je tam hardcoded, ale měl by se brát z DATASET_CONFIG['test_periods'] a taky jak to udělat u Chronos a TimeGPT, tam se to předává asi jinak
-- [x] do výsledné predikce do grafu se asi neberou best params z nejlepšího RMSE (možná asi berou, jen se nedělá výpočet metrik z CV, ale přímo train vs test, takže se ta čísla mohou lišit, jen takto mám výhodu, že ty test data/actual data znám, jinak predikce do budoucna přeci neznají budoucnost)
-- [x] vyhodit ven stride, ono to už je u local a global dělané přes seasonal periods, tak jen ověřit, jestli by to tak šlo a nebo tam narvat něco jiného, ale ať je to konfigurovatelné zvenku
-- [ ] sjednotit buňku 2
+# TODO
+
+Only active and recent work should live here.
+
+## Current Priorities
+
+- [ ] Finalize `forecasting/05_forecasting_kaggle_btcusd_hourly.ipynb`
+  - [ ] remove `smoke_test_points` for the final run
+  - [ ] decide the intended final horizon and keep it consistent
+    - current notebook uses `test_periods = 24`
+    - older notes referenced `168`
+  - [ ] rerun the notebook on full data and refresh exported images
+
+- [ ] Fix foundation-model category comparison in `src/evaluation.py`
+  - [ ] include `GraniteTTM` in the foundation category used for DM comparisons
+
+- [ ] Clean repo truth sources
+  - [ ] decide whether to delete `raw_py_scripts/` or keep them as explicit legacy copies
+  - [ ] if kept, mark them clearly as non-canonical
+
+- [ ] Align notebook comments with actual code
+  - [ ] notebook `05` comment says DM uses full horizon
+  - [ ] actual current call falls back to default `h=1`
+
+- [ ] Review the small 2026-04-02 changes
+  - [ ] confirm whether `src/config.py` and notebook `01` need a fresh rerun or a clearer commit message
+
+## Secondary Tasks
+
+- [ ] Try Google Colab
+- [ ] Unify "Cell 2" patterns if any forecast notebook still diverges from the common loader/setup
+- [ ] Consider adding a lightweight script or CLI wrapper for non-notebook execution
+
+## Current Baseline
+
+- [x] Shared data loading moved into `src/data_loader.py`
+- [x] Shared notebook imports and setup exist in `src/notebook_setup.py`
+- [x] Shared plotting and export logic moved into `src/visualization.py`
+- [x] Forecast notebooks `01` to `04` were executed after the refactor
+- [x] Multiseries workflow for notebook `04` is integrated into shared code
+- [x] Foundation models are wired in: Chronos2, GraniteTTM, TimeGPT
+- [ ] Notebook `05` is still only in smoke-test state

@@ -1,6 +1,10 @@
 import pandas as pd
 from typing import Dict, Any, Optional
 from src.evaluation import diebold_mariano_test
+from src.statistical_transforms import (
+    get_base_model_name_from_params,
+    get_target_transform_name,
+)
 
 
 class ExperimentTracker:
@@ -22,6 +26,8 @@ class ExperimentTracker:
         """
         entry = {
             "Model": model_name,
+            "Base Model": get_base_model_name_from_params(model_name, params),
+            "Target Transform": get_target_transform_name(params) if params else "-",
             "RMSE": rmse_val,
             "MAPE": mape_val,
             "Tuning Time (s)": tuning_time,

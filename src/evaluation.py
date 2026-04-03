@@ -3,6 +3,8 @@ import pandas as pd
 from scipy.stats import t, norm
 from darts import TimeSeries
 
+from src.statistical_transforms import clean_model_name
+
 def diebold_mariano_test(
     target,
     pred1,
@@ -145,7 +147,9 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
     def get_best_test(category_substrings):
         # Filter models that contain ANY of the substrings in the category list
         subset = df_test_stats[
-            df_test_stats["Model"].apply(lambda x: any(sub in x for sub in category_substrings))
+            df_test_stats["Model"].apply(
+                lambda x: any(sub in clean_model_name(x) for sub in category_substrings)
+            )
         ]
         if subset.empty:
             return None
@@ -154,7 +158,7 @@ def run_statistical_comparison(tracker, final_predictions, test_series, h=1):
     # Categories (Substrings to match)
     dl_models = ["TiDE", "N-BEATS", "TFT"]
     stat_models = ["AutoARIMA", "Prophet", "Holt-Winters"]
-    found_models = ["Chronos", "TimeGPT"]
+    found_models = ["Chronos", "Chronos2", "TimeGPT", "GraniteTTM"]
 
     comparisons = []
 

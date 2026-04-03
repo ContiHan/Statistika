@@ -33,6 +33,12 @@ from src.config import (
     NixtlaClient,
 )
 from src.model_config import get_foundation_grids
+from src.statistical_transforms import (
+    build_target_transform,
+    clean_model_name,
+    get_target_transform_name,
+    strip_internal_params,
+)
 
 def _load_foundation_model(model_name, params=None):
     """
@@ -252,7 +258,7 @@ def get_final_predictions(
     cat_foundation = ["Chronos", "Chronos2", "TimeGPT", "GraniteTTM"]
 
     def _get_category(model_name):
-        clean = model_name.replace(" (LOCAL)", "").replace(" (GLOBAL)", "")
+        clean = clean_model_name(model_name)
         if clean in cat_stat: return "statistical"
         if clean in cat_dl: return "dl"
         if clean in cat_foundation: return "foundation"
@@ -349,7 +355,7 @@ def get_final_predictions(
                 return None
 
         # 2. Darts Models
-        clean_name = model_name.replace(" (LOCAL)", "").replace(" (GLOBAL)", "")
+        clean_name = clean_model_name(model_name)
         cls_map = {
             "Holt-Winters": ExponentialSmoothing,
             "AutoARIMA": AutoARIMA,
@@ -363,30 +369,39 @@ def get_final_predictions(
             return None
 
         try:
+            transform_name = get_target_transform_name(params)
+            clean_params = strip_internal_params(params)
+
             # --- LOCAL TRAINING ---
             if not is_multiseries or "LOCAL" in model_name:
                 if is_multiseries:
                     preds = []
                     for i, (train_s, test_s) in enumerate(zip(train, test)):
-                        model = cls_map[clean_name](**params)
+                        target_transform = build_target_transform(transform_name).fit(train_s)
+                        train_transformed = target_transform.transform_series(train_s)
+                        model = cls_map[clean_name](**clean_params)
                         # Handle Covariates for Local
                         cov_args = {}
                         if clean_name in ["AutoARIMA", "Prophet"] and future_covs:
                             cov_args["future_covariates"] = future_covs[i]
 
-                        model.fit(train_s, **cov_args)
-                        preds.append(model.predict(len(test_s), **cov_args))
+                        model.fit(train_transformed, **cov_args)
+                        pred_transformed = model.predict(len(test_s), **cov_args)
+                        preds.append(target_transform.inverse_series(pred_transformed))
                     return preds
                 else:
                     # Single Series
-                    model = cls_map[clean_name](**params)
+                    model = cls_map[clean_name](**clean_params)
                     is_dl = clean_name in ["TiDE", "N-BEATS", "TFT"]
                     if is_dl:
                         model.fit(train_scaled, verbose=False)
                         return scaler.inverse_transform(model.predict(len(test)))
                     else:
-                        model.fit(train)
-                        return model.predict(len(test))
+                        target_transform = build_target_transform(transform_name).fit(train)
+                        train_transformed = target_transform.transform_series(train)
+                        model.fit(train_transformed)
+                        pred_transformed = model.predict(len(test))
+                        return target_transform.inverse_series(pred_transformed)
 
             # --- GLOBAL TRAINING ---
             else:

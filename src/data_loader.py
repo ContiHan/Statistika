@@ -5,12 +5,19 @@ from darts.dataprocessing.transformers import Scaler, StaticCovariatesTransforme
 from sklearn.preprocessing import LabelEncoder
 import os
 
+from src.runtime_context import (
+    set_current_dataset_config,
+    set_current_target_diagnostics,
+)
+from src.statistical_transforms import analyze_series_for_log
+
 def load_dataset(config, smoke_test=False, smoke_test_points=2000):
     """
     Base loader for loading raw data and creating TimeSeries objects.
     """
     name = config.get("name", "Unknown Dataset")
     print(f"Loading dataset: {name}")
+    set_current_dataset_config(config)
     
     # 1. Load File
     file_path = config["file_path"]
@@ -35,6 +42,8 @@ def load_dataset(config, smoke_test=False, smoke_test_points=2000):
         if "static_covariates" in config and config["static_covariates"]:
             encoders = {}
             for col in config["static_covariates"]:
+                if col == id_col:
+                    continue
                 le = LabelEncoder()
                 df[col] = le.fit_transform(df[col])
                 encoders[col] = le
@@ -111,6 +120,9 @@ def get_prepared_data(config):
         split_time = pd.Timestamp(series.end_time()) - offset
         train, test = series.split_after(split_time)
 
+    target_diagnostics = analyze_series_for_log(train, frequency=freq_str)
+    set_current_target_diagnostics(target_diagnostics)
+
     # 2. Scaling Target
     scaler = Scaler()
     train_scaled = scaler.fit_transform(train)
@@ -129,6 +141,7 @@ def get_prepared_data(config):
         "series": series, "all_series": series, # Alias for consistency
         "extras": extras,
         "split_time": split_time, # Add this for plotting
+        "target_diagnostics": target_diagnostics,
     }
     
     # Handle Covariates Naming for 04 (Multi-series compatible)
