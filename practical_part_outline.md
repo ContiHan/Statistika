@@ -14,12 +14,11 @@ Pracovní osnova pro kapitolu 4 diplomové práce. Tento soubor je veden samosta
 
 #### 4.2.1 Struktura projektu a sdílené moduly
 
-- `src/data_loader.py`
-- `src/notebook_setup.py`
-- `src/tuning.py`
-- `src/pipeline.py`
-- `src/evaluation.py`
-- `src/visualization.py`
+- datová vrstva a příprava datasetů
+- tuning a validace modelů
+- finální retraining a generování forecastů
+- evaluace, statistické testy a export výstupů
+- notebook workflow nad sdílenými moduly v `src/`
 
 #### 4.2.2 Použité knihovny a frameworky
 
@@ -47,21 +46,36 @@ Pracovní osnova pro kapitolu 4 diplomové práce. Tento soubor je veden samosta
 - `04` M5 daily
 - `05` BTC hourly
 
-#### 4.3.2 Rozdělení na train/test a volba forecast horizontu
+#### 4.3.2 Předzpracování dat v preprocessing noteboocích
+
+- načtení zdrojových dat a jejich základní očištění
+- sjednocení formátu timestampů a cílových proměnných
+- výběr relevantních sloupců a příprava finálních CSV
+- dataset-specific úpravy před samotným benchmarkem
+
+#### 4.3.3 Exploratory data analysis a diagnostika řad
+
+- vizuální průzkum řad v EDA noteboocích
+- popis trendu, sezónnosti, volatility a strukturálních rozdílů mezi datasety
+- ADF testy jako diagnostický nástroj stacionarity v EDA fázi
+- oddělení EDA diagnostiky od finální produkční forecast pipeline
+
+#### 4.3.4 Rozdělení na train/test a volba forecast horizontu
 
 - `test_periods`
 - `seasonal_period`
 - `cv_start_ratio`
 - rozdíly mezi datasety
 
-#### 4.3.3 Strategie transformace cílové řady
+#### 4.3.5 Strategie transformace cílové řady
 
 - deep learning modely: scaling
 - foundation modely: raw scale
 - statistické modely: dataset-level `raw/log`
 - Box-Cox diagnostika jako rozhodovací mechanismus
+- interní differencing u AutoARIMA místo plošného ručního differencingu
 
-#### 4.3.4 Kovariáty a multiseries specifika
+#### 4.3.6 Kovariáty a multiseries specifika
 
 - future covariates
 - past covariates
@@ -141,9 +155,9 @@ Doporučená vnitřní struktura každé datasetové podkapitoly:
 
 - dataset-specific experiment setup
 - selected preprocessing strategy
-- main metrics
-- DM results
-- short interpretation
+- hlavní metriky
+- DM výsledky
+- krátká interpretace výsledků
 
 ### 4.7 Souhrnná komparativní analýza
 
@@ -165,5 +179,5 @@ Doporučená vnitřní struktura každé datasetové podkapitoly:
 ## Poznámky
 
 - Tato osnova je pracovní a může být ještě zpřesněna nebo zkrácena.
-- Struktura odpovídá skutečnému stavu kódu a notebook workflow, ne obecné šabloně diplomové práce.
+- Struktura odpovídá skutečnému stavu kódu, notebook workflow a pomocných analytických notebooků.
 - Při budoucích detailních rozpadech a přípravě textu by tento soubor měl sloužit jako hlavní referenční kostra praktické části.
