@@ -5,31 +5,31 @@ Only active and recent work should live here.
 ## Current Priorities
 
 - [ ] Finalize `forecasting/05_forecasting_kaggle_btcusd_hourly.ipynb`
-  - [ ] remove `smoke_test_points` for the final run
-  - [ ] decide the intended final horizon and keep it consistent
-    - current notebook uses `test_periods = 24`
-    - older notes referenced `168`
-  - [ ] rerun the notebook on full data and refresh exported images
+  - [ ] keep `test_periods = 168` (`week-ahead`) and use the same horizon consistently
+  - [ ] decide the final BTC subset size (`smoke_test_points`) for the thesis run
+  - [ ] rerun the notebook with the chosen BTC setup and refresh exported images
+  - [ ] record the exact BTC runtime setup used in the thesis text
 
-- [ ] Fix foundation-model category comparison in `src/evaluation.py`
-  - [ ] include `GraniteTTM` in the foundation category used for DM comparisons
+- [ ] Freeze final experimental settings for all datasets
+  - [ ] confirm `test_periods`, `seasonal_period`, `cv_start_ratio`, and optional `smoke_test_points`
+  - [ ] confirm the final dataset-level statistical transform (`raw` vs `log`)
+  - [ ] keep one final result set per dataset and stop changing configs afterwards
 
-- [ ] Clean repo truth sources
-  - [ ] decide whether to delete `raw_py_scripts/` or keep them as explicit legacy copies
-  - [ ] if kept, mark them clearly as non-canonical
+- [ ] Regenerate final notebook outputs and exported figures
+  - [ ] rerun `01` to `04` from a clean kernel if any setup or plotting code changed
+  - [ ] verify `images/forecasting/` contains only the final PNGs you want to keep
+  - [ ] remove old duplicate M5 exports after the final rerun
 
-- [ ] Align notebook comments with actual code
-  - [ ] notebook `05` comment says DM uses full horizon
-  - [ ] actual current call falls back to default `h=1`
-
-- [ ] Review the small 2026-04-02 changes
-  - [ ] confirm whether `src/config.py` and notebook `01` need a fresh rerun or a clearer commit message
+- [ ] Start the thesis-writing phase
+  - [ ] finalize the practical-part outline
+  - [ ] prepare a chronological implementation log from repo notes, code changes, and notebook evolution
+  - [ ] draft the practical-part text from the final code and outputs
 
 ## Secondary Tasks
 
-- [ ] Try Google Colab
-- [ ] Unify "Cell 2" patterns if any forecast notebook still diverges from the common loader/setup
-- [ ] Consider adding a lightweight script or CLI wrapper for non-notebook execution
+- [ ] Optionally test Google Colab again only if BTC runtime becomes a blocker
+- [ ] Consider a lightweight script / CLI wrapper for non-notebook execution
+- [ ] Optionally add a short appendix note explaining why some DM pairs can be skipped
 
 ## Current Baseline
 
@@ -39,4 +39,7 @@ Only active and recent work should live here.
 - [x] Forecast notebooks `01` to `04` were executed after the refactor
 - [x] Multiseries workflow for notebook `04` is integrated into shared code
 - [x] Foundation models are wired in: Chronos2, GraniteTTM, TimeGPT
-- [ ] Notebook `05` is still only in smoke-test state
+- [x] `GraniteTTM` is included in the foundation category used by DM comparisons
+- [x] Statistical preprocessing is now dataset-level (`raw` vs `log`) instead of model-level mixing
+- [x] Diebold-Mariano testing now uses dedicated rolling backtest artifacts instead of test-set selection
+- [ ] Notebook `05` is still the only dataset that remains in reduced / smoke-test state
