@@ -551,6 +551,10 @@ def get_final_predictions(
                         target_transform = build_target_transform(transform_name).fit(train_s)
                         train_transformed = target_transform.transform_series(train_s)
                         model = cls_map[clean_name](**clean_params)
+                        if clean_name == "AutoARIMA":
+                            print(
+                                f"AutoARIMA: fitting final local model for series {i + 1}/{len(train)} (internal order search)..."
+                            )
                         # Handle Covariates for Local
                         cov_args = {}
                         if clean_name in ["AutoARIMA", "Prophet"] and future_covs:
@@ -570,6 +574,8 @@ def get_final_predictions(
                     else:
                         target_transform = build_target_transform(transform_name).fit(train)
                         train_transformed = target_transform.transform_series(train)
+                        if clean_name == "AutoARIMA":
+                            print("AutoARIMA: fitting final model (internal order search)...")
                         model.fit(train_transformed)
                         pred_transformed = model.predict(len(test))
                         return target_transform.inverse_series(pred_transformed)

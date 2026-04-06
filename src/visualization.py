@@ -11,29 +11,34 @@ import numpy as np
 from src.statistical_transforms import BOXCOX_LOG_THRESHOLD
 
 
+def _get_forecasting_output_dir():
+    return os.path.abspath(
+        os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), "..", "images", "forecasting"
+        )
+    )
+
+
 def plot_data_split(train, test, config, series=None):
     """
-    Visualize Train/Test split using Matplotlib.
+    Visualize Train/Test split using Plotly.
     Handles single-series and multi-series (plots up to 5 series).
     """
     is_multi = isinstance(train, list)
     dataset_name = config["name"]
     smoke_test = config.get("smoke_test") or config.get("smoke_test_points")
     value_unit = config.get("value_unit", "Value")
+    title_suffix = " [SMOKE TEST]" if smoke_test else ""
 
     if is_multi:
-        # Reconstruct full series if not provided
         if series is None:
             series = [t.append(te) for t, te in zip(train, test)]
 
-        # Plot up to 5 series to avoid clutter
         limit = 5
         to_plot = series[:limit]
-
-        fig, ax = plt.subplots(figsize=(15, 5))
+        fig = go.Figure()
         for s in to_plot:
             label = "Series"
-            # Try to get ID from static covariates
             if hasattr(s, "static_covariates") and s.static_covariates is not None:
                 cols = s.static_covariates.columns
                 if "unique_id" in cols:
@@ -41,32 +46,104 @@ def plot_data_split(train, test, config, series=None):
                 elif "id" in cols:
                     label = str(s.static_covariates["id"].values[0])
 
-            s.plot(ax=ax, label=label)
+            fig.add_trace(
+                go.Scatter(
+                    x=s.time_index,
+                    y=s.values().flatten(),
+                    mode="lines",
+                    name=label,
+                    line=dict(width=2),
+                )
+            )
 
         split_time = test[0].start_time()
-        ax.axvline(x=split_time, color="red", linestyle="--", label="Split")
-        ax.set_title(f"{dataset_name}" + (" [SMOKE TEST]" if smoke_test else ""))
-        ax.set_ylabel(value_unit)
-        ax.legend(loc="upper left", fontsize=8)
-        plt.tight_layout()
-        plt.show()
+        series_end = to_plot[0].end_time()
+        fig.add_vrect(
+            x0=split_time,
+            x1=series_end,
+            fillcolor="rgba(220, 53, 69, 0.12)",
+            line_width=0,
+        )
+        fig.add_vline(
+            x=split_time,
+            line_color="red",
+            line_dash="dash",
+        )
+        fig.add_annotation(
+            x=split_time,
+            y=1.02,
+            xref="x",
+            yref="paper",
+            text="Train/Test Split",
+            showarrow=False,
+            font=dict(size=11, color="red"),
+            xanchor="right",
+            yanchor="bottom",
+            bgcolor="rgba(255,255,255,0.75)",
+        )
+        fig.update_layout(
+            title=dict(
+                text=f"<b>{dataset_name}</b> - Train/Test Split{title_suffix}",
+                font=dict(size=16),
+            ),
+            width=1700,
+            height=500,
+            yaxis_title=value_unit,
+            legend=dict(orientation="h", y=1.08, x=0),
+            margin=dict(l=80, r=30, t=80, b=60),
+        )
+        return fig
 
     else:
-        # Single-series
         if series is None:
             series = train.append(test)
 
-        series.plot(label="Full Series", figsize=(18, 5))
-        plt.axvline(
-            x=test.start_time(), color="red", linestyle="--", label="Train/Test Split"
+        fig = go.Figure()
+        fig.add_trace(
+            go.Scatter(
+                x=series.time_index,
+                y=series.values().flatten(),
+                mode="lines",
+                name="Full Series",
+                line=dict(width=2),
+            )
         )
-        plt.title(
-            f"{dataset_name} - Train/Test Split"
-            + (" [SMOKE TEST]" if smoke_test else "")
+        split_time = test.start_time()
+        fig.add_vrect(
+            x0=split_time,
+            x1=series.end_time(),
+            fillcolor="rgba(220, 53, 69, 0.12)",
+            line_width=0,
         )
-        plt.ylabel(value_unit)
-        plt.legend()
-        plt.show()
+        fig.add_vline(
+            x=split_time,
+            line_color="red",
+            line_dash="dash",
+        )
+        fig.add_annotation(
+            x=split_time,
+            y=1.02,
+            xref="x",
+            yref="paper",
+            text="Train/Test Split",
+            showarrow=False,
+            font=dict(size=11, color="red"),
+            xanchor="right",
+            yanchor="bottom",
+            bgcolor="rgba(255,255,255,0.75)",
+        )
+        fig.update_layout(
+            title=dict(
+                text=f"<b>{dataset_name}</b> - Train/Test Split{title_suffix}",
+                font=dict(size=16),
+            ),
+            width=1700,
+            height=500,
+            yaxis_title=value_unit,
+            legend=dict(orientation="h", y=1.08, x=0),
+            margin=dict(l=80, r=30, t=80, b=60),
+        )
+        return fig
 
 
 def plot_model_comparison(
@@ -264,8 +341,8 @@ def plot_dm_results(dm_results_df, dataset_name):
         note=note,
         highlight_values={
             "Winner": "lightgreen",
-            "Significant": "lightgreen",
-            "Significant Holm": "lightgreen",
+            "Significant": ("lightgreen"),
+            "Significant Holm": ("lightgreen"),
         },
         wrap_widths={
             "Model A": 22,
@@ -317,6 +394,45 @@ def plot_dm_backtest_summary_table(summary_df, dataset_name):
     )
 
 
+def plot_selected_params_table(params_df, dataset_name):
+    """
+    Render the selected winning configuration for each model as a styled Plotly table.
+    """
+    if params_df is None or params_df.empty:
+        return None
+
+    table_df = params_df[
+        [
+            "Base Model",
+            "RMSE",
+            "MAPE",
+            "Tuning Time (s)",
+            "Best Config Time (s)",
+            "Selected Params",
+        ]
+    ].copy()
+    table_df["Selected Params"] = (
+        table_df["Selected Params"]
+        .fillna("-")
+        .astype(str)
+        .str.replace("; ", "<br>", regex=False)
+    )
+    note = (
+        "Each row shows the selected winning configuration stored in the experiment tracker after tuning.<br>"
+        "Selected Params contains the final hyperparameter combination used for that model variant."
+    )
+    return _plot_styled_table(
+        table_df,
+        title=f"<b>{dataset_name}</b> - Selected Model Configurations",
+        note=note,
+        wrap_widths={
+            "Base Model": 24,
+        },
+        min_cell_height=16,
+        per_line_height=14,
+    )
+
+
 def plot_boxcox_diagnostics_table(diagnostics_df, dataset_name):
     """
     Render Box-Cox / transform diagnostics as a Plotly table.
@@ -354,7 +470,7 @@ def plot_boxcox_diagnostics_table(diagnostics_df, dataset_name):
         title=f"<b>{dataset_name}</b> - Transform Diagnostics (Box-Cox)",
         note=note,
         highlight_values={
-            "Selected Transform": "lightgreen",
+            "Selected Transform": ("lightgreen"),
         },
         wrap_widths={
             "Series": 22,
@@ -563,6 +679,7 @@ def _plot_styled_table(
     significance_columns=None,
     positive_values=None,
     min_cell_height=48,
+    per_line_height=30,
 ):
     display_df, line_counts = _wrap_table_dataframe(df, wrap_widths or {})
     significance_columns = significance_columns or []
@@ -594,7 +711,7 @@ def _plot_styled_table(
 
     note_lines = [line.strip() for line in (note or "").split("<br>") if line.strip()]
     header_height = 40
-    cell_height = max(min_cell_height, 30 * max(line_counts or [1]))
+    cell_height = max(min_cell_height, per_line_height * max(line_counts or [1]))
     top_margin = 104
     note_font_size = 11
     note_line_spacing = 16
@@ -935,14 +1052,12 @@ def plot_forecast_comparison(
 
 def export_plots(fig_forecast, fig_comparison, dataset_name, suffix="", fig_dm=None):
     """Export plots including DM test table."""
-    output_dir = os.path.abspath(
-        os.path.join(os.getcwd(), "..", "images", "forecasting")
-    )
+    output_dir = _get_forecasting_output_dir()
     os.makedirs(output_dir, exist_ok=True)
     slug = _safe_slug(dataset_name, max_len=80)
     safe_suffix = _safe_slug(suffix, max_len=40) if suffix else ""
 
-    if fig_forecast:
+    if fig_forecast is not None:
         name = (
             f"{slug}_forecast_{safe_suffix}.png"
             if safe_suffix
@@ -957,7 +1072,7 @@ def export_plots(fig_forecast, fig_comparison, dataset_name, suffix="", fig_dm=N
             scale=2,
         )
 
-    if fig_comparison and not suffix:
+    if fig_comparison is not None and not suffix:
         _write_image_safe(
             fig_comparison,
             output_dir,
@@ -967,7 +1082,7 @@ def export_plots(fig_forecast, fig_comparison, dataset_name, suffix="", fig_dm=N
             scale=2,
         )
 
-    if fig_dm:
+    if fig_dm is not None:
         name = (
             f"{slug}_dm_test_{safe_suffix}.png"
             if safe_suffix
@@ -987,9 +1102,7 @@ def export_named_plots(dataset_name, figures, suffix=""):
     """
     Export arbitrary named figures with the same slug logic as the default plots.
     """
-    output_dir = os.path.abspath(
-        os.path.join(os.getcwd(), "..", "images", "forecasting")
-    )
+    output_dir = _get_forecasting_output_dir()
     os.makedirs(output_dir, exist_ok=True)
     slug = _safe_slug(dataset_name, max_len=80)
     safe_suffix = _safe_slug(suffix, max_len=40) if suffix else ""

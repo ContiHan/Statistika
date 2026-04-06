@@ -112,6 +112,10 @@ def _prepare_statistical_combinations(
     return _deduplicate_param_dicts(expanded)
 
 
+def _is_autoarima(model_name_or_class_name):
+    return clean_model_name(model_name_or_class_name) == "AutoARIMA"
+
+
 # === MULTI-SERIES TUNING (04) ===
 def evaluate_local_model(
     model_cls,
@@ -128,6 +132,7 @@ def evaluate_local_model(
     errors = []
     transform_name = get_target_transform_name(params)
     clean_params = strip_internal_params(params)
+    show_hfc_progress = _is_autoarima(model_cls.__name__)
 
     for i, train_s in enumerate(train_list):
         try:
@@ -148,7 +153,7 @@ def evaluate_local_model(
                 forecast_horizon=test_periods,
                 stride=stride,
                 retrain=True,
-                verbose=False,
+                verbose=show_hfc_progress,
                 last_points_only=True,
             )
             backtest = target_transform.inverse_series(backtest_transformed)
@@ -273,6 +278,11 @@ def run_tuning_local_and_eval(
     combinations = _prepare_statistical_combinations(
         model_name, param_grid, use_full_grid=use_full_grid, n_iter=n_iter
     )
+
+    if _is_autoarima(model_name):
+        tqdm.write(
+            "AutoARIMA uses one outer combination here, but still runs an internal stepwise order search inside each rolling backtest refit."
+        )
 
     best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (
         float("inf"),
@@ -444,6 +454,7 @@ def evaluate_model(
             target_transform = build_target_transform(transform_name).fit(train_series)
             train_transformed = target_transform.transform_series(train_series)
             model = model_cls(**clean_params)
+            show_hfc_progress = _is_autoarima(model_cls.__name__)
             # Statistical models use original data
             backtest_transformed = model.historical_forecasts(
                 series=train_transformed,
@@ -451,7 +462,7 @@ def evaluate_model(
                 forecast_horizon=test_periods,
                 stride=stride,
                 retrain=True,
-                verbose=False,
+                verbose=show_hfc_progress,
                 last_points_only=True,
             )
             backtest = target_transform.inverse_series(backtest_transformed)
@@ -505,6 +516,11 @@ def run_tuning_and_eval(
     else:
         combinations = _prepare_statistical_combinations(
             model_name, param_grid, use_full_grid=use_full_grid, n_iter=n_iter
+        )
+
+    if _is_autoarima(model_name):
+        tqdm.write(
+            "AutoARIMA uses one outer combination here, but still runs an internal stepwise order search inside each rolling backtest refit."
         )
 
     best_rmse, best_params, best_mape, best_cfg_time, best_artifact = (

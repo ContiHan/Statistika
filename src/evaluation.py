@@ -330,6 +330,7 @@ def run_pairwise_dm_analysis(
     forecast_horizon=1,
     stride=1,
     cv_start_ratio=None,
+    dm_h=None,
     include_second_best=True,
     include_fastest=False,
     include_foundation=True,
@@ -372,10 +373,12 @@ def run_pairwise_dm_analysis(
         shortlist_reasons=shortlist_reasons,
     )
 
+    effective_dm_h = forecast_horizon if dm_h is None else dm_h
+
     pairwise_results = _pairwise_dm_from_artifacts(
         artifacts=artifacts,
         criterion=criterion,
-        h=forecast_horizon,
+        h=effective_dm_h,
         adjust_pvalues=adjust_pvalues,
     )
     return {

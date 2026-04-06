@@ -19,11 +19,13 @@ Only active and recent work should live here.
   - [ ] rerun `01` to `04` from a clean kernel if any setup or plotting code changed
   - [ ] verify `images/forecasting/` contains only the final PNGs you want to keep
   - [ ] remove old duplicate M5 exports after the final rerun
+  - [ ] export the final selected-configuration tables showing which params won for each model
 
 - [ ] Start the thesis-writing phase
   - [ ] finalize the practical-part outline
   - [ ] prepare a chronological implementation log from repo notes, code changes, and notebook evolution
   - [ ] draft the practical-part text from the final code and outputs
+  - [ ] make sure every exported table and chart used in the thesis has an explicit interpretation in the practical part
 
 ## Secondary Tasks
 
@@ -42,4 +44,5 @@ Only active and recent work should live here.
 - [x] `GraniteTTM` is included in the foundation category used by DM comparisons
 - [x] Statistical preprocessing is now dataset-level (`raw` vs `log`) instead of model-level mixing
 - [x] Diebold-Mariano testing now uses dedicated rolling backtest artifacts instead of test-set selection
+- [x] Selected winning model configurations can be exported as a separate parameter-summary table
 - [ ] Notebook `05` is still the only dataset that remains in reduced / smoke-test state

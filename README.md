@@ -104,6 +104,7 @@ The repository also contains exploratory notebooks for data understanding and di
 - validation metrics are based on rolling backtesting
 - RMSE is the main model-selection metric
 - MAPE is tracked as an auxiliary relative-error metric
+- the experiment tracker stores the selected winning configuration for each model variant, including the final parameter set used after tuning
 
 ### Statistical Comparison
 
@@ -111,10 +112,22 @@ The repository uses dedicated Diebold-Mariano comparisons on backtest artifacts 
 
 Current logic:
 
-- shortlist models are selected from validation performance
+- shortlist models are selected from validation performance after tuning has already identified one winning configuration per model variant
 - pairwise DM comparisons run on dedicated rolling backtest artifacts
 - Holm correction is available for multiple pairwise comparisons
 - some pairs can be skipped if they do not share overlapping validation points
+
+Important distinction:
+
+- the `Selected Model Configurations` table reports the validation RMSE/MAPE stored by the experiment tracker during tuning
+- the `DM Backtest Summary` table reports RMSE/MAPE recomputed on a separate dedicated backtest used only for statistical comparison
+- these values are therefore not expected to match numerically, and the model ranking can change between the two tables
+- this is especially visible when the DM backtest uses a different protocol than tuning, for example a dense one-step setup (`forecast_horizon=1`, `stride=1`) versus a sparser tuning setup
+
+Interpretation:
+
+- use the selected-configuration table as evidence of which parameter setting won during tuning
+- use the DM backtest summary as evidence of how the shortlisted winning models behaved under the dedicated inferential backtest
 
 ## Current Repo Status
 
@@ -208,8 +221,10 @@ Examples:
 
 Generated artifacts are exported to `images/forecasting/`, including:
 
+- train/test split plots
 - forecast plots
 - comparison plots
+- selected model configuration tables
 - Box-Cox diagnostic tables and charts
 - DM backtest summary tables
 - DM pairwise tables

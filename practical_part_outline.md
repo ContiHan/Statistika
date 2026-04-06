@@ -66,6 +66,7 @@ Pracovní osnova pro kapitolu 4 diplomové práce. Tento soubor je veden samosta
 - `seasonal_period`
 - `cv_start_ratio`
 - rozdíly mezi datasety
+- vizuální dokumentace train/test splitu jako součást experimentálních artefaktů
 
 #### 4.3.5 Strategie transformace cílové řady
 
@@ -114,12 +115,14 @@ Pracovní osnova pro kapitolu 4 diplomové práce. Tento soubor je veden samosta
 - tuning grids
 - random grid search
 - interní vyhledávání parametrů u AutoARIMA
+- evidence vítězných konfigurací a finálních parametrů po tuningu
 
 #### 4.5.2 Validace pomocí rolling backtestingu
 
 - validation RMSE / MAPE
 - role `historical_forecasts`
 - rozdíl mezi validation a final test
+- vybrané vítězné konfigurace vycházejí z tuning/validation metrik uložených v trackeru
 
 #### 4.5.3 Finální retraining a test forecast
 
@@ -137,6 +140,8 @@ Pracovní osnova pro kapitolu 4 diplomové práce. Tento soubor je veden samosta
 - dedicated backtest artifacts
 - pairwise comparison
 - Holm correction
+- DM test se provádí nad vybranými nejlepšími konfiguracemi, nikoli nad celým gridem parametrů
+- RMSE v DM backtest summary nejsou stejné jako RMSE v tabulce vybraných konfigurací, protože vznikají z odděleného dedikovaného backtestu pro statistické porovnání
 - situace, kdy některé páry nelze korektně porovnat
 
 ### 4.6 Výsledky po jednotlivých datasetech
@@ -155,9 +160,11 @@ Doporučená vnitřní struktura každé datasetové podkapitoly:
 
 - dataset-specific experiment setup
 - selected preprocessing strategy
+- vybrané vítězné konfigurace modelů
 - hlavní metriky
 - DM výsledky
 - krátká interpretace výsledků
+- explicitní interpretace všech použitých tabulek a grafů, ne pouze jejich vložení bez komentáře
 
 ### 4.7 Souhrnná komparativní analýza
 
@@ -181,3 +188,4 @@ Doporučená vnitřní struktura každé datasetové podkapitoly:
 - Tato osnova je pracovní a může být ještě zpřesněna nebo zkrácena.
 - Struktura odpovídá skutečnému stavu kódu, notebook workflow a pomocných analytických notebooků.
 - Při budoucích detailních rozpadech a přípravě textu by tento soubor měl sloužit jako hlavní referenční kostra praktické části.
+- Každý graf a každá tabulka použitá v textu musí mít vlastní interpretaci. Tu lze psát buď průběžně v datasetových podkapitolách, nebo částečně souhrnně v komparativní analýze, ale ne jako nekomentovaný artefakt.

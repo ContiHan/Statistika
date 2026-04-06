@@ -37,7 +37,7 @@ except ImportError:
     NIXTLA_API_KEY = None
 
 # === LOCAL MODULE IMPORTS ===
-from src.experiment import ExperimentTracker
+from src.experiment import ExperimentTracker, build_selected_params_df
 from src.tuning import (
     run_tuning_and_eval,
     run_tuning_local_and_eval,
@@ -54,6 +54,7 @@ from src.visualization import (
     plot_dm_heatmap,
     plot_boxcox_diagnostics_table,
     plot_boxcox_lambda_chart,
+    plot_selected_params_table,
     plot_data_split,
 )
 from src.model_config import get_statistical_grids, get_dl_grids, TUNING_CONFIG

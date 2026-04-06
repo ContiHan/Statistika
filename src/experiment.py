@@ -4,6 +4,7 @@ from src.evaluation import diebold_mariano_test
 from src.statistical_transforms import (
     get_base_model_name_from_params,
     get_target_transform_name,
+    strip_internal_params,
 )
 
 
@@ -95,3 +96,38 @@ class ExperimentTracker:
 
     def get_validation_artifact(self, model_name: str):
         return self.validation_artifacts.get(model_name)
+
+
+def _format_params_compact(params: Optional[Dict[str, Any]]) -> str:
+    clean_params = strip_internal_params(params)
+    if not clean_params:
+        return "-"
+    parts = [f"{key}={value}" for key, value in clean_params.items()]
+    return "; ".join(parts)
+
+
+def build_selected_params_df(tracker) -> pd.DataFrame:
+    """
+    Returns a compact per-model summary of the selected winning configuration.
+    """
+    results_df = tracker.get_results_df()
+    if results_df.empty:
+        return pd.DataFrame()
+
+    df = results_df.copy()
+    df["Selected Params"] = df["Params"].apply(_format_params_compact)
+
+    keep_cols = [
+        "Model",
+        "Base Model",
+        "Target Transform",
+        "RMSE",
+        "MAPE",
+        "Tuning Time (s)",
+        "Best Config Time (s)",
+        "Combinations",
+        "Selection Basis",
+        "Selected Params",
+    ]
+    existing_cols = [col for col in keep_cols if col in df.columns]
+    return df[existing_cols].reset_index(drop=True)
