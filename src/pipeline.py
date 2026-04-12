@@ -34,6 +34,7 @@ from src.config import (
 )
 from src.model_config import get_foundation_grids
 from src.runtime_context import get_current_dataset_config
+from src.timegpt_utils import timegpt_forecast
 from src.statistical_transforms import (
     build_target_transform,
     clean_model_name,
@@ -334,7 +335,13 @@ def run_foundation_models(tracker, train, test, freq):
 
             def predict_fn(context, target_window):
                 df = pd.DataFrame({"ds": context.time_index, "y": context.values().flatten()})
-                fc_df = client.forecast(df=df, h=horizon, model="timegpt-1", freq=freq)
+                fc_df = timegpt_forecast(
+                    client,
+                    df=df,
+                    h=horizon,
+                    model="timegpt-1",
+                    freq=freq,
+                )
                 return TimeSeries.from_times_and_values(
                     target_window.time_index,
                     fc_df["TimeGPT"].values[: len(target_window)],
@@ -495,28 +502,72 @@ def get_final_predictions(
                         )
                         df_s["unique_id"] = f"series_{i}"
                         combined_df.append(df_s)
-                    combined_df = pd.concat(combined_df, ignore_index=True)
-                    fc_df = client.forecast(
-                        df=combined_df, h=len(test[0]), model="timegpt-1", freq=freq
-                    )
 
-                    preds = []
-                    for i, test_s in enumerate(test):
-                        pred_vals = fc_df[fc_df["unique_id"] == f"series_{i}"][
-                            "TimeGPT"
-                        ].values
-                        preds.append(
-                            TimeSeries.from_times_and_values(
-                                test_s.time_index, pred_vals
-                            )
+                    try:
+                        combined_df = pd.concat(combined_df, ignore_index=True)
+                        fc_df = timegpt_forecast(
+                            client,
+                            df=combined_df,
+                            h=len(test[0]),
+                            model="timegpt-1",
+                            freq=freq,
                         )
-                    return preds
+                        if "ds" in fc_df.columns:
+                            fc_df = fc_df.sort_values(["unique_id", "ds"])
+
+                        preds = []
+                        for i, test_s in enumerate(test):
+                            pred_vals = fc_df[fc_df["unique_id"] == f"series_{i}"][
+                                "TimeGPT"
+                            ].values
+                            if len(pred_vals) != len(test_s):
+                                raise ValueError(
+                                    "The time index and values must have the same length."
+                                )
+                            preds.append(
+                                TimeSeries.from_times_and_values(
+                                    test_s.time_index, pred_vals
+                                )
+                            )
+                        return preds
+                    except Exception as batch_exc:
+                        print(
+                            "TimeGPT multiseries batch forecast failed; "
+                            f"falling back to per-series requests. Reason: {batch_exc}"
+                        )
+                        preds = []
+                        for train_s, test_s in zip(train, test):
+                            df = pd.DataFrame(
+                                {"ds": train_s.time_index, "y": train_s.values().flatten()}
+                            )
+                            fc_df = timegpt_forecast(
+                                client,
+                                df=df,
+                                h=len(test_s),
+                                model="timegpt-1",
+                                freq=freq,
+                            )
+                            pred_vals = fc_df["TimeGPT"].values[: len(test_s)]
+                            if len(pred_vals) != len(test_s):
+                                raise ValueError(
+                                    "TimeGPT fallback forecast length does not match the test window."
+                                )
+                            preds.append(
+                                TimeSeries.from_times_and_values(
+                                    test_s.time_index, pred_vals
+                                )
+                            )
+                        return preds
                 else:
                     df = pd.DataFrame(
                         {"ds": train.time_index, "y": train.values().flatten()}
                     )
-                    fc_df = client.forecast(
-                        df=df, h=len(test), model="timegpt-1", freq=freq
+                    fc_df = timegpt_forecast(
+                        client,
+                        df=df,
+                        h=len(test),
+                        model="timegpt-1",
+                        freq=freq,
                     )
                     return TimeSeries.from_times_and_values(
                         test.time_index, fc_df["TimeGPT"].values

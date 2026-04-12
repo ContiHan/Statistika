@@ -35,7 +35,7 @@ The benchmark focuses on:
 | `02` | FRED GPDIC1 Investments | macro / finance | quarterly | US investments series |
 | `03` | ECB EUR/CZK | forex | monthly | exchange-rate forecasting |
 | `04` | M5 Walmart Hobbies | retail | daily | 5-series multiseries setup |
-| `05` | Kaggle BTC/USD | crypto | hourly | currently kept as a reduced / smoke-style run |
+| `05` | Kaggle BTC/USD | crypto | hourly | final run kept on the most recent `50k` points in smoke mode |
 
 ## Model Families
 
@@ -148,13 +148,49 @@ The preprocessing and EDA notebooks are supporting stages of the workflow, but t
 | `02_forecasting_fred_gpdic1_investments_quarterly.ipynb` | usable | quarterly macro benchmark |
 | `03_forecasting_ecb_eurczk_monthly.ipynb` | usable | monthly FX benchmark |
 | `04_forecasting_m5_walmart_daily.ipynb` | usable but expensive | multiseries workflow with covariates and longer runtimes |
-| `05_forecasting_kaggle_btcusd_hourly.ipynb` | reduced-run setup | computationally heavy hourly benchmark |
+| `05_forecasting_kaggle_btcusd_hourly.ipynb` | usable with reduced scope | final benchmark kept on the most recent `50k` points because full AutoARIMA rolling validation was not computationally practical |
 
 ### Current Known Limits
 
-- `05` BTC is still intentionally run in a reduced / smoke-style setup because of compute cost
 - some foundation-model DM pairs can be skipped when they are not comparable on overlapping validation points
 - runtime comparisons should be interpreted within each dataset run, not across different hardware sessions
+- `05` BTC is intentionally reported as a reduced / smoke-style run on the most recent `50k` points because the full AutoARIMA setup was not computationally feasible in a reasonable runtime
+
+### TimeGPT API Budgeting
+
+`TimeGPT` cost is driven by the number of `client.forecast(...)` calls, not by local runtime alone. The practical bottleneck is mainly the multiseries `04` DM backtest, not the `05` BTC notebook.
+
+The table below summarizes the approximate request budget for one notebook run under the current settings, assuming that:
+
+- `TimeGPT` is enabled
+- final forecast is generated
+- `TimeGPT` reaches the DM shortlist, so the dedicated DM backtest is also executed
+
+| Dataset | Train len | Tuning requests | Final forecast | DM requests | Total with DM |
+| :-- | --: | --: | --: | --: | --: |
+| `01 GDP` | 59 | 13 | 1 | 18 | 32 |
+| `02 Investments` | 307 | 22 | 1 | 93 | 116 |
+| `03 EUR/CZK` | 361 | 8 | 1 | 109 | 118 |
+| `04 M5 full` | 1885 per series (`5` series) | 385 | 1 | 2830 | 3216 |
+| `05 BTC full` | 122318 | 36 | 1 | 36 | 73 |
+| `05 BTC smoke 50k` | 49832 | 14 | 1 | 14 | 29 |
+
+Interpretation:
+
+- one clean full run of `04` + one reduced `05 smoke 50k` run consumes about `3245` requests
+- one clean run of all forecasting notebooks with the current reduced `05` setup consumes about `3511` requests
+- the main API-risk notebook is `04`, so avoid unnecessary reruns once the setup is frozen
+- `05` is relatively cheap from the `TimeGPT` API perspective; its main bottleneck is local compute time of the non-API models, especially AutoARIMA
+
+Current conservative runtime protection:
+
+- the repository currently uses a defensive `TimeGPT` throttle of `40 requests -> 90s sleep`
+- this is intentionally slower than the provider limit to reduce reruns caused by burst failures, `429`, and transient `500` responses
+- approximate added waiting time from throttling alone:
+  - `04` M5 DM with dense `stride=1`: about `105` extra minutes
+  - `04` full notebook TimeGPT path: about `120` extra minutes
+  - `05` reduced `50k` notebook TimeGPT path: well under `1` extra minute
+- these are upper-bound style estimates assuming sustained request flow; actual added time can be lower if the run naturally pauses between phases
 
 ## Repository Structure
 

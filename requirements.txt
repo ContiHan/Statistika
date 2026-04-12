@@ -129,6 +129,7 @@ tornado==6.5.4
 tqdm==4.67.1
 traitlets==5.14.3
 transformers==4.56.0
+truststore==0.10.4
 triad==1.0.0
 typer-slim==0.21.0
 typing-inspection==0.4.2

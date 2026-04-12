@@ -17,6 +17,7 @@ from darts.models import (
 from src.config import TIMEGPT_AVAILABLE, NIXTLA_API_KEY, NixtlaClient
 from src.pipeline import _load_foundation_model, _rolling_last_point_validation
 from src.runtime_context import get_current_dataset_config
+from src.timegpt_utils import timegpt_forecast
 from src.statistical_transforms import clean_model_name
 from src.tuning import (
     _build_validation_artifact,
@@ -802,7 +803,13 @@ def _backtest_timegpt(
 
     def predict_fn(context, target_window):
         df = pd.DataFrame({"ds": context.time_index, "y": context.values().flatten()})
-        fc_df = client.forecast(df=df, h=forecast_horizon, model="timegpt-1", freq=freq)
+        fc_df = timegpt_forecast(
+            client,
+            df=df,
+            h=forecast_horizon,
+            model="timegpt-1",
+            freq=freq,
+        )
         return TimeSeries.from_times_and_values(
             target_window.time_index,
             fc_df["TimeGPT"].values[: len(target_window)],

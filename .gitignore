@@ -4,6 +4,9 @@
 # API keys (sensitive)
 api_keys.py
 
+# Working thesis outline
+practical_part_outline.md
+
 # Python cache
 __pycache__/
 *.pyc

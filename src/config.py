@@ -10,6 +10,7 @@ torch = None
 CHRONOS_AVAILABLE = False
 TIMEGPT_AVAILABLE = False
 NIXTLA_API_KEY = None
+TRUSTSTORE_ACTIVE = False
 
 # === 1. PATH SETUP ===
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -18,7 +19,16 @@ PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-# === 2. SUPPRESS WARNINGS ===
+# === 2. SSL / TRUST STORE SETUP ===
+try:
+    import truststore
+
+    truststore.inject_into_ssl()
+    TRUSTSTORE_ACTIVE = True
+except Exception:
+    TRUSTSTORE_ACTIVE = False
+
+# === 3. SUPPRESS WARNINGS ===
 warnings.filterwarnings("ignore")
 os.environ["CMDSTAN_VERBOSE"] = "FALSE"
 # ... (warning logging setup) ...
@@ -38,7 +48,7 @@ loggers_to_silence = [
 for logger_name in loggers_to_silence:
     logging.getLogger(logger_name).setLevel(logging.CRITICAL)
 
-# === 3. LIBRARY IMPORTS ===
+# === 4. LIBRARY IMPORTS ===
 print("Checking for crucial dependencies...")
 
 # Chronos (via Darts)
@@ -70,16 +80,20 @@ try:
 except ImportError:
     TIMEGPT_AVAILABLE = False
 
-# === 4. LOAD API KEYS ===
+# === 5. LOAD API KEYS ===
 try:
     from config.api_keys import NIXTLA_API_KEY
 except ImportError:
     NIXTLA_API_KEY = None
 
-# === 5. SUMMARY OUTPUT ===
+# === 6. SUMMARY OUTPUT ===
 GREEN = "\033[92m"
 RED = "\033[91m"
 RESET = "\033[0m"
+
+print("  -> SSL trust store")
+color = GREEN if TRUSTSTORE_ACTIVE else RED
+print(f"     - Native trust store active: {color}{'Yes' if TRUSTSTORE_ACTIVE else 'No'}{RESET}")
 
 print("  -> Chronos model (Amazon)")
 color = GREEN if CHRONOS_AVAILABLE else RED
