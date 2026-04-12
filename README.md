@@ -4,11 +4,10 @@ Framework for benchmarking statistical models, deep learning models, and zero-sh
 
 ## Documentation Policy
 
-This repository currently keeps three maintained markdown documents:
+This repository currently keeps two maintained markdown documents:
 
 - `README.md`: project overview, methodology, repo structure, and current status
 - `todos.md`: active work list and short project follow-up notes
-- `practical_part_outline.md`: working outline for the thesis practical chapter
 
 Older scattered notes were consolidated into these files.
 
@@ -29,13 +28,13 @@ The benchmark focuses on:
 
 ## Dataset Portfolio
 
-| Notebook | Dataset | Domain | Frequency | Notes |
-| :-- | :-- | :-- | :-- | :-- |
-| `01` | World Bank USA Real GDP | macroeconomics | yearly | scaled to billions USD |
-| `02` | FRED GPDIC1 Investments | macro / finance | quarterly | US investments series |
-| `03` | ECB EUR/CZK | forex | monthly | exchange-rate forecasting |
-| `04` | M5 Walmart Hobbies | retail | daily | 5-series multiseries setup |
-| `05` | Kaggle BTC/USD | crypto | hourly | final run kept on the most recent `50k` points in smoke mode |
+| Notebook | Dataset                 | Domain          | Frequency | Notes                                                        |
+| :------- | :---------------------- | :-------------- | :-------- | :----------------------------------------------------------- |
+| `01`     | World Bank USA Real GDP | macroeconomics  | yearly    | scaled to billions USD                                       |
+| `02`     | FRED GPDIC1 Investments | macro / finance | quarterly | US investments series                                        |
+| `03`     | ECB EUR/CZK             | forex           | monthly   | exchange-rate forecasting                                    |
+| `04`     | M5 Walmart Hobbies      | retail          | daily     | 5-series multiseries setup                                   |
+| `05`     | Kaggle BTC/USD          | crypto          | hourly    | final run kept on the most recent `50k` points in smoke mode |
 
 ## Model Families
 
@@ -142,19 +141,23 @@ The preprocessing and EDA notebooks are supporting stages of the workflow, but t
 
 ### Notebook Status
 
-| Notebook | Status | Comment |
-| :-- | :-- | :-- |
-| `01_forecasting_wb_usa_real_gdp_yearly.ipynb` | usable | compact yearly benchmark |
-| `02_forecasting_fred_gpdic1_investments_quarterly.ipynb` | usable | quarterly macro benchmark |
-| `03_forecasting_ecb_eurczk_monthly.ipynb` | usable | monthly FX benchmark |
-| `04_forecasting_m5_walmart_daily.ipynb` | usable but expensive | multiseries workflow with covariates and longer runtimes |
-| `05_forecasting_kaggle_btcusd_hourly.ipynb` | usable with reduced scope | final benchmark kept on the most recent `50k` points because full AutoARIMA rolling validation was not computationally practical |
+| Notebook                                                 | Status                    | Comment                                                                                                                          |
+| :------------------------------------------------------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------- |
+| `01_forecasting_wb_usa_real_gdp_yearly.ipynb`            | usable                    | compact yearly benchmark                                                                                                         |
+| `02_forecasting_fred_gpdic1_investments_quarterly.ipynb` | usable                    | quarterly macro benchmark                                                                                                        |
+| `03_forecasting_ecb_eurczk_monthly.ipynb`                | usable                    | monthly FX benchmark                                                                                                             |
+| `04_forecasting_m5_walmart_daily.ipynb`                  | usable but expensive      | multiseries workflow with covariates and longer runtimes                                                                         |
+| `05_forecasting_kaggle_btcusd_hourly.ipynb`              | usable with reduced scope | final benchmark kept on the most recent `50k` points because full AutoARIMA rolling validation was not computationally practical |
 
 ### Current Known Limits
 
 - some foundation-model DM pairs can be skipped when they are not comparable on overlapping validation points
 - runtime comparisons should be interpreted within each dataset run, not across different hardware sessions
 - `05` BTC is intentionally reported as a reduced / smoke-style run on the most recent `50k` points because the full AutoARIMA setup was not computationally feasible in a reasonable runtime
+- the final reduced BTC protocol uses a denser DM setup than tuning:
+  - tuning on the reduced `50k` segment uses `cv_start_ratio = 0.95`
+  - dedicated DM backtest on the same reduced segment uses `cv_start_ratio = 0.90`
+  - this was done to keep tuning computationally feasible while still obtaining more usable DM backtest points
 
 ### TimeGPT API Budgeting
 
@@ -166,14 +169,14 @@ The table below summarizes the approximate request budget for one notebook run u
 - final forecast is generated
 - `TimeGPT` reaches the DM shortlist, so the dedicated DM backtest is also executed
 
-| Dataset | Train len | Tuning requests | Final forecast | DM requests | Total with DM |
-| :-- | --: | --: | --: | --: | --: |
-| `01 GDP` | 59 | 13 | 1 | 18 | 32 |
-| `02 Investments` | 307 | 22 | 1 | 93 | 116 |
-| `03 EUR/CZK` | 361 | 8 | 1 | 109 | 118 |
-| `04 M5 full` | 1885 per series (`5` series) | 385 | 1 | 2830 | 3216 |
-| `05 BTC full` | 122318 | 36 | 1 | 36 | 73 |
-| `05 BTC smoke 50k` | 49832 | 14 | 1 | 14 | 29 |
+| Dataset            |                    Train len | Tuning requests | Final forecast | DM requests | Total with DM |
+| :----------------- | ---------------------------: | --------------: | -------------: | ----------: | ------------: |
+| `01 GDP`           |                           59 |              13 |              1 |          18 |            32 |
+| `02 Investments`   |                          307 |              22 |              1 |          93 |           116 |
+| `03 EUR/CZK`       |                          361 |               8 |              1 |         109 |           118 |
+| `04 M5 full`       | 1885 per series (`5` series) |             385 |              1 |        2830 |          3216 |
+| `05 BTC full`      |                       122318 |              36 |              1 |          36 |            73 |
+| `05 BTC smoke 50k` |                        49832 |              14 |              1 |          14 |            29 |
 
 Interpretation:
 
@@ -277,4 +280,3 @@ Generated artifacts are exported to `images/forecasting/`, including:
 Active work is tracked in:
 
 - `todos.md`
-- `practical_part_outline.md` for thesis-writing structure
