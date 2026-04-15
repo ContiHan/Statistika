@@ -1,0 +1,42 @@
+Dataset,Model,Base Model,Target Transform,Param,Value
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,input_chunk_length,8
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,output_chunk_length,4
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,n_epochs,15
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,batch_size,64
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,random_state,42
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,num_stacks,10
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,num_blocks,1
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,raw,layer_widths,128
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,log,seasonal_periods,4
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,log,trend,ModelMode.ADDITIVE
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,log,seasonal,ModelMode.NONE
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,log,damped,True
+FRED GPDIC1 Investments Quarterly,AutoARIMA [log],AutoARIMA,log,season_length,4
+FRED GPDIC1 Investments Quarterly,AutoARIMA [log],AutoARIMA,log,seasonal,True
+FRED GPDIC1 Investments Quarterly,AutoARIMA [log],AutoARIMA,log,max_p,3
+FRED GPDIC1 Investments Quarterly,AutoARIMA [log],AutoARIMA,log,max_q,3
+FRED GPDIC1 Investments Quarterly,AutoARIMA [log],AutoARIMA,log,stepwise,True
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,raw,model,ibm-granite/granite-timeseries-ttm-r1
+FRED GPDIC1 Investments Quarterly,Prophet [log],Prophet,log,seasonality_mode,additive
+FRED GPDIC1 Investments Quarterly,Prophet [log],Prophet,log,changepoint_prior_scale,0.01
+FRED GPDIC1 Investments Quarterly,TimeGPT,TimeGPT,raw,model,timegpt-1
+FRED GPDIC1 Investments Quarterly,Chronos2,Chronos2,raw,model,amazon/chronos-2
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,input_chunk_length,4
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,output_chunk_length,2
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,n_epochs,15
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,batch_size,64
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,random_state,42
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,hidden_size,128
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,dropout,0.1
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,num_encoder_layers,1
+FRED GPDIC1 Investments Quarterly,TiDE,TiDE,raw,num_decoder_layers,1
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,input_chunk_length,4
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,output_chunk_length,2
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,n_epochs,30
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,batch_size,32
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,random_state,42
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,hidden_size,64
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,lstm_layers,1
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,num_attention_heads,4
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,dropout,0.1
+FRED GPDIC1 Investments Quarterly,TFT,TFT,raw,add_relative_index,True

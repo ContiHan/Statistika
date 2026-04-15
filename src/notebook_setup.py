@@ -44,6 +44,7 @@ from src.tuning import (
     run_tuning_global_and_eval,
 )
 from src.pipeline import run_foundation_models, get_final_predictions
+from src.export_data import export_forecasting_data
 from src.visualization import (
     plot_model_comparison,
     plot_forecast_comparison,

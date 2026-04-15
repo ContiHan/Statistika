@@ -1,0 +1,127 @@
+Dataset,Model,Base Model,Category,Target Transform,Series ID,Time,Actual,Prediction,Forecast Horizon,Stride,Source
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-09-09 02:00:00,111339.0,108260.859375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-09-16 02:00:00,115061.0,110292.3671875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-09-23 02:00:00,111923.0,112629.4765625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-09-30 02:00:00,114530.0,110732.703125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-10-07 02:00:00,124341.0,112087.71875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-10-14 02:00:00,113708.0,120292.5234375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-10-21 02:00:00,109534.0,112734.046875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-10-28 02:00:00,113944.0,108781.8984375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-11-04 02:00:00,106454.0,112042.9453125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-11-11 02:00:00,106623.0,106677.109375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-11-18 02:00:00,90756.0,104750.7890625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-11-25 02:00:00,87881.0,89004.3515625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-12-02 02:00:00,86544.0,87036.5078125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,dl,raw,series_0,2025-12-09 02:00:00,90071.0,85890.765625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-09-09 02:00:00,111339.0,107422.34375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-09-16 02:00:00,115061.0,109757.828125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-09-23 02:00:00,111923.0,112501.765625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-09-30 02:00:00,114530.0,111225.59375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-10-07 02:00:00,124341.0,111826.7890625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-10-14 02:00:00,113708.0,121242.8984375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-10-21 02:00:00,109534.0,114105.65625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-10-28 02:00:00,113944.0,107866.796875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-11-04 02:00:00,106454.0,111331.59375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-11-11 02:00:00,106623.0,106287.3125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-11-18 02:00:00,90756.0,102488.9609375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-11-25 02:00:00,87881.0,92085.828125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-12-02 02:00:00,86544.0,85474.5078125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TiDE,TiDE,dl,raw,series_0,2025-12-09 02:00:00,90071.0,84574.3515625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-09-09 03:00:00,111714.0,109432.703125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-09-16 03:00:00,115338.0,111314.3515625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-09-23 03:00:00,112415.0,115562.34375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-09-30 03:00:00,114440.0,114013.6484375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-10-07 03:00:00,124391.0,112035.6484375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-10-14 03:00:00,113557.0,123360.8359375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-10-21 03:00:00,109119.0,114177.1328125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-10-28 03:00:00,113905.0,108596.65625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-11-04 03:00:00,107139.0,112675.40625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-11-11 03:00:00,106431.0,108248.4375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-11-18 03:00:00,90743.0,104625.4453125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-11-25 03:00:00,87797.0,92835.96875,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-12-02 03:00:00,86969.0,87174.25,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,foundation,raw,series_0,2025-12-09 03:00:00,90401.0,88333.0078125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-09-09 03:00:00,111714.0,110566.1015625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-09-16 03:00:00,115338.0,111690.59375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-09-23 03:00:00,112415.0,113889.7734375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-09-30 03:00:00,114440.0,111821.4453125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-10-07 03:00:00,124391.0,113119.03125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-10-14 03:00:00,113557.0,122725.1015625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-10-21 03:00:00,109119.0,114062.3203125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-10-28 03:00:00,113905.0,109298.875,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-11-04 03:00:00,107139.0,114372.4921875,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-11-11 03:00:00,106431.0,109070.453125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-11-18 03:00:00,90743.0,106300.8359375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-11-25 03:00:00,87797.0,90458.1640625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-12-02 03:00:00,86969.0,87920.0,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2025-12-09 03:00:00,90401.0,88988.4140625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-09-09 02:00:00,111339.0,110244.03617398227,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-09-16 02:00:00,115061.0,111338.97161516365,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-09-23 02:00:00,111923.0,115060.9556077129,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-09-30 02:00:00,114530.0,111923.00769519054,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-10-07 02:00:00,124341.0,114529.99070730814,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-10-14 02:00:00,113708.0,124341.04878249699,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-10-21 02:00:00,109534.0,113707.983552989,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-10-28 02:00:00,113944.0,109534.02985240152,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-11-04 02:00:00,106454.0,113943.97750114668,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-11-11 02:00:00,106623.0,106453.9805718191,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-11-18 02:00:00,90756.0,106623.04798606335,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-11-25 02:00:00,87881.0,90755.9935396974,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-12-02 02:00:00,86544.0,87880.96591533368,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2025-12-09 02:00:00,90071.0,86543.99731761924,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-09-09 02:00:00,111339.0,111267.20325789659,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-09-16 02:00:00,115061.0,112436.87860943287,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-09-23 02:00:00,111923.0,116190.58083856605,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-09-30 02:00:00,114530.0,113028.7127171621,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-10-07 02:00:00,124341.0,115635.81856194307,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-10-14 02:00:00,113708.0,125602.94407833504,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-10-21 02:00:00,109534.0,114857.0162698536,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-10-28 02:00:00,113944.0,110604.58018640113,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-11-04 02:00:00,106454.0,115048.37318118823,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-11-11 02:00:00,106623.0,107449.56064327747,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-11-18 02:00:00,90756.0,107587.32706936622,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-11-25 02:00:00,87881.0,91591.31469030883,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-12-02 02:00:00,86544.0,88639.71816581355,168,168,rolling_validation
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,statistical,log,series_0,2025-12-09 02:00:00,90071.0,87270.73834063961,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-09-09 03:00:00,111714.0,107324.859375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-09-16 03:00:00,115338.0,112209.0234375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-09-23 03:00:00,112415.0,116177.796875,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-09-30 03:00:00,114440.0,112995.1875,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-10-07 03:00:00,124391.0,114873.125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-10-14 03:00:00,113557.0,126144.8828125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-10-21 03:00:00,109119.0,115479.921875,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-10-28 03:00:00,113905.0,110753.7265625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-11-04 03:00:00,107139.0,115192.0390625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-11-11 03:00:00,106431.0,108908.5,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-11-18 03:00:00,90743.0,106636.140625,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-11-25 03:00:00,87797.0,88022.78125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-12-02 03:00:00,86969.0,88154.203125,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,foundation,raw,series_0,2025-12-09 03:00:00,90401.0,89192.4609375,168,168,rolling_validation_foundation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-09-09 02:00:00,111339.0,108159.828125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-09-16 02:00:00,115061.0,109980.75,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-09-23 02:00:00,111923.0,112411.1171875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-09-30 02:00:00,114530.0,109512.2421875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-10-07 02:00:00,124341.0,111717.484375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-10-14 02:00:00,113708.0,122078.1015625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-10-21 02:00:00,109534.0,108960.3984375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-10-28 02:00:00,113944.0,111576.90625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-11-04 02:00:00,106454.0,114786.71875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-11-11 02:00:00,106623.0,105198.078125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-11-18 02:00:00,90756.0,103805.1015625,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-11-25 02:00:00,87881.0,95889.09375,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-12-02 02:00:00,86544.0,83112.0078125,168,168,rolling_validation
+Kaggle BTC/USD Hourly,TFT,TFT,dl,raw,series_0,2025-12-09 02:00:00,90071.0,80947.1875,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-09-09 02:00:00,111339.0,112528.3476542841,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-09-16 02:00:00,115061.0,115167.16563660851,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-09-23 02:00:00,111923.0,118417.52580369657,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-09-30 02:00:00,114530.0,122246.04790302015,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-10-07 02:00:00,124341.0,125966.14276085136,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-10-14 02:00:00,113708.0,133403.5222285417,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-10-21 02:00:00,109534.0,140701.26684967594,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-10-28 02:00:00,113944.0,143607.5621130119,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-11-04 02:00:00,106454.0,143878.09740359793,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-11-11 02:00:00,106623.0,141516.31309378482,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-11-18 02:00:00,90756.0,136882.31325317934,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-11-25 02:00:00,87881.0,132456.3596412928,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-12-02 02:00:00,86544.0,125362.21982642355,168,168,rolling_validation
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,statistical,log,series_0,2025-12-09 02:00:00,90071.0,118737.40385308665,168,168,rolling_validation

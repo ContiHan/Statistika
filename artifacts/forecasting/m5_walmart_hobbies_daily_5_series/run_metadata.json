@@ -1,0 +1,81 @@
+{
+  "dataset_name": "M5 Walmart Hobbies Daily (5 Series)",
+  "dataset_slug": "m5_walmart_hobbies_daily_5_series",
+  "created_at_utc": "2026-04-12T22:42:41.506340+00:00",
+  "dataset_config": {
+    "file_path": "../datasets/m5_walmart_hobbies_daily.csv",
+    "time_column": "timestamp",
+    "target_column": "sales_count",
+    "id_column": "unique_id",
+    "future_covariates": [
+      "wday",
+      "month"
+    ],
+    "past_covariates": [
+      "snap_CA",
+      "snap_TX",
+      "snap_WI"
+    ],
+    "static_covariates": [
+      "unique_id"
+    ],
+    "frequency": "D",
+    "test_periods": 28,
+    "seasonal_period": 7,
+    "name": "M5 Walmart Hobbies Daily (5 Series)",
+    "value_unit": "Walmart Hobbies Sales"
+  },
+  "n_tracked_models": 9,
+  "tracked_models": [
+    "GraniteTTM",
+    "TimeGPT",
+    "Chronos2",
+    "Holt-Winters (LOCAL) [raw]",
+    "AutoARIMA (LOCAL) [raw]",
+    "Prophet (LOCAL) [raw]",
+    "TiDE (GLOBAL)",
+    "N-BEATS (GLOBAL)",
+    "TFT (GLOBAL)"
+  ],
+  "final_prediction_models": [
+    "GraniteTTM",
+    "TimeGPT",
+    "Chronos2",
+    "Holt-Winters (LOCAL) [raw]",
+    "AutoARIMA (LOCAL) [raw]",
+    "Prophet (LOCAL) [raw]",
+    "TiDE (GLOBAL)",
+    "N-BEATS (GLOBAL)",
+    "TFT (GLOBAL)"
+  ],
+  "dm_shortlist": [
+    "GraniteTTM",
+    "TimeGPT",
+    "Holt-Winters (LOCAL) [raw]",
+    "TiDE (GLOBAL)"
+  ],
+  "dm_shortlist_reasons": {
+    "GraniteTTM": "Best overall validation RMSE; Best foundation validation RMSE",
+    "TimeGPT": "Second-best overall validation RMSE",
+    "Holt-Winters (LOCAL) [raw]": "Best statistical validation RMSE",
+    "TiDE (GLOBAL)": "Best deep learning validation RMSE"
+  },
+  "selected_transforms": [
+    "raw",
+    "raw",
+    "raw",
+    "raw",
+    "raw",
+    "raw"
+  ],
+  "export_flags": {
+    "export_tables": true,
+    "export_point_level": true,
+    "export_metadata": true,
+    "export_tracker_results": true,
+    "export_dm_shortlist": true,
+    "export_params_long": true,
+    "export_validation_points": true,
+    "export_dm_points": true
+  }
+}

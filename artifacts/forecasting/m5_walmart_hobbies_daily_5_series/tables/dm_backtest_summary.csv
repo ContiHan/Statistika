@@ -1,0 +1,5 @@
+Model,Category,Included Because,Backtest RMSE,Backtest MAPE,Backtest Points,Forecast Horizon,Stride,Status,Notes
+Holt-Winters (LOCAL) [raw],statistical,Best statistical validation RMSE,0.634568553581474,0.0,2835,1,1,OK,
+GraniteTTM,foundation,Best overall validation RMSE; Best foundation validation RMSE,0.6474969983100891,0.0,2830,1,1,OK,
+TimeGPT,foundation,Second-best overall validation RMSE,0.6502501368522644,0.0,2830,1,1,OK,
+TiDE (GLOBAL),dl,Best deep learning validation RMSE,0.7472241520881653,0.0,2825,1,1,OK,

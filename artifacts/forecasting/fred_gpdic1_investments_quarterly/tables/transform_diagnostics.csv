@@ -1,0 +1,2 @@
+Dataset,Series,Series Count,Train N,Positive Only,Zero Count,Negative Count,Box-Cox Lambda,CI Low,CI High,Supports Log,Supports Raw,Selected Transform,Selection Rule,Reason
+FRED GPDIC1 Investments Quarterly,-,1,307,True,0,0,0.11429028351760116,-0.031603343815943104,0.2612517968344701,True,False,log,boxcox_ci_prefers_log,Log selected for all statistical models: Box-Cox lambda on the train split supports a log-like transform (lambda=0.114).

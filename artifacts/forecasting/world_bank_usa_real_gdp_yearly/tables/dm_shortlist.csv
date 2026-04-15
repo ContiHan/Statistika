@@ -1,0 +1,4 @@
+Model,Category,Included Because
+TiDE,dl,Best overall validation RMSE; Best deep learning validation RMSE
+Holt-Winters [log],statistical,Second-best overall validation RMSE; Best statistical validation RMSE
+Chronos2,foundation,Best foundation validation RMSE

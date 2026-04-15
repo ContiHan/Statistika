@@ -1,0 +1,440 @@
+Dataset,Model,Base Model,Category,Target Transform,Series ID,Time,Actual,Prediction,Forecast Horizon,Stride,Source
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2014-11-01,27.77,26.488880157470703,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2014-12-01,27.655,26.703401565551758,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-01-01,27.725,26.681371688842773,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-02-01,27.795,26.732337951660156,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-03-01,27.43,26.728422164916992,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-04-01,27.53,26.77872085571289,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-05-01,27.43,26.749584197998047,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-06-01,27.41,26.696884155273438,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-07-01,27.245,26.750917434692383,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-08-01,27.03,26.715803146362305,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-09-01,27.03,26.701156616210938,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-10-01,27.18,26.602783203125,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-11-01,27.09,26.563343048095703,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2015-12-01,27.03,26.575498580932617,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-01-01,27.025,26.565948486328125,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-02-01,27.025,26.479223251342773,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-03-01,27.055,26.39778709411621,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-04-01,27.055,26.39576530456543,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-05-01,27.04,26.413053512573242,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-06-01,27.02,26.38492202758789,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-07-01,27.13,26.30984115600586,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-08-01,27.03,26.295198440551758,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-09-01,27.03,26.31510353088379,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-10-01,27.02,26.33899688720703,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-11-01,27.025,26.30240249633789,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2016-12-01,27.06,26.295578002929688,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-01-01,27.02,26.290504455566406,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-02-01,27.02,26.30942726135254,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-03-01,27.02,26.309843063354492,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-04-01,27.03,26.28253746032715,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-05-01,26.92,26.290685653686523,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-06-01,26.42,26.29538345336914,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-07-01,26.195,26.278884887695312,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-08-01,26.08,26.213973999023438,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-09-01,26.105,26.10588836669922,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-10-01,25.975,26.066837310791016,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-11-01,25.67,26.034996032714844,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2017-12-01,25.495,25.99909210205078,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-01-01,25.54,25.86977195739746,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-02-01,25.27,25.75722312927246,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-03-01,25.42,25.757875442504883,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-04-01,25.43,25.75901222229004,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-05-01,25.54,25.63360595703125,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-06-01,25.79,25.5508975982666,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-07-01,26.02,25.48428726196289,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-08-01,25.6,25.53760528564453,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-09-01,25.735,25.551515579223633,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-10-01,25.715,25.523439407348633,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-11-01,25.92,25.454111099243164,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2018-12-01,25.955,25.483444213867188,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-01-01,25.725,25.483421325683594,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-02-01,25.76,25.547332763671875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-03-01,25.6,25.474523544311523,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-04-01,25.8,25.420936584472656,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-05-01,25.66,25.533016204833984,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-06-01,25.817,25.552587509155273,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-07-01,25.445,25.588348388671875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-08-01,25.66,25.475210189819336,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-09-01,25.915,25.5042724609375,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-10-01,25.815,25.46755027770996,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-11-01,25.51,25.56232452392578,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2019-12-01,25.515,25.575124740600586,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-01-01,25.41,25.51324462890625,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-02-01,25.21,25.442317962646484,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-03-01,25.39,25.442771911621094,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-04-01,27.325,25.51434326171875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-05-01,27.095,25.483388900756836,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-06-01,26.915,25.482881546020508,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-07-01,26.74,25.78396224975586,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-08-01,26.175,25.73391342163086,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-09-01,26.21,25.729671478271484,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-10-01,27.21,25.684757232666016,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-11-01,27.25,25.886430740356445,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2020-12-01,26.19,26.013893127441406,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-01-01,26.245,25.857603073120117,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-02-01,26.02,25.805097579956055,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-03-01,26.195,25.803314208984375,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-04-01,26.145,25.99077033996582,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-05-01,25.885,26.077274322509766,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-06-01,25.45,26.1065673828125,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-07-01,25.485,25.733999252319336,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-08-01,25.5,25.569067001342773,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-09-01,25.525,25.724899291992188,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-10-01,25.495,25.820327758789062,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-11-01,25.695,25.719697952270508,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2021-12-01,25.525,25.568397521972656,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-01-01,24.86,25.4827823638916,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-02-01,24.365,25.522748947143555,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-03-01,24.995,25.542316436767578,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-04-01,24.385,25.401918411254883,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-05-01,24.605,25.29029083251953,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-06-01,24.71,25.371444702148438,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-07-01,24.74,25.248212814331055,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-08-01,24.61,25.218603134155273,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-09-01,24.545,25.127410888671875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-10-01,24.55,25.302730560302734,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-11-01,24.485,25.30452537536621,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2022-12-01,24.34,25.123687744140625,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-01-01,24.115,25.144229888916016,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-02-01,23.79,25.12785530090332,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-03-01,23.495,25.079261779785156,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-04-01,23.49,25.00861358642578,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-05-01,23.505,25.02020263671875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-06-01,23.745,25.013578414916992,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-07-01,23.73,25.001052856445312,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-08-01,23.91,24.97517204284668,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-09-01,24.075,24.987403869628906,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-10-01,24.34,24.955751419067383,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-11-01,24.56,25.00523567199707,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,dl,raw,series_0,2023-12-01,24.29,25.02623748779297,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2014-11-01,27.77,27.08946990966797,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2014-12-01,27.655,27.47883415222168,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-01-01,27.725,27.587848663330078,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-02-01,27.795,27.584482192993164,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-03-01,27.43,27.592039108276367,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-04-01,27.53,27.58197593688965,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-05-01,27.43,27.45433807373047,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-06-01,27.41,27.292993545532227,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-07-01,27.245,27.227741241455078,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-08-01,27.03,27.285818099975586,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-09-01,27.03,27.075244903564453,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-10-01,27.18,26.938762664794922,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-11-01,27.09,26.874874114990234,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2015-12-01,27.03,26.93480682373047,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-01-01,27.025,27.063074111938477,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-02-01,27.025,26.968719482421875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-03-01,27.055,26.89583969116211,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-04-01,27.055,26.923118591308594,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-05-01,27.04,26.949493408203125,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-06-01,27.02,26.99982452392578,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-07-01,27.13,26.93862533569336,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-08-01,27.03,26.842641830444336,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-09-01,27.03,26.929962158203125,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-10-01,27.02,26.948509216308594,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-11-01,27.025,26.895721435546875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2016-12-01,27.06,26.859159469604492,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-01-01,27.02,26.869626998901367,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-02-01,27.02,26.877185821533203,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-03-01,27.02,26.890840530395508,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-04-01,27.03,26.879894256591797,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-05-01,26.92,26.841310501098633,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-06-01,26.42,26.878726959228516,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-07-01,26.195,26.790359497070312,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-08-01,26.08,26.452627182006836,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-09-01,26.105,26.14962387084961,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-10-01,25.975,26.00810432434082,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-11-01,25.67,26.063472747802734,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2017-12-01,25.495,26.03264045715332,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-01-01,25.54,25.890989303588867,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-02-01,25.27,25.719764709472656,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-03-01,25.42,25.749549865722656,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-04-01,25.43,25.793161392211914,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-05-01,25.54,25.81000518798828,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-06-01,25.79,25.80198097229004,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-07-01,26.02,25.889358520507812,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-08-01,25.6,26.068626403808594,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-09-01,25.735,26.357425689697266,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-10-01,25.715,26.165225982666016,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-11-01,25.92,25.95792007446289,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2018-12-01,25.955,25.95660400390625,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-01-01,25.725,26.04132652282715,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-02-01,25.76,25.99467658996582,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-03-01,25.6,25.95619773864746,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-04-01,25.8,25.809215545654297,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-05-01,25.66,25.737272262573242,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-06-01,25.817,25.99574089050293,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-07-01,25.445,25.933752059936523,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-08-01,25.66,25.943267822265625,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-09-01,25.915,25.738473892211914,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-10-01,25.815,25.823486328125,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-11-01,25.51,26.06615447998047,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2019-12-01,25.515,26.13704490661621,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-01-01,25.41,25.87937355041504,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-02-01,25.21,25.720012664794922,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-03-01,25.39,25.653079986572266,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-04-01,27.325,25.529001235961914,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-05-01,27.095,25.72636604309082,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-06-01,26.915,26.777034759521484,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-07-01,26.74,27.16075897216797,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-08-01,26.175,27.22128677368164,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-09-01,26.21,26.876583099365234,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-10-01,27.21,26.502853393554688,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-11-01,27.25,26.08269691467285,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2020-12-01,26.19,26.607728958129883,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-01-01,26.245,26.948902130126953,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-02-01,26.02,25.929826736450195,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-03-01,26.195,25.85675811767578,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-04-01,26.145,26.187665939331055,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-05-01,25.885,26.213359832763672,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-06-01,25.45,26.287612915039062,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-07-01,25.485,26.14628028869629,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-08-01,25.5,25.39967155456543,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-09-01,25.525,25.46796989440918,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-10-01,25.495,25.997989654541016,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-11-01,25.695,25.963193893432617,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2021-12-01,25.525,25.83530616760254,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-01-01,24.86,25.92239761352539,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-02-01,24.365,25.83319091796875,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-03-01,24.995,25.50069808959961,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-04-01,24.385,25.0750789642334,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-05-01,24.605,25.12429428100586,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-06-01,24.71,25.00471305847168,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-07-01,24.74,25.038000106811523,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-08-01,24.61,25.15891456604004,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-09-01,24.545,25.351652145385742,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-10-01,24.55,25.25919532775879,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-11-01,24.485,25.454923629760742,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2022-12-01,24.34,25.37458038330078,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-01-01,24.115,24.96967124938965,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-02-01,23.79,24.990018844604492,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-03-01,23.495,24.845380783081055,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-04-01,23.49,24.496126174926758,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-05-01,23.505,24.317733764648438,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-06-01,23.745,24.335838317871094,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-07-01,23.73,24.435686111450195,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-08-01,23.91,24.59966468811035,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-09-01,24.075,24.711597442626953,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-10-01,24.34,24.883583068847656,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-11-01,24.56,25.026798248291016,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,dl,raw,series_0,2023-12-01,24.29,25.251962661743164,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2014-11-01,27.77,27.485157162655444,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2014-12-01,27.655,27.730145352344607,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-01-01,27.725,27.634548832972747,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-02-01,27.795,27.695737174360648,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-03-01,27.43,27.765502863753998,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-04-01,27.53,27.423623477861362,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-05-01,27.43,27.499584384012252,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-06-01,27.41,27.409191435290275,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-07-01,27.245,27.385317786874708,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-08-01,27.03,27.22786951123729,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-09-01,27.03,27.015614844954154,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-10-01,27.18,27.003991090946112,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-11-01,27.09,27.145450592313118,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2015-12-01,27.03,27.068118683784178,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-01-01,27.025,27.007113189401924,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-02-01,27.025,26.99907954323179,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-03-01,27.055,26.998707965208723,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-04-01,27.055,27.027162582295826,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-05-01,27.04,27.02880719742106,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-06-01,27.02,27.01476958676327,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-07-01,27.13,26.995124919302608,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-08-01,27.03,27.09825365802288,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-09-01,27.03,27.009356645851238,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-10-01,27.02,27.004506292240425,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-11-01,27.025,26.994841060852984,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2016-12-01,27.06,26.99910699922295,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-01-01,27.02,27.032542721143543,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-02-01,27.02,26.9965989350449,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-03-01,27.02,26.994676988156726,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-04-01,27.03,26.994638148774566,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-05-01,26.92,27.004169039324022,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-06-01,26.42,26.90064417755321,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-07-01,26.195,26.421497979824615,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-08-01,26.08,26.181896385980348,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-09-01,26.105,26.0601028830149,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-10-01,25.975,26.07740204465139,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-11-01,25.67,25.955109527700632,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2017-12-01,25.495,25.659333716054196,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-01-01,25.54,25.477643400863126,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-02-01,25.27,25.510907441222418,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-03-01,25.42,25.256539081635086,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-04-01,25.43,25.38546045685091,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-05-01,25.54,25.401848467261846,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-06-01,25.79,25.50711059663926,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-07-01,26.02,25.749996198417968,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-08-01,25.6,25.981330380411393,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-09-01,25.735,25.594815790666477,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-10-01,25.715,25.702460063192653,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-11-01,25.92,25.689304377111124,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2018-12-01,25.955,25.88301109532293,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-01-01,25.725,25.92661731666143,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-02-01,25.76,25.710934691065845,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-03-01,25.6,25.732653018079397,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-04-01,25.8,25.582217339990468,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-05-01,25.66,25.763708893861672,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-06-01,25.817,25.6409304439104,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-07-01,25.445,25.783019227937533,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-08-01,25.66,25.438737043004277,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-09-01,25.915,25.62313098378596,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-10-01,25.815,25.87478597090876,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-11-01,25.51,25.794133351534995,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2019-12-01,25.515,25.501158737914956,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-01-01,25.41,25.489746250407848,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-02-01,25.21,25.389841078905643,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-03-01,25.39,25.195141275672437,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-04-01,27.325,25.354682486510928,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-05-01,27.095,27.20212856988123,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-06-01,26.915,27.078575022468776,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-07-01,26.74,26.9016128938151,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-08-01,26.175,26.7262107798862,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-09-01,26.21,26.180566915884288,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-10-01,27.21,26.185282797491592,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-11-01,27.25,27.13450967021654,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2020-12-01,26.19,27.22273145851985,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-01-01,26.245,26.22183469234361,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-02-01,26.02,26.22080160866115,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-03-01,26.195,26.007475289969786,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-04-01,26.145,26.16196016877204,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-05-01,25.885,26.122954603386535,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-06-01,25.45,25.874538551269357,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-07-01,25.485,25.448523436103763,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-08-01,25.5,25.459359446492066,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-09-01,25.525,25.47420576974093,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-10-01,25.495,25.498753661586168,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-11-01,25.695,25.471649199106707,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2021-12-01,25.525,25.65995343076533,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-01-01,24.86,25.508764784766488,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-02-01,24.365,24.86969614520336,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-03-01,24.995,24.364625599402768,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-04-01,24.385,24.93818960006557,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-05-01,24.605,24.391368109402112,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-06-01,24.71,24.568548403564712,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-07-01,24.74,24.677845519853886,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-08-01,24.61,24.712453410899695,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-09-01,24.545,24.591747917244287,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-10-01,24.55,24.523550655684684,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-11-01,24.485,24.524433197937892,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2022-12-01,24.34,24.46317177472415,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-01-01,24.115,24.32284203902171,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-02-01,23.79,24.102431205419123,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-03-01,23.495,23.782861764900815,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-04-01,23.49,23.48597710986171,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-05-01,23.505,23.465056534455318,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-06-01,23.745,23.478144534523356,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-07-01,23.73,23.70596789079529,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-08-01,23.91,23.704278019559943,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-09-01,24.075,23.874560094530747,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-10-01,24.34,24.04012889627424,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-11-01,24.56,24.30023262109179,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,statistical,raw,series_0,2023-12-01,24.29,24.522858717607274,1,1,rolling_validation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2014-12-01,27.655,27.92818832397461,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-01-01,27.725,27.759292602539062,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-02-01,27.795,27.71769142150879,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-03-01,27.43,27.838973999023438,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-04-01,27.53,27.523880004882812,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-05-01,27.43,27.625425338745117,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-06-01,27.41,27.54366683959961,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-07-01,27.245,27.457061767578125,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-08-01,27.03,27.32145881652832,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-09-01,27.03,27.10931396484375,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-10-01,27.18,26.949928283691406,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-11-01,27.09,27.23359489440918,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2015-12-01,27.03,27.11221694946289,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-01-01,27.025,27.071922302246094,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-02-01,27.025,27.053415298461914,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-03-01,27.055,27.02684783935547,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-04-01,27.055,27.10318374633789,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-05-01,27.04,27.065404891967773,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-06-01,27.02,27.07579231262207,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-07-01,27.13,27.03557586669922,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-08-01,27.03,27.11100196838379,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-09-01,27.03,27.063919067382812,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-10-01,27.02,27.058197021484375,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-11-01,27.025,27.030601501464844,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2016-12-01,27.06,27.030960083007812,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-01-01,27.02,27.074853897094727,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-02-01,27.02,27.036039352416992,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-03-01,27.02,27.03505516052246,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-04-01,27.03,27.034008026123047,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-05-01,26.92,27.038036346435547,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-06-01,26.42,26.959442138671875,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-07-01,26.195,26.500322341918945,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-08-01,26.08,26.130203247070312,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-09-01,26.105,25.976346969604492,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-10-01,25.975,26.052637100219727,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-11-01,25.67,25.9215145111084,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2017-12-01,25.495,25.5512638092041,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-01-01,25.54,25.329051971435547,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-02-01,25.27,25.405977249145508,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-03-01,25.42,25.104280471801758,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-04-01,25.43,25.378095626831055,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-05-01,25.54,25.429546356201172,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-06-01,25.79,25.565336227416992,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-07-01,26.02,25.929332733154297,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-08-01,25.6,26.26493263244629,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-09-01,25.735,25.705305099487305,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-10-01,25.715,25.797466278076172,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-11-01,25.92,25.738313674926758,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2018-12-01,25.955,26.00338363647461,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-01-01,25.725,26.091136932373047,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-02-01,25.76,25.680057525634766,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-03-01,25.6,25.779666900634766,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-04-01,25.8,25.619247436523438,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-05-01,25.66,25.851232528686523,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-06-01,25.817,25.76282501220703,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-07-01,25.445,25.904993057250977,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-08-01,25.66,25.478490829467773,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-09-01,25.915,25.715694427490234,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-10-01,25.815,25.86087417602539,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-11-01,25.51,25.887283325195312,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2019-12-01,25.515,25.595876693725586,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-01-01,25.41,25.532901763916016,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-02-01,25.21,25.463153839111328,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-03-01,25.39,25.285888671875,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-04-01,27.325,25.45553207397461,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-05-01,27.095,26.195537567138672,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-06-01,26.915,26.50974464416504,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-07-01,26.74,26.479881286621094,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-08-01,26.175,26.609798431396484,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-09-01,26.21,26.21176528930664,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-10-01,27.21,26.173349380493164,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-11-01,27.25,26.744535446166992,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2020-12-01,26.19,26.957433700561523,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-01-01,26.245,26.247058868408203,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-02-01,26.02,26.260602951049805,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-03-01,26.195,26.232728958129883,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-04-01,26.145,26.62287139892578,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-05-01,25.885,26.260202407836914,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-06-01,25.45,26.013973236083984,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-07-01,25.485,25.680849075317383,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-08-01,25.5,25.589679718017578,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-09-01,25.525,25.60225486755371,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-10-01,25.495,25.67316436767578,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-11-01,25.695,25.54927635192871,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2021-12-01,25.525,25.54319953918457,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-01-01,24.86,25.58932876586914,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-02-01,24.365,24.992212295532227,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-03-01,24.995,24.672382354736328,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-04-01,24.385,25.015047073364258,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-05-01,24.605,24.452659606933594,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-06-01,24.71,24.522663116455078,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-07-01,24.74,24.729251861572266,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-08-01,24.61,24.793437957763672,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-09-01,24.545,24.68539810180664,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-10-01,24.55,24.61427879333496,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-11-01,24.485,24.63707160949707,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2022-12-01,24.34,24.568431854248047,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-01-01,24.115,24.353496551513672,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-02-01,23.79,24.075712203979492,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-03-01,23.495,24.076799392700195,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-04-01,23.49,23.483530044555664,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-05-01,23.505,23.632307052612305,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-06-01,23.745,23.5783634185791,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-07-01,23.73,23.768428802490234,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-08-01,23.91,23.730777740478516,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-09-01,24.075,23.8854923248291,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-10-01,24.34,24.067466735839844,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-11-01,24.56,24.288665771484375,1,1,dm_backtest_foundation
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,foundation,raw,series_0,2023-12-01,24.29,24.529701232910156,1,1,dm_backtest_foundation

@@ -1,0 +1,10 @@
+Model,Base Model,Target Transform,RMSE,MAPE,Tuning Time (s),Best Config Time (s),Combinations,Selection Basis,Selected Params
+N-BEATS,N-BEATS,raw,0.9213225245475769,2.7265567779541016,25.909929990768433,1.2391176223754883,10,validation,input_chunk_length=12; output_chunk_length=12; n_epochs=15; batch_size=64; random_state=42; num_stacks=10; num_blocks=1; layer_widths=128
+TiDE,TiDE,raw,0.9303491711616516,2.7930097579956055,9.109997987747192,1.7153630256652832,10,validation,input_chunk_length=12; output_chunk_length=12; n_epochs=30; batch_size=32; random_state=42; hidden_size=64; dropout=0.1; num_encoder_layers=1; num_decoder_layers=1
+Holt-Winters [raw],Holt-Winters,raw,1.132244729535744,3.357996320003238,6.0051398277282715,0.1464540958404541,15,validation,seasonal_periods=12; trend=ModelMode.MULTIPLICATIVE; seasonal=ModelMode.NONE; damped=False
+TimeGPT,TimeGPT,raw,1.1416351795196533,3.916595458984375,9.282495021820068,9.282495021820068,1,validation,model=timegpt-1
+TFT,TFT,raw,1.2403491735458374,4.077456951141357,35.24830985069275,3.5137200355529785,10,validation,input_chunk_length=12; output_chunk_length=6; n_epochs=30; batch_size=64; random_state=42; hidden_size=64; lstm_layers=1; num_attention_heads=4; dropout=0.1; add_relative_index=True
+AutoARIMA [raw],AutoARIMA,raw,1.3303240916111234,4.304993135464857,1.2023067474365234,1.2009210586547852,1,validation,season_length=12; seasonal=True; max_p=3; max_q=3; stepwise=True
+Chronos2,Chronos2,raw,1.360496163368225,4.782388687133789,3.705029010772705,3.705029010772705,1,validation,model=amazon/chronos-2
+GraniteTTM,GraniteTTM,raw,1.6669014692306519,5.117913246154785,1.5754642486572266,1.5754642486572266,1,validation,model=ibm-granite/granite-timeseries-ttm-r1
+Prophet [raw],Prophet,raw,1.8459551897126063,5.7620048389436835,4.107010841369629,0.6162922382354736,6,validation,seasonality_mode=additive; changepoint_prior_scale=0.1

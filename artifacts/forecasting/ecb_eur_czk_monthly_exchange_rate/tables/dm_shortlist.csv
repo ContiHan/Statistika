@@ -1,0 +1,5 @@
+Model,Category,Included Because
+N-BEATS,dl,Best overall validation RMSE; Best deep learning validation RMSE
+TiDE,dl,Second-best overall validation RMSE
+Holt-Winters [raw],statistical,Best statistical validation RMSE
+TimeGPT,foundation,Best foundation validation RMSE

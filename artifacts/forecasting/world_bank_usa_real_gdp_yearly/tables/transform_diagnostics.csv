@@ -1,0 +1,2 @@
+Dataset,Series,Series Count,Train N,Positive Only,Zero Count,Negative Count,Box-Cox Lambda,CI Low,CI High,Supports Log,Supports Raw,Selected Transform,Selection Rule,Reason
+World Bank USA Real GDP Yearly,-,1,59,True,0,0,0.26396003030028997,-0.30079483983241956,0.8469511320158978,True,False,log,boxcox_ci_prefers_log,Log selected for all statistical models: Box-Cox lambda on the train split supports a log-like transform (lambda=0.264).

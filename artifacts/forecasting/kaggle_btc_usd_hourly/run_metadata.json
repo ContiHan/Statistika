@@ -1,0 +1,65 @@
+{
+  "dataset_name": "Kaggle BTC/USD Hourly",
+  "dataset_slug": "kaggle_btc_usd_hourly",
+  "created_at_utc": "2026-04-15T04:33:29.214515+00:00",
+  "dataset_config": {
+    "file_path": "../datasets/kaggle_btcusd_hourly.csv",
+    "time_column": "timestamp",
+    "target_column": "btc_usd",
+    "frequency": "H",
+    "test_periods": 168,
+    "seasonal_period": 168,
+    "name": "Kaggle BTC/USD Hourly",
+    "value_unit": "BTC/USD Close Price",
+    "cv_start_ratio": 0.95,
+    "smoke_test_points": 50000
+  },
+  "n_tracked_models": 9,
+  "tracked_models": [
+    "N-BEATS",
+    "TiDE",
+    "TimeGPT",
+    "GraniteTTM",
+    "Holt-Winters [log]",
+    "AutoARIMA [log]",
+    "Chronos2",
+    "TFT",
+    "Prophet [log]"
+  ],
+  "final_prediction_models": [
+    "N-BEATS",
+    "TiDE",
+    "TimeGPT",
+    "GraniteTTM",
+    "Holt-Winters [log]",
+    "AutoARIMA [log]",
+    "Chronos2",
+    "TFT",
+    "Prophet [log]"
+  ],
+  "dm_shortlist": [
+    "N-BEATS",
+    "TiDE",
+    "Holt-Winters [log]",
+    "TimeGPT"
+  ],
+  "dm_shortlist_reasons": {
+    "N-BEATS": "Best overall validation RMSE; Best deep learning validation RMSE",
+    "TiDE": "Second-best overall validation RMSE",
+    "Holt-Winters [log]": "Best statistical validation RMSE",
+    "TimeGPT": "Best foundation validation RMSE"
+  },
+  "selected_transforms": [
+    "log"
+  ],
+  "export_flags": {
+    "export_tables": true,
+    "export_point_level": true,
+    "export_metadata": true,
+    "export_tracker_results": true,
+    "export_dm_shortlist": true,
+    "export_params_long": true,
+    "export_validation_points": true,
+    "export_dm_points": true
+  }
+}

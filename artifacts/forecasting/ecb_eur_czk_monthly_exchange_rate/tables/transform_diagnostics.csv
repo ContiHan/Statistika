@@ -1,0 +1,2 @@
+Dataset,Series,Series Count,Train N,Positive Only,Zero Count,Negative Count,Box-Cox Lambda,CI Low,CI High,Supports Log,Supports Raw,Selected Transform,Selection Rule,Reason
+ECB EUR/CZK Monthly Exchange Rate,-,1,361,True,0,0,-2.375551393497481,-3.2970152012251233,-1.4629605693020398,False,False,raw,boxcox_prefers_raw,Raw selected for all statistical models: Box-Cox lambda on the train split does not support a log-like transform strongly enough (lambda=-2.376).

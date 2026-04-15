@@ -1,0 +1,4 @@
+Model,Category,Included Because,Backtest RMSE,Backtest MAPE,Backtest Points,Forecast Horizon,Stride,Status,Notes
+Holt-Winters [log],statistical,Second-best overall validation RMSE; Best statistical validation RMSE,113.91629553596937,2.429182422192154,93,1,1,OK,
+GraniteTTM,foundation,Best foundation validation RMSE,126.75081634521484,2.9555253982543945,93,1,1,OK,
+N-BEATS,dl,Best overall validation RMSE; Best deep learning validation RMSE,208.7874298095703,5.513047218322754,93,1,1,OK,

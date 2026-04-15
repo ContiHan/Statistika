@@ -1,0 +1,10 @@
+Model,Base Model,Target Transform,RMSE,MAPE,Tuning Time (s),Best Config Time (s),Combinations,Selection Basis,Selected Params
+N-BEATS,N-BEATS,raw,6115.50732421875,4.368752956390381,3448.0782520771027,329.81149077415466,10,validation,input_chunk_length=168; output_chunk_length=84; n_epochs=30; batch_size=64; random_state=42; num_stacks=10; num_blocks=1; layer_widths=128
+TiDE,TiDE,raw,6190.62646484375,4.833932399749756,885.6075451374054,109.99784183502197,10,validation,input_chunk_length=336; output_chunk_length=168; n_epochs=30; batch_size=64; random_state=42; hidden_size=128; dropout=0.1; num_encoder_layers=1; num_decoder_layers=1
+TimeGPT,TimeGPT,raw,6493.96337890625,4.7858195304870605,17.725496768951416,17.725496768951416,1,validation,model=timegpt-1
+GraniteTTM,GraniteTTM,raw,6501.2919921875,4.683056831359863,1.4813458919525146,1.4813458919525146,1,validation,model=ibm-granite/granite-timeseries-ttm-r1
+Holt-Winters [log],Holt-Winters,log,6591.485722761256,4.830747996452222,251.60060787200928,101.64821910858154,6,validation,seasonal_periods=168; trend=ModelMode.ADDITIVE; seasonal=ModelMode.ADDITIVE; damped=True
+AutoARIMA [log],AutoARIMA,log,6907.311560139715,4.990577409102271,15723.366493940353,15723.364963054657,1,validation,season_length=168; seasonal=True; max_p=3; max_q=3; stepwise=True
+Chronos2,Chronos2,raw,6924.2607421875,4.9214019775390625,4.020603895187378,4.020603895187378,1,validation,model=amazon/chronos-2
+TFT,TFT,raw,7058.79296875,5.639443397521973,8131.153342008591,1494.161337852478,10,validation,input_chunk_length=336; output_chunk_length=84; n_epochs=30; batch_size=32; random_state=42; hidden_size=64; lstm_layers=1; num_attention_heads=4; dropout=0.1; add_relative_index=True
+Prophet [log],Prophet,log,28543.631928753253,23.780323020208325,724.6824009418488,242.31562876701355,3,validation,seasonality_mode=additive; changepoint_prior_scale=0.1

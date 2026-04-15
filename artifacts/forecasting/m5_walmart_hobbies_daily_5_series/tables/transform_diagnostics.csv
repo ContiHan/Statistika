@@ -1,0 +1,7 @@
+Dataset,Series,Series Count,Train N,Positive Only,Zero Count,Negative Count,Box-Cox Lambda,CI Low,CI High,Supports Log,Supports Raw,Selected Transform,Selection Rule,Reason
+M5 Walmart Hobbies Daily (5 Series),ALL,5,1885,False,7517,0,,,,False,True,raw,aggregate_dataset_decision,Raw selected: target contains zero or negative values.
+M5 Walmart Hobbies Daily (5 Series),HOBBIES_1_242,1,1885,False,533,0,,,,False,True,raw,nonpositive_values,Raw selected: target contains zero or negative values.
+M5 Walmart Hobbies Daily (5 Series),HOBBIES_2_071,1,1885,False,1749,0,,,,False,True,raw,nonpositive_values,Raw selected: target contains zero or negative values.
+M5 Walmart Hobbies Daily (5 Series),HOBBIES_2_108,1,1885,False,1800,0,,,,False,True,raw,nonpositive_values,Raw selected: target contains zero or negative values.
+M5 Walmart Hobbies Daily (5 Series),HOBBIES_2_109,1,1885,False,1742,0,,,,False,True,raw,nonpositive_values,Raw selected: target contains zero or negative values.
+M5 Walmart Hobbies Daily (5 Series),HOBBIES_2_123,1,1885,False,1693,0,,,,False,True,raw,nonpositive_values,Raw selected: target contains zero or negative values.

@@ -1,0 +1,5 @@
+Model,Category,Included Because
+GraniteTTM,foundation,Best overall validation RMSE; Best foundation validation RMSE
+TimeGPT,foundation,Second-best overall validation RMSE
+Holt-Winters (LOCAL) [raw],statistical,Best statistical validation RMSE
+TiDE (GLOBAL),dl,Best deep learning validation RMSE

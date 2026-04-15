@@ -1,0 +1,2 @@
+Dataset,Series,Series Count,Train N,Positive Only,Zero Count,Negative Count,Box-Cox Lambda,CI Low,CI High,Supports Log,Supports Raw,Selected Transform,Selection Rule,Reason
+Kaggle BTC/USD Hourly,-,1,49832,True,0,0,0.2409166670635003,0.22857312544796124,0.25327743733574193,False,False,log,boxcox_lambda_near_zero,Log selected for all statistical models: Box-Cox lambda on the train split supports a log-like transform (lambda=0.241).

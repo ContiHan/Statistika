@@ -203,12 +203,14 @@ Current conservative runtime protection:
 - `src/pipeline.py`: final retraining, prediction generation, and foundation-model execution
 - `src/evaluation.py`: validation summaries, pairwise DM analysis, and statistical comparison logic
 - `src/visualization.py`: plots, tables, and PNG export
+- `src/export_data.py`: machine-readable export bundle (`CSV` / `JSON`) for post-processing
 - `src/notebook_setup.py`: shared notebook imports and setup helpers
 - `datasets/`: prepared input CSVs
 - `preprocessing/`: preprocessing notebooks
 - `exploratory_data_analysis/`: EDA notebooks
 - `forecasting/`: benchmark notebooks
 - `images/forecasting/`: exported plots and tables
+- `artifacts/forecasting/`: machine-readable per-dataset export bundles
 - `config/`: local API-key config template
 
 ## Environment Setup
@@ -268,6 +270,72 @@ Generated artifacts are exported to `images/forecasting/`, including:
 - DM backtest summary tables
 - DM pairwise tables
 - DM heatmaps
+
+Machine-readable exports can also be written to `artifacts/forecasting/<dataset_slug>/`:
+
+- `tables/`
+  - `comparison_metrics.csv`
+  - `selected_params.csv`
+  - `transform_diagnostics.csv`
+  - `dm_backtest_summary.csv`
+  - `dm_pairwise.csv`
+  - optional: `tracker_results.csv`, `dm_shortlist.csv`, `params_long.csv`
+- `series/`
+  - `reference_series.csv`
+  - `final_forecasts.csv`
+  - optional: `validation_points.csv`, `dm_backtest_points.csv`
+- `run_metadata.json`
+
+The shared helper `export_forecasting_data(...)` is available from `src/notebook_setup.py`.
+
+Default behavior:
+
+- exports the full bundle, including the optional audit-friendly CSVs
+- keeps PNG outputs in `images/forecasting/`
+- keeps machine-readable outputs in `artifacts/forecasting/`
+
+If a notebook run should save only the core bundle, the optional exports can be disabled with:
+
+```python
+export_forecasting_data(
+    ...,
+    include_optional=False,
+)
+```
+
+If needed, the optional sections can also be toggled individually:
+
+- `export_tracker_results`
+- `export_dm_shortlist`
+- `export_params_long`
+- `export_validation_points`
+- `export_dm_points`
+
+Examples:
+
+```python
+# default: save the full bundle
+export_forecasting_data(...)
+```
+
+```python
+# core bundle only
+export_forecasting_data(
+    ...,
+    include_optional=False,
+)
+```
+
+```python
+# custom bundle: keep only selected optional exports
+export_forecasting_data(
+    ...,
+    include_optional=False,
+    export_tracker_results=True,
+    export_validation_points=True,
+    export_dm_points=True,
+)
+```
 
 ## Language Policy
 

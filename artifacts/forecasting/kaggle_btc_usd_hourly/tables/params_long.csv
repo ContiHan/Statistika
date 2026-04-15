@@ -1,0 +1,42 @@
+Dataset,Model,Base Model,Target Transform,Param,Value
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,input_chunk_length,168
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,output_chunk_length,84
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,n_epochs,30
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,batch_size,64
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,random_state,42
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,num_stacks,10
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,num_blocks,1
+Kaggle BTC/USD Hourly,N-BEATS,N-BEATS,raw,layer_widths,128
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,input_chunk_length,336
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,output_chunk_length,168
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,n_epochs,30
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,batch_size,64
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,random_state,42
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,hidden_size,128
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,dropout,0.1
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,num_encoder_layers,1
+Kaggle BTC/USD Hourly,TiDE,TiDE,raw,num_decoder_layers,1
+Kaggle BTC/USD Hourly,TimeGPT,TimeGPT,raw,model,timegpt-1
+Kaggle BTC/USD Hourly,GraniteTTM,GraniteTTM,raw,model,ibm-granite/granite-timeseries-ttm-r1
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,log,seasonal_periods,168
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,log,trend,ModelMode.ADDITIVE
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,log,seasonal,ModelMode.ADDITIVE
+Kaggle BTC/USD Hourly,Holt-Winters [log],Holt-Winters,log,damped,True
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,log,season_length,168
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,log,seasonal,True
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,log,max_p,3
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,log,max_q,3
+Kaggle BTC/USD Hourly,AutoARIMA [log],AutoARIMA,log,stepwise,True
+Kaggle BTC/USD Hourly,Chronos2,Chronos2,raw,model,amazon/chronos-2
+Kaggle BTC/USD Hourly,TFT,TFT,raw,input_chunk_length,336
+Kaggle BTC/USD Hourly,TFT,TFT,raw,output_chunk_length,84
+Kaggle BTC/USD Hourly,TFT,TFT,raw,n_epochs,30
+Kaggle BTC/USD Hourly,TFT,TFT,raw,batch_size,32
+Kaggle BTC/USD Hourly,TFT,TFT,raw,random_state,42
+Kaggle BTC/USD Hourly,TFT,TFT,raw,hidden_size,64
+Kaggle BTC/USD Hourly,TFT,TFT,raw,lstm_layers,1
+Kaggle BTC/USD Hourly,TFT,TFT,raw,num_attention_heads,4
+Kaggle BTC/USD Hourly,TFT,TFT,raw,dropout,0.1
+Kaggle BTC/USD Hourly,TFT,TFT,raw,add_relative_index,True
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,log,seasonality_mode,additive
+Kaggle BTC/USD Hourly,Prophet [log],Prophet,log,changepoint_prior_scale,0.1

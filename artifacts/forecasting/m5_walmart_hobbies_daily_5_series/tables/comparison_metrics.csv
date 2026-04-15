@@ -1,0 +1,10 @@
+Dataset,Model,Base Model,Category,Target Transform,RMSE,MAPE,Test RMSE,Test MAPE,Tuning Time (s),Best Config Time (s),Combinations,Selection Basis,Final Forecast Available,Roles,Is Best Overall,Is Fastest,Is Best Statistical,Is Best Dl,Is Best Foundation
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,0.6396331191062927,0.0,0.5335637927055359,0.0,3.2366559505462646,3.2366559505462646,1,validation,True,fastest,False,True,False,False,False
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,0.6482506990432739,0.0,0.5038984649441103,0.0,1242.7715923786163,1242.7715923786163,1,validation,True,best_overall; best_foundation,True,False,False,False,True
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,0.6572399735450745,0.0,0.5520342588424683,0.0,47.083820104599,47.083820104599,1,validation,True,,False,False,False,False,False
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,0.6819716618849675,0.0,0.5254819793776458,0.0,139.66659832000732,0.9699568748474121,15,validation,True,,False,False,False,False,False
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,0.6848884989059496,0.0,0.5227728840507414,0.0,1827.0674200057983,1827.0653939247131,1,validation,True,,False,False,False,False,False
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,0.6985556633787746,0.0,0.5194160273287504,0.0,352.3366219997406,73.46615719795227,6,validation,True,best_statistical,False,False,True,False,False
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,0.7653205394744873,0.0,0.6373626589775085,0.0,295.9346661567688,26.194175004959106,10,validation,True,best_dl,False,False,False,True,False
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,0.7947975397109985,0.0,0.7206011414527893,0.0,902.296276807785,66.94501566886902,10,validation,True,,False,False,False,False,False
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,1.6367336511611938,0.0,1.4528993368148804,0.0,1471.9411330223083,134.5548050403595,10,validation,True,,False,False,False,False,False

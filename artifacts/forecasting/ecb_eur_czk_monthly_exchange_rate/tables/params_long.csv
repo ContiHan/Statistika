@@ -1,0 +1,42 @@
+Dataset,Model,Base Model,Target Transform,Param,Value
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,input_chunk_length,12
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,output_chunk_length,12
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,n_epochs,15
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,batch_size,64
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,random_state,42
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,num_stacks,10
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,num_blocks,1
+ECB EUR/CZK Monthly Exchange Rate,N-BEATS,N-BEATS,raw,layer_widths,128
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,input_chunk_length,12
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,output_chunk_length,12
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,n_epochs,30
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,batch_size,32
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,random_state,42
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,hidden_size,64
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,dropout,0.1
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,num_encoder_layers,1
+ECB EUR/CZK Monthly Exchange Rate,TiDE,TiDE,raw,num_decoder_layers,1
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,raw,seasonal_periods,12
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,raw,trend,ModelMode.MULTIPLICATIVE
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,raw,seasonal,ModelMode.NONE
+ECB EUR/CZK Monthly Exchange Rate,Holt-Winters [raw],Holt-Winters,raw,damped,False
+ECB EUR/CZK Monthly Exchange Rate,TimeGPT,TimeGPT,raw,model,timegpt-1
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,input_chunk_length,12
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,output_chunk_length,6
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,n_epochs,30
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,batch_size,64
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,random_state,42
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,hidden_size,64
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,lstm_layers,1
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,num_attention_heads,4
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,dropout,0.1
+ECB EUR/CZK Monthly Exchange Rate,TFT,TFT,raw,add_relative_index,True
+ECB EUR/CZK Monthly Exchange Rate,AutoARIMA [raw],AutoARIMA,raw,season_length,12
+ECB EUR/CZK Monthly Exchange Rate,AutoARIMA [raw],AutoARIMA,raw,seasonal,True
+ECB EUR/CZK Monthly Exchange Rate,AutoARIMA [raw],AutoARIMA,raw,max_p,3
+ECB EUR/CZK Monthly Exchange Rate,AutoARIMA [raw],AutoARIMA,raw,max_q,3
+ECB EUR/CZK Monthly Exchange Rate,AutoARIMA [raw],AutoARIMA,raw,stepwise,True
+ECB EUR/CZK Monthly Exchange Rate,Chronos2,Chronos2,raw,model,amazon/chronos-2
+ECB EUR/CZK Monthly Exchange Rate,GraniteTTM,GraniteTTM,raw,model,ibm-granite/granite-timeseries-ttm-r1
+ECB EUR/CZK Monthly Exchange Rate,Prophet [raw],Prophet,raw,seasonality_mode,additive
+ECB EUR/CZK Monthly Exchange Rate,Prophet [raw],Prophet,raw,changepoint_prior_scale,0.1

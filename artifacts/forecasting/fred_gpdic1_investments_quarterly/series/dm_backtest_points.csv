@@ -1,0 +1,280 @@
+Dataset,Model,Base Model,Category,Target Transform,Series ID,Time,Actual,Prediction,Forecast Horizon,Stride,Source
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2000-07-01,2466.375,2392.266845703125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2000-10-01,2471.534,2433.90185546875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2001-01-01,2358.969,2472.530517578125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2001-04-01,2362.652,2485.9873046875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2001-07-01,2311.409,2498.965087890625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2001-10-01,2196.554,2501.935302734375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2002-01-01,2262.071,2481.342041015625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2002-04-01,2298.939,2470.591796875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2002-07-01,2295.983,2442.457275390625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2002-10-01,2293.746,2421.7900390625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2003-01-01,2312.465,2400.177978515625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2003-04-01,2327.492,2387.5380859375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2003-07-01,2411.638,2384.328857421875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2003-10-01,2493.928,2403.377197265625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2004-01-01,2498.14,2442.225341796875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2004-04-01,2597.507,2471.807861328125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2004-07-01,2638.672,2511.79296875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2004-10-01,2693.575,2554.9814453125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2005-01-01,2769.261,2609.36474609375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2005-04-01,2733.225,2672.444580078125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2005-07-01,2769.106,2722.258544921875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2005-10-01,2857.35,2769.52587890625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2006-01-01,2899.229,2818.68310546875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2006-04-01,2882.564,2871.06787109375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2006-07-01,2871.589,2910.625244140625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2006-10-01,2818.228,2938.321044921875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2007-01-01,2800.037,2950.402099609375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2007-04-01,2827.01,2957.13623046875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2007-07-01,2794.526,2972.253662109375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2007-10-01,2762.518,2974.562744140625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2008-01-01,2686.998,2962.0390625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2008-04-01,2641.85,2931.6767578125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2008-07-01,2589.254,2898.371337890625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2008-10-01,2338.938,2863.158447265625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2009-01-01,2073.135,2798.513671875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2009-04-01,1952.641,2701.900634765625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2009-07-01,1946.867,2586.435791015625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2009-10-01,2128.516,2476.98779296875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2010-01-01,2174.335,2403.611328125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2010-04-01,2288.469,2333.51220703125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2010-07-01,2390.072,2279.767822265625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2010-10-01,2383.297,2250.801513671875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2011-01-01,2338.901,2256.068359375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2011-04-01,2434.538,2295.968017578125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2011-07-01,2445.296,2360.353271484375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2011-10-01,2633.829,2424.26708984375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2012-01-01,2692.179,2498.7880859375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2012-04-01,2752.614,2565.4912109375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2012-07-01,2759.86,2622.5263671875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2012-10-01,2736.423,2670.499755859375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2013-01-01,2845.38,2714.143310546875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2013-04-01,2882.489,2784.218994140625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2013-07-01,2998.991,2845.843994140625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2013-10-01,3027.805,2919.51904296875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2014-01-01,2998.148,2970.17138671875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2014-04-01,3121.321,3005.767822265625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2014-07-01,3193.152,3055.65771484375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2014-10-01,3203.351,3113.354736328125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2015-01-01,3314.895,3177.06201171875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2015-04-01,3328.049,3242.2197265625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2015-07-01,3335.27,3294.29296875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2015-10-01,3315.334,3339.591064453125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2016-01-01,3301.09,3380.806396484375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2016-04-01,3287.033,3417.639404296875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2016-07-01,3301.079,3440.89501953125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2016-10-01,3391.749,3458.176513671875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2017-01-01,3382.703,3483.325927734375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2017-04-01,3435.929,3491.40966796875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2017-07-01,3493.166,3506.111083984375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2017-10-01,3558.859,3525.443603515625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2018-01-01,3612.936,3556.3271484375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2018-04-01,3612.389,3600.441650390625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2018-07-01,3722.248,3642.622314453125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2018-10-01,3724.752,3696.98291015625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2019-01-01,3755.53,3740.61572265625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2019-04-01,3790.049,3791.69970703125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2019-07-01,3819.94,3839.320068359375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2019-10-01,3770.431,3879.68017578125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2020-01-01,3676.274,3909.09130859375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2020-04-01,3163.508,3917.927490234375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2020-07-01,3755.526,3849.0146484375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2020-10-01,3878.929,3868.196044921875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2021-01-01,3849.329,3885.764892578125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2021-04-01,3799.029,3908.120849609375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2021-07-01,3937.3,3911.16748046875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2021-10-01,4191.773,3892.435302734375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2022-01-01,4272.382,3957.0166015625,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2022-04-01,4176.99,4064.535888671875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2022-07-01,4105.292,4187.74951171875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2022-10-01,4184.98,4220.49560546875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2023-01-01,4108.542,4257.01123046875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2023-04-01,4180.752,4302.71142578125,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,N-BEATS,N-BEATS,dl,raw,series_0,2023-07-01,4275.527,4366.3427734375,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2000-07-01,2466.375,2504.3935828032136,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2000-10-01,2471.534,2480.0143021585386,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2001-01-01,2358.969,2485.122002398711,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2001-04-01,2362.652,2371.7118567865123,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2001-07-01,2311.409,2375.339416836784,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2001-10-01,2196.554,2323.6788487426197,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2002-01-01,2262.071,2207.99932214091,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2002-04-01,2298.939,2273.867694235958,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2002-07-01,2295.983,2310.8983134842515,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2002-10-01,2293.746,2307.849185993423,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2003-01-01,2312.465,2305.524528875373,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2003-04-01,2327.492,2324.288292535772,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2003-07-01,2411.638,2339.3353444629556,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2003-10-01,2493.928,2423.934634045942,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2004-01-01,2498.14,2506.661887456808,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2004-04-01,2597.507,2510.8218917555114,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2004-07-01,2638.672,2610.726950381734,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2004-10-01,2693.575,2652.0657367474873,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2005-01-01,2769.261,2707.2239768365157,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2005-04-01,2733.225,2783.2921941290165,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2005-07-01,2769.106,2746.9507144919276,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2005-10-01,2857.35,2782.9663814685846,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2006-01-01,2899.229,2871.6587465242887,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2006-04-01,2882.564,2913.7035736026555,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2006-07-01,2871.589,2896.851787087595,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2006-10-01,2818.228,2885.725209222479,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2007-01-01,2800.037,2831.964276328573,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2007-04-01,2827.01,2813.5851733368877,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2007-07-01,2794.526,2840.6329467215996,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2007-10-01,2762.518,2807.880252750798,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2008-01-01,2686.998,2775.609695518685,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2008-04-01,2641.85,2699.584521250523,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2008-07-01,2589.254,2654.109785204485,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2008-10-01,2338.938,2601.149484725861,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2009-01-01,2073.135,2349.400398553143,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2009-04-01,1952.641,2082.1249442335097,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2009-07-01,1946.867,1960.952332065003,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2009-10-01,2128.516,1955.099273191767,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2010-01-01,2174.335,2137.6316856222174,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2010-04-01,2288.469,2183.6328301038984,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2010-07-01,2390.072,2298.2979435108778,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2010-10-01,2383.297,2400.3669109316397,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2011-01-01,2338.901,2393.4970430744906,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2011-04-01,2434.538,2348.8146646082932,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2011-07-01,2445.296,2444.8787093946007,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2011-10-01,2633.829,2455.6298321445684,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2012-01-01,2692.179,2645.0537484199676,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2012-04-01,2752.614,2703.6327114858827,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2012-07-01,2759.86,2764.3054221199213,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2012-10-01,2736.423,2771.520892566449,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2013-01-01,2845.38,2747.8988479257087,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2013-04-01,2882.489,2857.328775221902,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2013-07-01,2998.991,2894.5522838048078,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2013-10-01,3027.805,3011.5590650721815,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2014-01-01,2998.148,3040.4437466472573,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2014-04-01,3121.321,3010.5673711708237,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2014-07-01,3193.152,3134.2700270985442,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2014-10-01,3203.351,3206.374208499831,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2015-01-01,3314.895,3216.5473231573915,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2015-04-01,3328.049,3328.5521887780974,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2015-07-01,3335.27,3341.69237814443,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2015-10-01,3315.334,3348.8679056246165,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2016-01-01,3301.09,3328.7616672958875,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2016-04-01,3287.033,3314.373764719863,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2016-07-01,3301.079,3300.174712951903,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2016-10-01,3391.749,3314.213925145692,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2017-01-01,3382.703,3405.2265791650075,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2017-04-01,3435.929,3396.063901598956,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2017-07-01,3493.166,3449.4557546124042,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2017-10-01,3558.859,3506.878098693685,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2018-01-01,3612.936,3572.793337934075,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2018-04-01,3612.389,3627.0351672519714,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2018-07-01,3722.248,3626.405640983686,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2018-10-01,3724.752,3736.678401750779,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2019-01-01,3755.53,3739.112079626996,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2019-04-01,3790.049,3769.946383021128,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2019-07-01,3819.94,3804.5369451619636,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2019-10-01,3770.431,3834.476680849861,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2020-01-01,3676.274,3784.67122909879,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2020-04-01,3163.508,3690.028400909473,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2020-07-01,3755.526,3175.0108996275394,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2020-10-01,3878.929,3769.465078518689,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2021-01-01,3849.329,3893.314365259003,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2021-04-01,3799.029,3863.5104751536574,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2021-07-01,3937.3,3812.921542754977,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2021-10-01,4191.773,3951.6925285033426,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2022-01-01,4272.382,4207.150359934415,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2022-04-01,4176.99,4288.011020830904,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2022-07-01,4105.292,4192.1348328151425,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2022-10-01,4184.98,4120.058536777256,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2023-01-01,4108.542,4199.991228248107,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2023-04-01,4180.752,4123.160418825804,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2023-07-01,4275.527,4195.580630652109,1,1,rolling_validation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2000-07-01,2466.375,2596.789306640625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2000-10-01,2471.534,2578.4228515625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2001-01-01,2358.969,2576.07763671875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2001-04-01,2362.652,2408.1337890625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2001-07-01,2311.409,2401.300537109375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2001-10-01,2196.554,2342.02587890625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2002-01-01,2262.071,2226.124267578125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2002-04-01,2298.939,2289.1826171875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2002-07-01,2295.983,2323.47802734375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2002-10-01,2293.746,2318.7421875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2003-01-01,2312.465,2310.846435546875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2003-04-01,2327.492,2316.826416015625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2003-07-01,2411.638,2319.173828125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2003-10-01,2493.928,2399.673583984375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2004-01-01,2498.14,2491.674560546875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2004-04-01,2597.507,2495.735595703125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2004-07-01,2638.672,2605.955322265625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2004-10-01,2693.575,2656.06884765625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2005-01-01,2769.261,2721.955078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2005-04-01,2733.225,2804.278076171875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2005-07-01,2769.106,2764.796875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2005-10-01,2857.35,2814.2470703125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2006-01-01,2899.229,2914.40771484375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2006-04-01,2882.564,2966.91455078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2006-07-01,2871.589,2943.152587890625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2006-10-01,2818.228,2925.19580078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2007-01-01,2800.037,2862.03955078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2007-04-01,2827.01,2839.100830078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2007-07-01,2794.526,2869.3271484375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2007-10-01,2762.518,2839.447509765625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2008-01-01,2686.998,2804.8125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2008-04-01,2641.85,2708.588623046875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2008-07-01,2589.254,2641.545654296875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2008-10-01,2338.938,2570.171630859375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2009-01-01,2073.135,2229.42333984375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2009-04-01,1952.641,1950.739990234375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2009-07-01,1946.867,1887.50634765625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2009-10-01,2128.516,1928.455078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2010-01-01,2174.335,2155.2705078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2010-04-01,2288.469,2218.854736328125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2010-07-01,2390.072,2321.977783203125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2010-10-01,2383.297,2410.72900390625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2011-01-01,2338.901,2394.2431640625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2011-04-01,2434.538,2337.30078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2011-07-01,2445.296,2423.724365234375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2011-10-01,2633.829,2435.82568359375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2012-01-01,2692.179,2634.1435546875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2012-04-01,2752.614,2682.43896484375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2012-07-01,2759.86,2733.909912109375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2012-10-01,2736.423,2735.208251953125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2013-01-01,2845.38,2712.669921875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2013-04-01,2882.489,2811.47265625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2013-07-01,2998.991,2837.989990234375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2013-10-01,3027.805,2949.711669921875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2014-01-01,2998.148,2985.0107421875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2014-04-01,3121.321,2943.3916015625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2014-07-01,3193.152,3066.3671875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2014-10-01,3203.351,3134.09130859375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2015-01-01,3314.895,3138.96484375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2015-04-01,3328.049,3255.029296875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2015-07-01,3335.27,3284.95654296875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2015-10-01,3315.334,3286.29296875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2016-01-01,3301.09,3249.986083984375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2016-04-01,3287.033,3228.233154296875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2016-07-01,3301.079,3198.697998046875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2016-10-01,3391.749,3214.78466796875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2017-01-01,3382.703,3306.31884765625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2017-04-01,3435.929,3318.400390625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2017-07-01,3493.166,3381.5732421875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2017-10-01,3558.859,3456.58984375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2018-01-01,3612.936,3536.904052734375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2018-04-01,3612.389,3597.146728515625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2018-07-01,3722.248,3604.77392578125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2018-10-01,3724.752,3726.28662109375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2019-01-01,3755.53,3730.92236328125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2019-04-01,3790.049,3763.8310546875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2019-07-01,3819.94,3794.35400390625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2019-10-01,3770.431,3820.70361328125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2020-01-01,3676.274,3773.86181640625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2020-04-01,3163.508,3698.41845703125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2020-07-01,3755.526,3145.167236328125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2020-10-01,3878.929,3740.415771484375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2021-01-01,3849.329,3882.30126953125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2021-04-01,3799.029,3874.66650390625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2021-07-01,3937.3,3824.455078125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2021-10-01,4191.773,3963.992431640625,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2022-01-01,4272.382,4236.6220703125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2022-04-01,4176.99,4333.6328125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2022-07-01,4105.292,4232.611328125,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2022-10-01,4184.98,4154.20068359375,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2023-01-01,4108.542,4273.69091796875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2023-04-01,4180.752,4174.44091796875,1,1,dm_backtest_foundation
+FRED GPDIC1 Investments Quarterly,GraniteTTM,GraniteTTM,foundation,raw,series_0,2023-07-01,4275.527,4256.74609375,1,1,dm_backtest_foundation

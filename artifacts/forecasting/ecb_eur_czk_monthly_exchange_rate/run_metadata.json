@@ -1,0 +1,63 @@
+{
+  "dataset_name": "ECB EUR/CZK Monthly Exchange Rate",
+  "dataset_slug": "ecb_eur_czk_monthly_exchange_rate",
+  "created_at_utc": "2026-04-12T18:11:25.386485+00:00",
+  "dataset_config": {
+    "file_path": "../datasets/ecb_eurczk_monthly.csv",
+    "time_column": "timestamp",
+    "target_column": "eur_czk",
+    "frequency": "MS",
+    "test_periods": 24,
+    "seasonal_period": 12,
+    "name": "ECB EUR/CZK Monthly Exchange Rate",
+    "value_unit": "EUR/CZK Exchange Rate"
+  },
+  "n_tracked_models": 9,
+  "tracked_models": [
+    "N-BEATS",
+    "TiDE",
+    "Holt-Winters [raw]",
+    "TimeGPT",
+    "TFT",
+    "AutoARIMA [raw]",
+    "Chronos2",
+    "GraniteTTM",
+    "Prophet [raw]"
+  ],
+  "final_prediction_models": [
+    "N-BEATS",
+    "TiDE",
+    "Holt-Winters [raw]",
+    "TimeGPT",
+    "TFT",
+    "AutoARIMA [raw]",
+    "Chronos2",
+    "GraniteTTM",
+    "Prophet [raw]"
+  ],
+  "dm_shortlist": [
+    "N-BEATS",
+    "TiDE",
+    "Holt-Winters [raw]",
+    "TimeGPT"
+  ],
+  "dm_shortlist_reasons": {
+    "N-BEATS": "Best overall validation RMSE; Best deep learning validation RMSE",
+    "TiDE": "Second-best overall validation RMSE",
+    "Holt-Winters [raw]": "Best statistical validation RMSE",
+    "TimeGPT": "Best foundation validation RMSE"
+  },
+  "selected_transforms": [
+    "raw"
+  ],
+  "export_flags": {
+    "export_tables": true,
+    "export_point_level": true,
+    "export_metadata": true,
+    "export_tracker_results": true,
+    "export_dm_shortlist": true,
+    "export_params_long": true,
+    "export_validation_points": true,
+    "export_dm_points": true
+  }
+}

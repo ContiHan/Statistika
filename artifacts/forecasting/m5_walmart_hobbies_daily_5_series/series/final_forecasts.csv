@@ -1,0 +1,1261 @@
+Dataset,Model,Base Model,Category,Target Transform,Roles,Series ID,Time,Actual,Prediction,Test RMSE,Test MAPE
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-03-28,1.0,0.6422116756439209,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-03-29,1.0,0.9050359129905701,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-03-30,2.0,0.8978848457336426,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-03-31,0.0,0.9005610942840576,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-01,0.0,0.9212983250617981,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-02,2.0,1.0088841915130615,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-03,0.0,1.0223884582519531,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-04,0.0,1.0087482929229736,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-05,0.0,0.9106582999229431,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-06,0.0,0.9605851173400879,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-07,2.0,0.9935932755470276,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-08,1.0,1.0073444843292236,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-09,3.0,1.0582189559936523,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-10,1.0,0.9469355940818787,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-11,0.0,1.000209093093872,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-12,2.0,1.0090525150299072,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-13,0.0,0.9944034218788147,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-14,0.0,1.0486215353012085,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-15,1.0,0.9865031242370605,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-16,2.0,0.9876207113265991,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-17,0.0,0.9718573689460754,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-18,0.0,1.0148941278457642,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-19,1.0,1.0148720741271973,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-20,1.0,0.9614191651344299,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-21,4.0,0.9376859068870544,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-22,3.0,1.0800538063049316,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-23,3.0,0.9868144392967224,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_1_242,2016-04-24,0.0,0.9407410621643066,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-03-28,1.0,0.15878050029277802,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-03-29,0.0,0.19073620438575745,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-03-30,0.0,0.19052943587303162,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-03-31,0.0,0.18561989068984985,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-01,0.0,0.24542713165283203,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-02,0.0,0.24102231860160828,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-03,0.0,0.20926855504512787,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-04,0.0,0.2109486609697342,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-05,0.0,0.1854133903980255,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-06,0.0,0.1904628872871399,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-07,0.0,0.20154517889022827,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-08,0.0,0.21623317897319794,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-09,0.0,0.22381485998630524,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-10,0.0,0.24293763935565948,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-11,0.0,0.21925120055675507,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-12,0.0,0.250675767660141,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-13,0.0,0.2483053207397461,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-14,0.0,0.2733132541179657,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-15,0.0,0.2724559009075165,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-16,0.0,0.24760714173316956,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-17,0.0,0.20434647798538208,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-18,0.0,0.2003336399793625,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-19,0.0,0.189350888133049,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-20,0.0,0.20081458985805511,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-21,0.0,0.20581768453121185,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-22,0.0,0.22079123556613922,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-23,0.0,0.23919913172721863,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_071,2016-04-24,1.0,0.25966912508010864,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-03-28,0.0,0.008138209581375122,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-03-29,0.0,0.007766276597976685,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-03-30,0.0,0.021429702639579773,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-03-31,0.0,0.031036481261253357,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-01,0.0,0.028169624507427216,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-02,0.0,0.045430295169353485,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-03,0.0,0.033072635531425476,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-04,0.0,0.02492097020149231,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-05,0.0,0.03257963806390762,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-06,0.0,0.013615064322948456,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-07,0.0,0.05124659091234207,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-08,0.0,0.04210241883993149,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-09,0.0,0.04441463202238083,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-10,0.0,0.04745331406593323,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-11,0.0,0.03076338768005371,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-12,0.0,0.036112286150455475,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-13,0.0,0.0773615688085556,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-14,0.0,0.054832763969898224,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-15,0.0,0.04316258430480957,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-16,0.0,0.03830163925886154,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-17,0.0,0.03602250665426254,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-18,0.0,0.039546988904476166,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-19,0.0,0.03416857868432999,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-20,0.0,0.04457947611808777,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-21,1.0,0.06469610333442688,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-22,0.0,0.061462171375751495,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-23,0.0,0.05988847464323044,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_108,2016-04-24,0.0,0.06548205018043518,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-03-28,0.0,0.27609890699386597,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-03-29,0.0,0.35596925020217896,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-03-30,2.0,0.3740421533584595,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-03-31,0.0,0.3743520975112915,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-01,1.0,0.3962957262992859,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-02,0.0,0.3897190988063812,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-03,2.0,0.3995662331581116,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-04,1.0,0.3636733591556549,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-05,1.0,0.3862581253051758,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-06,1.0,0.35063767433166504,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-07,0.0,0.3611397445201874,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-08,1.0,0.3900044560432434,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-09,0.0,0.39108937978744507,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-10,1.0,0.354611337184906,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-11,0.0,0.34798112511634827,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-12,0.0,0.32867902517318726,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-13,0.0,0.3487659692764282,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-14,0.0,0.3734514117240906,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-15,0.0,0.3485751450061798,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-16,0.0,0.3716917634010315,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-17,1.0,0.4001920819282532,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-18,1.0,0.36269640922546387,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-19,0.0,0.3725445866584778,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-20,0.0,0.353532999753952,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-21,0.0,0.364047646522522,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-22,1.0,0.4025120437145233,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-23,0.0,0.39912328124046326,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_109,2016-04-24,2.0,0.37814298272132874,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-03-28,0.0,0.20800545811653137,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-03-29,0.0,0.20285800099372864,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-03-30,1.0,0.22874578833580017,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-03-31,0.0,0.23706132173538208,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-01,0.0,0.27779626846313477,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-02,0.0,0.23179510235786438,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-03,0.0,0.24201297760009766,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-04,0.0,0.24432633817195892,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-05,0.0,0.3338221311569214,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-06,0.0,0.27341967821121216,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-07,0.0,0.2897128164768219,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-08,0.0,0.2439439445734024,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-09,0.0,0.24740713834762573,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-10,0.0,0.29298481345176697,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-11,0.0,0.3266445994377136,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-12,0.0,0.35260188579559326,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-13,0.0,0.313688725233078,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-14,0.0,0.30582916736602783,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-15,0.0,0.31125980615615845,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-16,0.0,0.30022257566452026,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-17,0.0,0.25901174545288086,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-18,0.0,0.25925740599632263,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-19,0.0,0.28225457668304443,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-20,0.0,0.2884548306465149,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-21,0.0,0.2941831350326538,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-22,0.0,0.26172739267349243,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-23,1.0,0.2761125862598419,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,foundation,raw,fastest,HOBBIES_2_123,2016-04-24,0.0,0.2849973440170288,0.5335637927055359,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-03-28,1.0,0.5866256,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-03-29,1.0,0.5275516,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-03-30,2.0,0.6623031,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-03-31,0.0,0.81779796,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-01,0.0,1.4475006,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-02,2.0,1.8319373,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-03,0.0,0.9128785,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-04,0.0,0.6378412,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-05,0.0,0.568906,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-06,0.0,0.57122374,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-07,2.0,0.8225067,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-08,1.0,1.9801016,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-09,3.0,2.6509948,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-10,1.0,0.88769615,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-11,0.0,0.6563246,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-12,2.0,0.6417808,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-13,0.0,0.7380442,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-14,0.0,0.9105848,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-15,1.0,2.1482875,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-16,2.0,2.8038735,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-17,0.0,0.9942365,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-18,0.0,0.8684476,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-19,1.0,0.8423044,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-20,1.0,0.837934,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-21,4.0,1.035031,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-22,3.0,2.0671473,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-23,3.0,2.707172,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_1_242,2016-04-24,0.0,1.1467549,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-03-28,1.0,0.08931123,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-03-29,0.0,0.09112255,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-03-30,0.0,0.10606902,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-03-31,0.0,0.12290543,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-01,0.0,0.16583677,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-02,0.0,0.14437379,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-03,0.0,0.12542498,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-04,0.0,0.11656176,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-05,0.0,0.108768515,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-06,0.0,0.12989336,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-07,0.0,0.1504202,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-08,0.0,0.17682162,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-09,0.0,0.15977384,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-10,0.0,0.14807828,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-11,0.0,0.1419086,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-12,0.0,0.14536096,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-13,0.0,0.15983976,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-14,0.0,0.190133,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-15,0.0,0.21607171,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-16,0.0,0.19673666,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-17,0.0,0.17426404,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-18,0.0,0.16048342,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-19,0.0,0.15912178,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-20,0.0,0.17123286,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-21,0.0,0.19375199,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-22,0.0,0.20842837,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-23,0.0,0.18178794,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_071,2016-04-24,1.0,0.17049037,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-03-28,0.0,0.013396902,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-03-29,0.0,0.018534707,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-03-30,0.0,0.024894768,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-03-31,0.0,0.024831438,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-01,0.0,0.027139213,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-02,0.0,0.031815797,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-03,0.0,0.033917908,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-04,0.0,0.03234651,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-05,0.0,0.029322894,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-06,0.0,0.027011493,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-07,0.0,0.024919353,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-08,0.0,0.024917481,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-09,0.0,0.025042897,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-10,0.0,0.023277381,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-11,0.0,0.022193993,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-12,0.0,0.020212185,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-13,0.0,0.01882259,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-14,0.0,0.018001001,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-15,0.0,0.018105278,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-16,0.0,0.018328557,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-17,0.0,0.018142372,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-18,0.0,0.017737629,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-19,0.0,0.017012643,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-20,0.0,0.016188273,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-21,1.0,0.015807774,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-22,0.0,0.01577933,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-23,0.0,0.01573945,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_108,2016-04-24,0.0,0.015857229,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-03-28,0.0,0.35816985,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-03-29,0.0,0.37501878,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-03-30,2.0,0.4008006,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-03-31,0.0,0.39980483,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-01,1.0,0.36739528,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-02,0.0,0.35764557,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-03,2.0,0.37039113,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-04,1.0,0.41658196,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-05,1.0,0.40821317,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-06,1.0,0.41547343,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-07,0.0,0.3821798,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-08,1.0,0.36060536,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-09,0.0,0.3713395,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-10,1.0,0.39915192,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-11,0.0,0.36843336,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-12,0.0,0.41169247,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-13,0.0,0.45055607,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-14,0.0,0.43990305,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-15,0.0,0.42470017,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-16,0.0,0.40921602,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-17,1.0,0.39058483,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-18,1.0,0.39915508,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-19,0.0,0.40659174,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-20,0.0,0.44565377,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-21,0.0,0.47579968,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-22,1.0,0.45382413,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-23,0.0,0.4368876,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_109,2016-04-24,2.0,0.41560164,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-03-28,0.0,0.24986465,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-03-29,0.0,0.19708958,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-03-30,1.0,0.15584676,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-03-31,0.0,0.15104051,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-01,0.0,0.19362721,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-02,0.0,0.21789397,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-03,0.0,0.28476056,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-04,0.0,0.33732098,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-05,0.0,0.26404345,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-06,0.0,0.2364857,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-07,0.0,0.22914307,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-08,0.0,0.2342027,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-09,0.0,0.28443405,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-10,0.0,0.3538907,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-11,0.0,0.5010102,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-12,0.0,0.30205482,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-13,0.0,0.26313543,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-14,0.0,0.23806839,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-15,0.0,0.2223392,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-16,0.0,0.24932392,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-17,0.0,0.4265117,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-18,0.0,0.51886284,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-19,0.0,0.3462747,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-20,0.0,0.3059598,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-21,0.0,0.2823532,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-22,0.0,0.27676395,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-23,1.0,0.28928453,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,foundation,raw,best_overall; best_foundation,HOBBIES_2_123,2016-04-24,0.0,0.3890801,0.5038984649441103,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-03-28,1.0,0.43859004974365234,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-03-29,1.0,0.42824435234069824,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-03-30,2.0,0.4011075496673584,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-03-31,0.0,0.5046338438987732,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-01,0.0,0.91515052318573,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-02,2.0,0.9636049270629883,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-03,0.0,0.721934974193573,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-04,0.0,0.5376686453819275,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-05,0.0,0.47694849967956543,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-06,0.0,0.45261186361312866,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-07,2.0,0.5972964763641357,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-08,1.0,1.027777075767517,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-09,3.0,1.151818037033081,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-10,1.0,0.8475457429885864,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-11,0.0,0.5891625881195068,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-12,2.0,0.4634302854537964,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-13,0.0,0.41981691122055054,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-14,0.0,0.6183673143386841,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-15,1.0,1.0098251104354858,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-16,2.0,1.0457314252853394,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-17,0.0,0.7255822420120239,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-18,0.0,0.5262056589126587,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-19,1.0,0.43188023567199707,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-20,1.0,0.4111453890800476,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-21,4.0,0.5416870713233948,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-22,3.0,0.8951151967048645,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-23,3.0,0.933609127998352,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_1_242,2016-04-24,0.0,0.6620898246765137,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-03-28,1.0,0.003127962350845337,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-03-29,0.0,0.00276772677898407,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-03-30,0.0,0.0033119618892669678,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-03-31,0.0,0.0025734752416610718,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-01,0.0,0.003962397575378418,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-02,0.0,0.0023150891065597534,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-03,0.0,0.0031615793704986572,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-04,0.0,0.004046007990837097,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-05,0.0,0.0038809627294540405,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-06,0.0,0.0027296841144561768,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-07,0.0,0.003544643521308899,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-08,0.0,0.00307619571685791,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-09,0.0,0.0031359493732452393,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-10,0.0,0.0019175857305526733,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-11,0.0,0.002728864550590515,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-12,0.0,0.0034258365631103516,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-13,0.0,0.002926558256149292,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-14,0.0,0.001960262656211853,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-15,0.0,0.0027013570070266724,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-16,0.0,0.0016595423221588135,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-17,0.0,0.0028530657291412354,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-18,0.0,0.0015530437231063843,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-19,0.0,0.0028976351022720337,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-20,0.0,0.003942728042602539,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-21,0.0,0.0038193315267562866,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-22,0.0,0.0028687119483947754,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-23,0.0,0.0037657171487808228,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_071,2016-04-24,1.0,0.002975255250930786,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-03-28,0.0,0.0004191547632217407,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-03-29,0.0,0.00025959312915802,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-03-30,0.0,0.0006466656923294067,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-03-31,0.0,0.0006821006536483765,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-01,0.0,0.0010468214750289917,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-02,0.0,0.0006766915321350098,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-03,0.0,0.0006799101829528809,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-04,0.0,0.0007308721542358398,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-05,0.0,0.0010458678007125854,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-06,0.0,0.0005483478307723999,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-07,0.0,0.0004449784755706787,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-08,0.0,0.000598028302192688,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-09,0.0,0.0009478777647018433,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-10,0.0,0.0004912614822387695,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-11,0.0,0.0009928345680236816,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-12,0.0,0.0007786452770233154,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-13,0.0,0.000733792781829834,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-14,0.0,0.0005253702402114868,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-15,0.0,0.0007687509059906006,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-16,0.0,0.0008888542652130127,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-17,0.0,0.0012427568435668945,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-18,0.0,0.0008115470409393311,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-19,0.0,0.0007605254650115967,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-20,0.0,0.0008139163255691528,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-21,1.0,0.0010541081428527832,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-22,0.0,0.0006607323884963989,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-23,0.0,0.0004497617483139038,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_108,2016-04-24,0.0,0.0007396787405014038,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-03-28,0.0,0.012155234813690186,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-03-29,0.0,0.007223308086395264,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-03-30,2.0,0.008500784635543823,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-03-31,0.0,0.003918558359146118,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-01,1.0,0.010050445795059204,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-02,0.0,0.004999905824661255,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-03,2.0,0.006849735975265503,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-04,1.0,0.003896176815032959,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-05,1.0,0.007256507873535156,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-06,1.0,0.006347328424453735,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-07,0.0,0.005383789539337158,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-08,1.0,0.006436794996261597,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-09,0.0,0.0020068883895874023,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-10,1.0,0.0053539276123046875,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-11,0.0,0.005618453025817871,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-12,0.0,0.0029145479202270508,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-13,0.0,0.005087018013000488,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-14,0.0,0.007378488779067993,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-15,0.0,0.002835988998413086,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-16,0.0,0.005465209484100342,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-17,1.0,0.007177203893661499,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-18,1.0,0.006521105766296387,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-19,0.0,0.005099475383758545,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-20,0.0,0.004136890172958374,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-21,0.0,0.0010308325290679932,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-22,1.0,0.00530204176902771,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-23,0.0,0.006159484386444092,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_109,2016-04-24,2.0,0.0033870935440063477,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-03-28,0.0,0.005380257964134216,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-03-29,0.0,0.003061071038246155,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-03-30,1.0,0.003991708159446716,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-03-31,0.0,0.003945261240005493,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-01,0.0,0.004605710506439209,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-02,0.0,0.00227317214012146,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-03,0.0,0.003187239170074463,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-04,0.0,0.002136051654815674,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-05,0.0,0.006234690546989441,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-06,0.0,0.006237715482711792,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-07,0.0,0.0069994330406188965,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-08,0.0,0.005299374461174011,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-09,0.0,0.0056877583265304565,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-10,0.0,0.007525354623794556,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-11,0.0,0.008508503437042236,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-12,0.0,0.01004074513912201,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-13,0.0,0.003963828086853027,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-14,0.0,0.004131421446800232,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-15,0.0,0.0019201785326004028,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-16,0.0,0.0013968348503112793,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-17,0.0,0.0023773908615112305,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-18,0.0,0.0036268681287765503,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-19,0.0,0.0032936930656433105,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-20,0.0,0.004393830895423889,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-21,0.0,0.005348145961761475,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-22,0.0,0.001781076192855835,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-23,1.0,0.004122212529182434,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,foundation,raw,,HOBBIES_2_123,2016-04-24,0.0,0.004750356078147888,0.5520342588424683,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-03-28,1.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-03-29,1.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-03-30,2.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-03-31,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-01,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-02,2.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-03,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-04,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-05,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-06,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-07,2.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-08,1.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-09,3.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-10,1.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-11,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-12,2.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-13,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-14,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-15,1.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-16,2.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-17,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-18,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-19,1.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-20,1.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-21,4.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-22,3.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-23,3.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_1_242,2016-04-24,0.0,1.0735325994390523,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-03-28,1.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-03-29,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-03-30,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-03-31,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-01,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-02,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-03,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-04,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-05,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-06,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-07,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-08,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-09,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-10,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-11,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-12,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-13,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-14,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-15,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-16,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-17,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-18,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-19,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-20,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-21,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-22,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-23,0.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_071,2016-04-24,1.0,0.1832886264481812,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-03-28,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-03-29,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-03-30,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-03-31,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-01,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-02,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-03,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-04,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-05,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-06,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-07,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-08,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-09,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-10,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-11,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-12,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-13,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-14,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-15,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-16,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-17,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-18,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-19,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-20,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-21,1.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-22,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-23,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_108,2016-04-24,0.0,0.00683143977064822,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-03-28,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-03-29,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-03-30,2.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-03-31,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-01,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-02,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-03,2.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-04,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-05,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-06,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-07,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-08,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-09,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-10,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-11,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-12,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-13,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-14,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-15,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-16,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-17,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-18,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-19,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-20,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-21,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-22,1.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-23,0.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_109,2016-04-24,2.0,0.354975236132725,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-03-28,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-03-29,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-03-30,1.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-03-31,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-01,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-02,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-03,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-04,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-05,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-06,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-07,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-08,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-09,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-10,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-11,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-12,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-13,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-14,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-15,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-16,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-17,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-18,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-19,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-20,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-21,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-22,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-23,1.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,statistical,raw,,HOBBIES_2_123,2016-04-24,0.0,0.20903706805523184,0.5254819793776458,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-03-28,1.0,0.7115674619013667,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-03-29,1.0,0.7485047120458354,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-03-30,2.0,0.8600306644712968,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-03-31,0.0,0.8931835553677614,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-01,0.0,1.1603436049503524,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-02,2.0,1.638615514461907,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-03,0.0,1.0652866034241137,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-04,0.0,1.063155491018858,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-05,0.0,0.97691910766301,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-06,0.0,0.941646278057717,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-07,2.0,0.928931867750505,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-08,1.0,1.0698098296658431,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-09,3.0,1.492462994106026,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-10,1.0,1.1100572993696325,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-11,0.0,1.0903274836627257,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-12,2.0,1.0164422057592222,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-13,0.0,0.9747622161054824,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-14,0.0,0.9473708567743377,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-15,1.0,1.0177109092731127,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-16,2.0,1.4023120378854892,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-17,0.0,1.1397042211510862,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-18,0.0,1.1078697270788207,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-19,1.0,1.0415770571577823,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-20,1.0,0.9957766461829697,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-21,4.0,0.9590679724963838,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-22,3.0,0.9845456107953399,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-23,3.0,1.3449452056189042,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_1_242,2016-04-24,0.0,1.1585684098931899,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-03-28,1.0,0.21449021248209907,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-03-29,0.0,0.1805049599523001,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-03-30,0.0,0.19450846982811248,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-03-31,0.0,0.17649269809118825,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-01,0.0,0.11932748629029305,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-02,0.0,0.2058365632851414,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-03,0.0,0.20444125592130175,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-04,0.0,0.1836151913144907,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-05,0.0,0.1821813292845897,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-06,0.0,0.17499479563995435,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-07,0.0,0.17164658587687984,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-08,0.0,0.16945884079529935,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-09,0.0,0.1957270663012797,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-10,0.0,0.19038647188542462,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-11,0.0,0.186604829008405,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-12,0.0,0.18139091065156038,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-13,0.0,0.17669424967428188,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-14,0.0,0.17165246186080385,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-15,0.0,0.16661392543606038,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-16,0.0,0.19620146839265165,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-17,0.0,0.19133882789262444,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-18,0.0,0.186359090901225,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-19,0.0,0.1814814035240611,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-20,0.0,0.17656236980560128,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-21,0.0,0.17167092338222487,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-22,0.0,0.166774919515791,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-23,0.0,0.19618090640597943,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_071,2016-04-24,1.0,0.19127514005937307,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-03-28,0.0,0.01141224102096099,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-03-29,0.0,0.008827724799306717,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-03-30,0.0,0.005328841900894537,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-03-31,0.0,0.001770226137389256,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-01,0.0,0.00012304315621101264,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-02,0.0,0.021499804985554052,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-03,0.0,0.017937015480742547,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-04,0.0,0.014374224888040573,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-05,0.0,0.010811434224269938,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-06,0.0,0.007248643555856599,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-07,0.0,0.003685852887139969,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-08,0.0,0.00012306221840352113,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-09,0.0,0.0214998062308306,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-10,0.0,0.017937015562092776,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-11,0.0,0.014374224893354944,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-12,0.0,0.010811434224617111,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-13,0.0,0.007248643555879279,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-14,0.0,0.0036858528871414505,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-15,0.0,0.00012306221840361828,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-16,0.0,0.021499806230830608,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-17,0.0,0.017937015562092776,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-18,0.0,0.014374224893354944,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-19,0.0,0.010811434224617111,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-20,0.0,0.007248643555879279,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-21,1.0,0.0036858528871414505,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-22,0.0,0.00012306221840361828,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-23,0.0,0.021499806230830608,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_108,2016-04-24,0.0,0.017937015562092776,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-03-28,0.0,0.17088931986807568,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-03-29,0.0,0.5875176574604491,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-03-30,2.0,0.29795806916222783,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-03-31,0.0,0.2651124009546714,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-01,1.0,0.2447420469891994,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-02,0.0,0.14643999691903226,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-03,2.0,0.2825283814425145,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-04,1.0,0.2891211803513861,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-05,1.0,0.27459406864730873,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-06,1.0,0.3083586505806565,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-07,0.0,0.37717167557765974,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-08,1.0,0.2986916224213867,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-09,0.0,0.4850077227586063,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-10,1.0,0.2799172036300714,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-11,0.0,0.29934948639373443,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-12,0.0,0.3365159209654987,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-13,0.0,0.3144674756031266,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-14,0.0,0.33658466047003327,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-15,0.0,0.32555861766341654,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-16,0.0,0.32925148691713024,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-17,1.0,0.3243417476315044,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-18,1.0,0.33321015609447263,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-19,0.0,0.33167627718515696,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-20,0.0,0.33782702149084703,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-21,0.0,0.3381395229941362,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-22,1.0,0.3427301721119966,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-23,0.0,0.33407916846648944,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_109,2016-04-24,2.0,0.33775998775525934,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-03-28,0.0,0.2155722417900711,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-03-29,0.0,0.2095181690156125,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-03-30,1.0,0.2034640962411539,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-03-31,0.0,0.1974100234666953,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-01,0.0,0.193308031636798,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-02,0.0,0.22963246828354958,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-03,0.0,0.22357839550909098,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-04,0.0,0.21752432273463237,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-05,0.0,0.21147024996017377,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-06,0.0,0.2054161771857152,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-07,0.0,0.19936210441125657,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-08,0.0,0.193308031636798,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-09,0.0,0.22963246828354958,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-10,0.0,0.22357839550909098,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-11,0.0,0.21752432273463237,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-12,0.0,0.21147024996017377,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-13,0.0,0.2054161771857152,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-14,0.0,0.19936210441125657,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-15,0.0,0.193308031636798,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-16,0.0,0.22963246828354958,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-17,0.0,0.22357839550909098,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-18,0.0,0.21752432273463237,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-19,0.0,0.21147024996017377,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-20,0.0,0.2054161771857152,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-21,0.0,0.19936210441125657,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-22,0.0,0.193308031636798,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-23,1.0,0.22963246828354958,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,statistical,raw,,HOBBIES_2_123,2016-04-24,0.0,0.22357839550909098,0.5227728840507414,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-03-28,1.0,0.7471327097247461,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-03-29,1.0,0.7292315114900678,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-03-30,2.0,0.7426800887955054,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-03-31,0.0,0.9582023035385266,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-01,0.0,1.5835768024719397,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-02,2.0,1.7634425256814548,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-03,0.0,1.4018067282372215,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-04,0.0,0.8694309919522705,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-05,0.0,0.8293255334887606,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-06,0.0,0.8182381280211487,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-07,2.0,1.007492517436809,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-08,1.0,1.6277178658118117,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-09,3.0,1.7797875790413074,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-10,1.0,1.3905857234119137,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-11,0.0,0.8315260469246165,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-12,2.0,0.7662425506482848,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-13,0.0,0.7320630770256192,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-14,0.0,0.9008337247273671,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-15,1.0,1.5036360050268478,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-16,2.0,1.6417153576119552,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-17,0.0,1.242239502920611,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-18,0.0,0.6768118125085653,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-19,1.0,0.6091587538086929,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-20,1.0,0.5766029148162783,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-21,4.0,0.750889386391584,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-22,3.0,1.3629073167731933,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-23,3.0,1.5136250913374854,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_1_242,2016-04-24,0.0,1.1298573909600453,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-03-28,1.0,0.27019418241553894,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-03-29,0.0,0.2484972597913219,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-03-30,0.0,0.29242613708670895,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-03-31,0.0,0.29038160920839484,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-01,0.0,0.30296726810427804,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-02,0.0,0.3169415241165998,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-03,0.0,0.35104595267216965,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-04,0.0,0.29215492804959076,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-05,0.0,0.25999186744274055,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-06,0.0,0.29310780495511546,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-07,0.0,0.2801362013168013,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-08,0.0,0.28813756487277353,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-09,0.0,0.2916695047061429,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-10,0.0,0.31592407541497014,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-11,0.0,0.24799552388399648,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-12,0.0,0.20781039071556595,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-13,0.0,0.23410121948437052,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-14,0.0,0.21565700046368497,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-15,0.0,0.21966403325704045,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-16,0.0,0.22077292282857694,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-17,0.0,0.24423364446147072,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-18,0.0,0.17716184443094557,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-19,0.0,0.13946836455529693,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-20,0.0,0.1698332574689509,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-21,0.0,0.15695741086675924,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-22,0.0,0.1679054349439124,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-23,0.0,0.17717547639458422,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_071,2016-04-24,1.0,0.20983782381796026,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-03-28,0.0,-0.027911995796262287,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-03-29,0.0,-0.0251316667115562,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-03-30,0.0,-0.051679484177606094,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-03-31,0.0,-0.018401554741755304,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-01,0.0,-0.007175313008150691,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-02,0.0,-0.003244963087577442,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-03,0.0,0.034233550186393576,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-04,0.0,-0.002430476988475587,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-05,0.0,0.0016959530485493902,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-06,0.0,-0.02406975968101764,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-07,0.0,0.009393646384650678,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-08,0.0,0.020223176095969724,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-09,0.0,0.023108894687217826,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-10,0.0,0.05894147003158557,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-11,0.0,0.02006101550693702,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-12,0.0,0.02144704264163055,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-13,0.0,-0.007521824271260302,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-14,0.0,0.02235018570194061,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-15,0.0,0.029286040869340876,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-16,0.0,0.028071033003386356,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-17,0.0,0.05969782561332536,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-18,0.0,0.016612566651325107,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-19,0.0,0.013901949617447134,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-20,0.0,-0.018950044013250525,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-21,1.0,0.00735292065788935,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-22,0.0,0.011126703691084892,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-23,0.0,0.007239111301386001,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_108,2016-04-24,0.0,0.03675249371113723,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-03-28,0.0,0.37484076718334125,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-03-29,0.0,0.3758306946532298,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-03-30,2.0,0.3689990449048299,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-03-31,0.0,0.37274305069414276,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-01,1.0,0.44157628041259966,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-02,0.0,0.4174485087499054,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-03,2.0,0.3933050085053141,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-04,1.0,0.38423673614139275,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-05,1.0,0.3810562126938096,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-06,1.0,0.37002100893902284,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-07,0.0,0.3696147100250575,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-08,1.0,0.42073355182391814,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-09,0.0,0.3928133303143636,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-10,1.0,0.36517312462878093,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-11,0.0,0.3529728358819438,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-12,0.0,0.34708527688058566,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-13,0.0,0.33381840143672314,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-14,0.0,0.3316953019990323,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-15,0.0,0.38164018636065805,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-16,0.0,0.35310494390225117,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-17,1.0,0.32541284175453744,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-18,1.0,0.3137163435766122,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-19,0.0,0.308869767955692,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-20,0.0,0.29715234914963534,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-21,0.0,0.29704929595792773,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-22,1.0,0.34943902080130435,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-23,0.0,0.3237211063734345,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_109,2016-04-24,2.0,0.2991615041783437,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-03-28,0.0,0.11945501313509906,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-03-29,0.0,0.10736296496760184,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-03-30,1.0,0.11814428943078803,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-03-31,0.0,0.09963274054355532,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-01,0.0,0.10629604475082749,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-02,0.0,0.15136823835513102,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-03,0.0,0.13435814002599622,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-04,0.0,0.1363077907189018,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-05,0.0,0.12757650513675184,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-06,0.0,0.14172848897082763,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-07,0.0,0.12647576102277971,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-08,0.0,0.12258891056165613,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-09,0.0,0.170328115010298,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-10,0.0,0.15551292469328756,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-11,0.0,0.1590793497566649,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-12,0.0,0.1512936702719681,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-13,0.0,0.16564325941041635,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-14,0.0,0.1497823158937624,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-15,0.0,0.1444449437057813,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-16,0.0,0.18987792452006527,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-17,0.0,0.17191162525029238,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-18,0.0,0.17151752900224126,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-19,0.0,0.1590217827812342,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-20,0.0,0.16799504448779495,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-21,0.0,0.14619653890745482,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-22,0.0,0.13448479496407595,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-23,1.0,0.1732474640768563,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,statistical,raw,best_statistical,HOBBIES_2_123,2016-04-24,0.0,0.14846873522471724,0.5194160273287504,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-03-28,1.0,0.8720303177833557,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-03-29,1.0,0.7784404754638672,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-03-30,2.0,0.8665251135826111,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-03-31,0.0,1.3401859998703003,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-01,0.0,2.0731143951416016,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-02,2.0,2.092229127883911,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-03,0.0,1.4985426664352417,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-04,0.0,1.2830727100372314,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-05,0.0,1.0176665782928467,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-06,0.0,1.1545509099960327,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-07,2.0,1.0927734375,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-08,1.0,1.8039036989212036,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-09,3.0,1.9751663208007812,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-10,1.0,1.9977246522903442,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-11,0.0,1.1112323999404907,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-12,2.0,1.1631700992584229,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-13,0.0,0.5342324376106262,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-14,0.0,1.5797773599624634,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-15,1.0,1.3304736614227295,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-16,2.0,1.6596739292144775,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-17,0.0,1.32929527759552,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-18,0.0,1.0673362016677856,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-19,1.0,0.7373881340026855,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-20,1.0,1.265952467918396,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-21,4.0,1.2442694902420044,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-22,3.0,1.6257985830307007,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-23,3.0,1.4082461595535278,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_1_242,2016-04-24,0.0,1.6048593521118164,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-03-28,1.0,0.1966262310743332,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-03-29,0.0,0.2753334045410156,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-03-30,0.0,0.2888292074203491,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-03-31,0.0,0.3653300106525421,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-01,0.0,0.5292295813560486,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-02,0.0,0.5540086030960083,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-03,0.0,0.3810490369796753,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-04,0.0,0.36240166425704956,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-05,0.0,0.2590917944908142,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-06,0.0,0.2707221508026123,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-07,0.0,0.08558689802885056,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-08,0.0,0.2272917777299881,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-09,0.0,0.4642910957336426,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-10,0.0,0.648080587387085,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-11,0.0,0.22208325564861298,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-12,0.0,0.22191260755062103,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-13,0.0,-0.1386127769947052,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-14,0.0,0.2681601345539093,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-15,0.0,0.4054323136806488,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-16,0.0,0.532660722732544,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-17,0.0,0.32298240065574646,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-18,0.0,0.11712612956762314,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-19,0.0,-0.1718190461397171,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-20,0.0,0.09221484512090683,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-21,0.0,0.09151410311460495,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-22,0.0,0.22545470297336578,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-23,0.0,0.09730695933103561,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_071,2016-04-24,1.0,0.2820456326007843,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-03-28,0.0,-0.12394266575574875,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-03-29,0.0,-0.04340365156531334,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-03-30,0.0,-0.14355698227882385,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-03-31,0.0,-0.05102544650435448,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-01,0.0,0.06220414862036705,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-02,0.0,-0.008069276809692383,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-03,0.0,0.014478801749646664,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-04,0.0,0.0917375311255455,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-05,0.0,-0.11213310807943344,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-06,0.0,0.11200397461652756,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-07,0.0,-0.024926094338297844,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-08,0.0,-0.04528265818953514,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-09,0.0,0.15573495626449585,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-10,0.0,0.33026123046875,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-11,0.0,-0.049896832555532455,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-12,0.0,-0.08940353244543076,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-13,0.0,-0.1906794160604477,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-14,0.0,0.007939934730529785,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-15,0.0,0.2443709820508957,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-16,0.0,0.4086320698261261,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-17,0.0,0.1723441332578659,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-18,0.0,0.020551204681396484,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-19,0.0,-0.1918409913778305,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-20,0.0,-0.11959760636091232,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-21,1.0,0.08163738250732422,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-22,0.0,0.1452186107635498,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-23,0.0,0.015142618678510189,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_108,2016-04-24,0.0,0.11646293848752975,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-03-28,0.0,0.4366755187511444,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-03-29,0.0,1.4552912712097168,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-03-30,2.0,0.34572863578796387,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-03-31,0.0,0.9891610145568848,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-01,1.0,1.4251328706741333,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-02,0.0,0.9102706909179688,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-03,2.0,0.6543490886688232,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-04,1.0,0.8787413835525513,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-05,1.0,0.3731687664985657,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-06,1.0,0.625866711139679,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-07,0.0,0.6088598966598511,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-08,1.0,0.44967085123062134,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-09,0.0,0.5889480710029602,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-10,1.0,0.8664637804031372,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-11,0.0,0.3532344400882721,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-12,0.0,0.518682599067688,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-13,0.0,0.4650268852710724,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-14,0.0,0.42334452271461487,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-15,0.0,0.5479731559753418,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-16,0.0,0.7641546130180359,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-17,1.0,0.45047298073768616,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-18,1.0,0.4439562261104584,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-19,0.0,0.41009029746055603,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-20,0.0,0.1940252035856247,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-21,0.0,0.46859902143478394,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-22,1.0,0.41190338134765625,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-23,0.0,0.33566394448280334,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_109,2016-04-24,2.0,0.33609119057655334,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-03-28,0.0,0.49557581543922424,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-03-29,0.0,0.6390700936317444,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-03-30,1.0,0.6347888112068176,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-03-31,0.0,0.39475199580192566,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-01,0.0,0.6486409902572632,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-02,0.0,0.2599790394306183,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-03,0.0,0.36262989044189453,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-04,0.0,0.6864538192749023,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-05,0.0,0.23471705615520477,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-06,0.0,0.6742122173309326,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-07,0.0,0.7964467406272888,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-08,0.0,0.3751184940338135,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-09,0.0,0.5325927138328552,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-10,0.0,0.924299955368042,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-11,0.0,0.3291735053062439,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-12,0.0,0.8633666634559631,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-13,0.0,0.8881208896636963,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-14,0.0,0.5195763111114502,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-15,0.0,0.6386110782623291,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-16,0.0,0.9681640267372131,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-17,0.0,0.5004088282585144,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-18,0.0,0.7423273324966431,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-19,0.0,0.8401922583580017,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-20,0.0,0.43358278274536133,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-21,0.0,0.7951059937477112,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-22,0.0,0.6947594881057739,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-23,1.0,0.706341028213501,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,dl,raw,best_dl,HOBBIES_2_123,2016-04-24,0.0,0.5373850464820862,0.6373626589775085,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-03-28,1.0,1.7023142576217651,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-03-29,1.0,1.2011092901229858,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-03-30,2.0,0.789703369140625,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-03-31,0.0,1.1408931016921997,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-01,0.0,1.5436508655548096,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-02,2.0,0.4098885655403137,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-03,0.0,0.5823013782501221,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-04,0.0,0.5559498071670532,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-05,0.0,1.2490710020065308,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-06,0.0,0.5391599535942078,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-07,2.0,0.7558896541595459,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-08,1.0,1.2325594425201416,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-09,3.0,0.9808489084243774,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-10,1.0,0.4002707302570343,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-11,0.0,0.9789621829986572,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-12,2.0,0.5056682825088501,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-13,0.0,0.5276777148246765,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-14,0.0,0.9764548540115356,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-15,1.0,0.40653547644615173,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-16,2.0,0.4135816991329193,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-17,0.0,0.7207457423210144,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-18,0.0,0.29734617471694946,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-19,1.0,0.35133811831474304,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-20,1.0,0.6470892429351807,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-21,4.0,0.3439309895038605,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-22,3.0,0.3336428701877594,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-23,3.0,0.35502728819847107,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_1_242,2016-04-24,0.0,0.6681930422782898,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-03-28,1.0,0.8031283020973206,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-03-29,0.0,0.11604445427656174,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-03-30,0.0,0.6672602891921997,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-03-31,0.0,0.9497542381286621,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-01,0.0,0.641510009765625,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-02,0.0,2.521080493927002,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-03,0.0,0.7883065342903137,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-04,0.0,0.16642612218856812,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-05,0.0,0.5610331296920776,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-06,0.0,0.7299836874008179,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-07,0.0,1.0016142129898071,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-08,0.0,1.2752528190612793,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-09,0.0,0.3473702371120453,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-10,0.0,0.39295539259910583,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-11,0.0,0.6352829933166504,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-12,0.0,0.2136126011610031,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-13,0.0,0.35004720091819763,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-14,0.0,0.6034677624702454,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-15,0.0,0.47388598322868347,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-16,0.0,0.4778275787830353,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-17,0.0,0.8819345831871033,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-18,0.0,0.17619727551937103,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-19,0.0,0.25574684143066406,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-20,0.0,0.5244432091712952,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-21,0.0,0.2304450124502182,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-22,0.0,0.16200804710388184,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-23,0.0,0.18220876157283783,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_071,2016-04-24,1.0,0.45038682222366333,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-03-28,0.0,-0.2636496424674988,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-03-29,0.0,-0.24604783952236176,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-03-30,0.0,-0.021124480292201042,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-03-31,0.0,-0.2729768753051758,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-01,0.0,-0.25521528720855713,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-02,0.0,-0.027538491412997246,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-03,0.0,-0.27269190549850464,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-04,0.0,-0.2628769278526306,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-05,0.0,-0.0269638579338789,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-06,0.0,-0.2789720892906189,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-07,0.0,-0.2736974358558655,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-08,0.0,-0.03449323773384094,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-09,0.0,-0.28343188762664795,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-10,0.0,-0.2824100852012634,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-11,0.0,-0.036671608686447144,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-12,0.0,-0.2905306816101074,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-13,0.0,-0.279695987701416,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-14,0.0,-0.037459343671798706,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-15,0.0,-0.2912975549697876,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-16,0.0,-0.2799396514892578,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-17,0.0,-0.03760308027267456,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-18,0.0,-0.2917018532752991,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-19,0.0,-0.2803965210914612,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-20,0.0,-0.03768402338027954,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-21,1.0,-0.29232311248779297,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-22,0.0,-0.2861989736557007,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-23,0.0,-0.27885401248931885,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_108,2016-04-24,0.0,-0.03594134747982025,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-03-28,0.0,1.1027647256851196,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-03-29,0.0,0.6543107032775879,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-03-30,2.0,0.08410780876874924,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-03-31,0.0,0.36204221844673157,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-01,1.0,0.5673632025718689,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-02,0.0,0.5425875186920166,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-03,2.0,0.6053288578987122,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-04,1.0,0.9363831877708435,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-05,1.0,0.8543344140052795,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-06,1.0,1.4381866455078125,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-07,0.0,-0.49031952023506165,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-08,1.0,1.7624592781066895,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-09,0.0,0.7143720984458923,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-10,1.0,0.07801622152328491,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-11,0.0,0.4501301348209381,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-12,0.0,0.3807555139064789,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-13,0.0,0.3581632077693939,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-14,0.0,0.5826002955436707,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-15,0.0,0.25440752506256104,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-16,0.0,0.28404438495635986,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-17,1.0,0.6244812607765198,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-18,1.0,0.2532263398170471,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-19,0.0,0.29160797595977783,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-20,0.0,0.559333860874176,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-21,0.0,0.14236390590667725,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-22,1.0,0.19822882115840912,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-23,0.0,0.18713752925395966,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_109,2016-04-24,2.0,0.521191418170929,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-03-28,0.0,0.06813281774520874,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-03-29,0.0,-0.7121190428733826,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-03-30,1.0,-0.01465038862079382,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-03-31,0.0,-0.13677173852920532,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-01,0.0,0.26869189739227295,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-02,0.0,0.4333036541938782,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-03,0.0,0.6476984024047852,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-04,0.0,0.11301326006650925,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-05,0.0,0.41837748885154724,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-06,0.0,-0.20766036212444305,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-07,0.0,-0.2184491604566574,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-08,0.0,0.018107682466506958,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-09,0.0,-0.24436138570308685,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-10,0.0,-0.19689993560314178,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-11,0.0,-0.00691969646140933,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-12,0.0,-0.2665110230445862,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-13,0.0,-0.21681778132915497,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-14,0.0,-0.007980406284332275,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-15,0.0,-0.2600063681602478,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-16,0.0,-0.22454075515270233,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-17,0.0,-0.01644188165664673,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-18,0.0,-0.27074551582336426,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-19,0.0,-0.2693502902984619,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-20,0.0,-0.030838174745440483,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-21,0.0,-0.28782743215560913,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-22,0.0,-0.28118467330932617,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-23,1.0,-0.2765730023384094,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,dl,raw,,HOBBIES_2_123,2016-04-24,0.0,-0.03506369888782501,0.7206011414527893,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-03-28,1.0,5.7278947830200195,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-03-29,1.0,0.7949351072311401,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-03-30,2.0,-0.11489619314670563,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-03-31,0.0,-0.280324786901474,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-01,0.0,1.5605523586273193,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-02,2.0,2.4929864406585693,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-03,0.0,4.218847751617432,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-04,0.0,3.5025012493133545,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-05,0.0,1.2125869989395142,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-06,0.0,0.7166396975517273,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-07,2.0,1.5842726230621338,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-08,1.0,2.315156936645508,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-09,3.0,2.1965622901916504,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-10,1.0,3.399733543395996,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-11,0.0,1.810284972190857,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-12,2.0,1.667207956314087,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-13,0.0,-0.2619529366493225,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-14,0.0,1.5287871360778809,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-15,1.0,1.3284475803375244,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-16,2.0,1.2884784936904907,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-17,0.0,1.6882083415985107,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-18,0.0,0.23804871737957,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-19,1.0,0.013426678255200386,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-20,1.0,2.8252007961273193,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-21,4.0,1.6060700416564941,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-22,3.0,1.0420863628387451,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-23,3.0,5.476076126098633,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_1_242,2016-04-24,0.0,0.1102091372013092,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-03-28,1.0,0.07821115106344223,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-03-29,0.0,2.4233009815216064,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-03-30,0.0,3.054091691970825,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-03-31,0.0,-0.07571171224117279,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-01,0.0,-0.007001904305070639,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-02,0.0,6.685607433319092,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-03,0.0,3.813669443130493,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-04,0.0,-0.005425678100436926,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-05,0.0,0.0074927229434251785,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-06,0.0,0.2413187026977539,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-07,0.0,0.09987363964319229,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-08,0.0,0.302796334028244,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-09,0.0,3.4555001258850098,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-10,0.0,-0.24838033318519592,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-11,0.0,-0.29718640446662903,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-12,0.0,0.24081924557685852,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-13,0.0,0.13133446872234344,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-14,0.0,0.08200126141309738,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-15,0.0,0.33838915824890137,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-16,0.0,0.0499606691300869,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-17,0.0,0.06697484850883484,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-18,0.0,-0.021237172186374664,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-19,0.0,0.21997936069965363,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-20,0.0,0.09737689048051834,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-21,0.0,0.06590601801872253,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-22,0.0,-0.03918960690498352,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-23,0.0,0.18996886909008026,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_071,2016-04-24,1.0,3.2919774055480957,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-03-28,0.0,0.07830146700143814,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-03-29,0.0,0.06060481444001198,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-03-30,0.0,-0.21561071276664734,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-03-31,0.0,-0.159257173538208,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-01,0.0,0.05779426172375679,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-02,0.0,0.07697806507349014,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-03,0.0,1.3989136219024658,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-04,0.0,0.1628251075744629,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-05,0.0,-0.22825464606285095,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-06,0.0,0.12110085785388947,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-07,0.0,-0.1364295780658722,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-08,0.0,-0.054896969348192215,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-09,0.0,-0.013026726432144642,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-10,0.0,-0.41535913944244385,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-11,0.0,0.3299812078475952,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-12,0.0,-0.28294816613197327,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-13,0.0,0.057368725538253784,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-14,0.0,0.05320272967219353,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-15,0.0,-0.3443010747432709,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-16,0.0,-0.18571455776691437,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-17,0.0,0.012205136008560658,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-18,0.0,0.15187259018421173,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-19,0.0,0.22764746844768524,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-20,0.0,0.01907929591834545,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-21,1.0,0.08838821202516556,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-22,0.0,-0.01737101934850216,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-23,0.0,-0.04463481903076172,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_108,2016-04-24,0.0,0.15943537652492523,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-03-28,0.0,-0.008251136168837547,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-03-29,0.0,-0.07617577910423279,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-03-30,2.0,0.5169696807861328,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-03-31,0.0,0.09093889594078064,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-01,1.0,-0.017632903531193733,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-02,0.0,0.10930009931325912,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-03,2.0,-0.08350766450166702,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-04,1.0,0.10658412426710129,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-05,1.0,-0.04420526698231697,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-06,1.0,0.16525059938430786,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-07,0.0,-0.24867066740989685,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-08,1.0,0.06517656147480011,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-09,0.0,-0.34615468978881836,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-10,1.0,-0.06725414842367172,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-11,0.0,0.14213034510612488,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-12,0.0,-0.11575771123170853,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-13,0.0,0.07351202517747879,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-14,0.0,-0.04098273441195488,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-15,0.0,0.15835332870483398,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-16,0.0,-0.3888806104660034,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-17,1.0,-0.2727387249469757,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-18,1.0,0.000986950471997261,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-19,0.0,0.0576518289744854,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-20,0.0,-0.050804756581783295,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-21,0.0,-0.024612583220005035,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-22,1.0,0.14513404667377472,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-23,0.0,0.14949975907802582,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_109,2016-04-24,2.0,-0.003930076025426388,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-03-28,0.0,0.06331094354391098,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-03-29,0.0,0.05001716688275337,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-03-30,1.0,1.2950778007507324,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-03-31,0.0,-0.005119618959724903,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-01,0.0,7.370204448699951,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-02,0.0,0.48737356066703796,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-03,0.0,0.3656904697418213,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-04,0.0,3.404130220413208,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-05,0.0,2.721234083175659,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-06,0.0,-0.003887738101184368,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-07,0.0,4.889990329742432,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-08,0.0,-0.0004833084240090102,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-09,0.0,0.01235151570290327,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-10,0.0,4.655436992645264,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-11,0.0,0.670051097869873,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-12,0.0,0.47975823283195496,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-13,0.0,-0.19501018524169922,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-14,0.0,4.626938343048096,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-15,0.0,0.49260586500167847,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-16,0.0,0.0015591831179335713,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-17,0.0,0.046647049486637115,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-18,0.0,-0.009073861874639988,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-19,0.0,-0.023374058306217194,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-20,0.0,0.1153891533613205,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-21,0.0,0.00399786327034235,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-22,0.0,0.004204269498586655,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-23,1.0,4.648898124694824,1.4528993368148804,0
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,dl,raw,,HOBBIES_2_123,2016-04-24,0.0,0.00029720726888626814,1.4528993368148804,0

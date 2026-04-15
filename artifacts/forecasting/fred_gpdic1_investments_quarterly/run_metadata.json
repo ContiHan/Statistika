@@ -1,0 +1,61 @@
+{
+  "dataset_name": "FRED GPDIC1 Investments Quarterly",
+  "dataset_slug": "fred_gpdic1_investments_quarterly",
+  "created_at_utc": "2026-04-12T18:05:18.806660+00:00",
+  "dataset_config": {
+    "file_path": "../datasets/fred_gpdic1_investments_quarterly.csv",
+    "time_column": "timestamp",
+    "target_column": "investments",
+    "frequency": "QS",
+    "test_periods": 8,
+    "seasonal_period": 4,
+    "name": "FRED GPDIC1 Investments Quarterly",
+    "value_unit": "Billions USD"
+  },
+  "n_tracked_models": 9,
+  "tracked_models": [
+    "N-BEATS",
+    "Holt-Winters [log]",
+    "AutoARIMA [log]",
+    "GraniteTTM",
+    "Prophet [log]",
+    "TimeGPT",
+    "Chronos2",
+    "TiDE",
+    "TFT"
+  ],
+  "final_prediction_models": [
+    "N-BEATS",
+    "Holt-Winters [log]",
+    "AutoARIMA [log]",
+    "GraniteTTM",
+    "Prophet [log]",
+    "TimeGPT",
+    "Chronos2",
+    "TiDE",
+    "TFT"
+  ],
+  "dm_shortlist": [
+    "N-BEATS",
+    "Holt-Winters [log]",
+    "GraniteTTM"
+  ],
+  "dm_shortlist_reasons": {
+    "N-BEATS": "Best overall validation RMSE; Best deep learning validation RMSE",
+    "Holt-Winters [log]": "Second-best overall validation RMSE; Best statistical validation RMSE",
+    "GraniteTTM": "Best foundation validation RMSE"
+  },
+  "selected_transforms": [
+    "log"
+  ],
+  "export_flags": {
+    "export_tables": true,
+    "export_point_level": true,
+    "export_metadata": true,
+    "export_tracker_results": true,
+    "export_dm_shortlist": true,
+    "export_params_long": true,
+    "export_validation_points": true,
+    "export_dm_points": true
+  }
+}

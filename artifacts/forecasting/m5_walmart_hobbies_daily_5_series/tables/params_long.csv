@@ -1,0 +1,42 @@
+Dataset,Model,Base Model,Target Transform,Param,Value
+M5 Walmart Hobbies Daily (5 Series),GraniteTTM,GraniteTTM,raw,model,ibm-granite/granite-timeseries-ttm-r1
+M5 Walmart Hobbies Daily (5 Series),TimeGPT,TimeGPT,raw,model,timegpt-1
+M5 Walmart Hobbies Daily (5 Series),Chronos2,Chronos2,raw,model,amazon/chronos-2
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,raw,seasonal_periods,7
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,raw,trend,ModelMode.NONE
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,raw,seasonal,ModelMode.NONE
+M5 Walmart Hobbies Daily (5 Series),Holt-Winters (LOCAL) [raw],Holt-Winters,raw,damped,False
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,raw,season_length,7
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,raw,seasonal,True
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,raw,max_p,3
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,raw,max_q,3
+M5 Walmart Hobbies Daily (5 Series),AutoARIMA (LOCAL) [raw],AutoARIMA,raw,stepwise,True
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,raw,seasonality_mode,additive
+M5 Walmart Hobbies Daily (5 Series),Prophet (LOCAL) [raw],Prophet,raw,changepoint_prior_scale,0.5
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,input_chunk_length,7
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,output_chunk_length,3
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,n_epochs,30
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,batch_size,64
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,random_state,42
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,hidden_size,64
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,dropout,0.1
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,num_encoder_layers,1
+M5 Walmart Hobbies Daily (5 Series),TiDE (GLOBAL),TiDE,raw,num_decoder_layers,1
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,input_chunk_length,14
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,output_chunk_length,3
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,n_epochs,30
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,batch_size,64
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,random_state,42
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,num_stacks,10
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,num_blocks,1
+M5 Walmart Hobbies Daily (5 Series),N-BEATS (GLOBAL),N-BEATS,raw,layer_widths,128
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,input_chunk_length,7
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,output_chunk_length,7
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,n_epochs,15
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,batch_size,32
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,random_state,42
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,hidden_size,64
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,lstm_layers,1
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,num_attention_heads,4
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,dropout,0.1
+M5 Walmart Hobbies Daily (5 Series),TFT (GLOBAL),TFT,raw,add_relative_index,True

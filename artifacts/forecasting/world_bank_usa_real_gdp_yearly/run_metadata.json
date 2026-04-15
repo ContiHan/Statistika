@@ -1,0 +1,62 @@
+{
+  "dataset_name": "World Bank USA Real GDP Yearly",
+  "dataset_slug": "world_bank_usa_real_gdp_yearly",
+  "created_at_utc": "2026-04-12T17:59:32.013252+00:00",
+  "dataset_config": {
+    "file_path": "../datasets/wb_usa_real_gdp_yearly.csv",
+    "time_column": "timestamp",
+    "target_column": "real_gdp",
+    "frequency": "YS",
+    "test_periods": 6,
+    "seasonal_period": 1,
+    "name": "World Bank USA Real GDP Yearly",
+    "value_scale": 1000000000.0,
+    "value_unit": "Billions USD"
+  },
+  "n_tracked_models": 9,
+  "tracked_models": [
+    "TiDE",
+    "Holt-Winters [log]",
+    "Chronos2",
+    "TimeGPT",
+    "GraniteTTM",
+    "N-BEATS",
+    "AutoARIMA [log]",
+    "Prophet [log]",
+    "TFT"
+  ],
+  "final_prediction_models": [
+    "TiDE",
+    "Holt-Winters [log]",
+    "Chronos2",
+    "TimeGPT",
+    "GraniteTTM",
+    "N-BEATS",
+    "AutoARIMA [log]",
+    "Prophet [log]",
+    "TFT"
+  ],
+  "dm_shortlist": [
+    "TiDE",
+    "Holt-Winters [log]",
+    "Chronos2"
+  ],
+  "dm_shortlist_reasons": {
+    "TiDE": "Best overall validation RMSE; Best deep learning validation RMSE",
+    "Holt-Winters [log]": "Second-best overall validation RMSE; Best statistical validation RMSE",
+    "Chronos2": "Best foundation validation RMSE"
+  },
+  "selected_transforms": [
+    "log"
+  ],
+  "export_flags": {
+    "export_tables": true,
+    "export_point_level": true,
+    "export_metadata": true,
+    "export_tracker_results": true,
+    "export_dm_shortlist": true,
+    "export_params_long": true,
+    "export_validation_points": true,
+    "export_dm_points": true
+  }
+}

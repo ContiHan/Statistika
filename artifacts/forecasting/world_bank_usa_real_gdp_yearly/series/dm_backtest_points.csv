@@ -1,0 +1,57 @@
+Dataset,Model,Base Model,Category,Target Transform,Series ID,Time,Actual,Prediction,Forecast Horizon,Stride,Source
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2000-01-01,13650.948,11248.4912109375,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2001-01-01,13781.389,11630.4560546875,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2002-01-01,14015.733,12012.1640625,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2003-01-01,14407.559,12173.5947265625,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2004-01-01,14961.929,12539.6806640625,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2005-01-01,15483.135,12818.1767578125,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2006-01-01,15914.269,13069.484375,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2007-01-01,16233.168,13144.064453125,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2008-01-01,16251.606,13327.98046875,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2009-01-01,15832.884,13457.9013671875,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2010-01-01,16259.61,13623.47265625,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2011-01-01,16513.977,13821.3203125,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2012-01-01,16892.0,14164.044921875,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2013-01-01,17249.744,14038.8349609375,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2014-01-01,17685.098,13973.5625,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2015-01-01,18206.021,13875.8837890625,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2016-01-01,18537.27,14170.3623046875,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2017-01-01,18992.846,14330.0107421875,1,1,rolling_validation
+World Bank USA Real GDP Yearly,TiDE,TiDE,dl,raw,series_0,2018-01-01,19556.27,14874.771484375,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2000-01-01,13650.948,13509.545220777762,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2001-01-01,13781.389,14071.519189058221,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2002-01-01,14015.733,14176.059836781571,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2003-01-01,14407.559,14399.802570714748,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2004-01-01,14961.929,14799.04192573672,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2005-01-01,15483.135,15377.807198152366,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2006-01-01,15914.269,15918.258035056597,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2007-01-01,16233.168,16357.535205462715,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2008-01-01,16251.606,16672.210374676488,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2009-01-01,15832.884,16658.184489696072,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2010-01-01,16259.61,16175.84463846573,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2011-01-01,16513.977,16611.413077371348,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2012-01-01,16892.0,16861.02023122605,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2013-01-01,17249.744,17243.453243192216,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2014-01-01,17685.098,17603.832982599244,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2015-01-01,18206.021,18047.010668775183,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2016-01-01,18537.27,18581.150663281893,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2017-01-01,18992.846,18911.949578286254,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Holt-Winters [log],Holt-Winters,statistical,log,series_0,2018-01-01,19556.27,19375.312028987588,1,1,rolling_validation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2001-01-01,13781.389,14138.421875,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2002-01-01,14015.733,14228.048828125,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2003-01-01,14407.559,14622.404296875,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2004-01-01,14961.929,15118.98046875,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2005-01-01,15483.135,15693.74609375,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2006-01-01,15914.269,16249.234375,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2007-01-01,16233.168,16690.02734375,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2008-01-01,16251.606,17079.822265625,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2009-01-01,15832.884,16982.84375,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2010-01-01,16259.61,15843.3193359375,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2011-01-01,16513.977,16662.75390625,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2012-01-01,16892.0,16920.60546875,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2013-01-01,17249.744,17400.01171875,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2014-01-01,17685.098,17883.58203125,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2015-01-01,18206.021,18316.736328125,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2016-01-01,18537.27,18880.8359375,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2017-01-01,18992.846,19118.6171875,1,1,dm_backtest_foundation
+World Bank USA Real GDP Yearly,Chronos2,Chronos2,foundation,raw,series_0,2018-01-01,19556.27,19705.83984375,1,1,dm_backtest_foundation

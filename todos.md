@@ -33,22 +33,27 @@ Only active and recent work should live here.
   - [ ] explicitly state that scaling and log transforms are inverted back to the original target scale before final comparison of models
   - [ ] explicitly explain that `05` is reported as a reduced `50k` smoke run because the full AutoARIMA-based setup was not computationally practical
 
-- [ ] Plan structured export of run data for post-processing
-  - [ ] store one machine-readable export bundle per dataset run under a dedicated repo folder
-  - [ ] export table-level CSVs:
-    - [ ] tracker results / comparison metrics
-    - [ ] selected params
-    - [ ] transform diagnostics
-    - [ ] DM backtest summary
-    - [ ] DM pairwise results
-    - [ ] DM shortlist / inclusion reasons
-  - [ ] export point-level CSVs:
-    - [ ] reference train/test series
-    - [ ] final forecast values
-    - [ ] tuning validation points
-    - [ ] DM backtest points
-  - [ ] decide whether to also export normalized parameter key/value tables in addition to compact params strings
-  - [ ] make it possible to rebuild thesis tables from saved data instead of only from PNG artifacts
+- [ ] Use structured export of run data for post-processing
+  - [x] shared export helper exists in `src/export_data.py`
+  - [x] machine-readable bundles are written under `artifacts/forecasting/<dataset_slug>/`
+  - [x] default export bundle includes:
+    - [x] comparison metrics
+    - [x] selected params
+    - [x] transform diagnostics
+    - [x] DM backtest summary
+    - [x] DM pairwise results
+    - [x] reference train/test series
+    - [x] final forecast values
+    - [x] `run_metadata.json`
+  - [x] optional exports are available for:
+    - [x] tracker results
+    - [x] DM shortlist / inclusion reasons
+    - [x] normalized parameter key/value rows
+    - [x] tuning validation points
+    - [x] DM backtest points
+  - [ ] add one final export cell to each forecasting notebook after PNG export
+  - [ ] run the export on the final kept notebook outputs for `01` to `05`
+  - [ ] decide which exported CSVs will be used directly in the thesis text and which will stay as appendix / analysis support
   - [ ] keep open the option of a lightweight interactive web view for comparing RMSE, MAPE, timing, DM, and forecasts across datasets
 
 ## Secondary Tasks
