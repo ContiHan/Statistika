@@ -8,7 +8,7 @@ The repository contains:
 - exploratory data analysis notebooks
 - forecasting notebooks with a shared workflow
 - reusable source modules in `src/`
-- exported figures and machine-readable artifacts used for thesis writing
+- exported figures and machine-readable artifacts used in the thesis
 
 ## What The Project Does
 
@@ -324,8 +324,3 @@ This repository keeps two maintained markdown documents:
 
 Older scattered notes were consolidated into these files.
 
-## Language Policy
-
-- code: English
-- repository documentation: English
-- user interaction with the agent: Czech
